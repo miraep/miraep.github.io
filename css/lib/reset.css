@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    color: #222;
-    font: none normal 100%/1.2em arial,"myriad pro",nanumGothic,"돋움",dotum,sans-serif;
+    color: #333;
+    font: none normal 100%/1.2em "myriad pro",arial,nanumGothic,"돋움",dotum,sans-serif;
     /*margin: 0 auto;*/
 }
 
@@ -22,8 +22,8 @@ ul,ol,li {
 }
 
 a{
-    color: #303030;
-    font-family: arial;
+    color: #788;
+    text-decoration: none;
 }
 a:focus,
 input:focus,
@@ -41,12 +41,6 @@ input[type="email"]:focus,
 textarea:focus{
     background-color: #fcf;
 }
-
-dl a,
-ul a{
-    text-decoration: none;
-}
-
 
 /* html 5 */
 header,

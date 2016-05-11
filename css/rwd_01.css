@@ -1,0 +1,222 @@
+* {
+  transition: all 0.1s; }
+
+#pcAd {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  #container {
+    width: 100%;
+    height: auto; }
+
+  #headBox {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #ccc; }
+    #headBox > h1 {
+      width: 100px;
+      height: 30px;
+      background-color: #fff;
+      margin-left: calc(50% - 50px);
+      margin-bottom: 20px; }
+    #headBox > #gnb {
+      width: 86%;
+      height: 300px;
+      margin-left: 7%;
+      background-color: #fff; }
+
+  #ad {
+    display: none; }
+
+  #content {
+    width: 100%;
+    height: 100px;
+    background-color: #ffa; }
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    background-color: #f00; } }
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  #container {
+    width: 100%;
+    height: auto; }
+
+  #headBox {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #ccc; }
+    #headBox > h1 {
+      width: 100px;
+      height: 30px;
+      background-color: #fff;
+      margin-left: 7%;
+      margin-bottom: 20px; }
+    #headBox > #gnb {
+      width: 86%;
+      height: 62.5vw;
+      margin-left: 7%;
+      background-color: #fff; }
+
+  #ad {
+    display: none; }
+
+  #content {
+    width: 100%;
+    height: 100px;
+    background-color: #ffa; }
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    background-color: #f00; } }
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  #container {
+    width: 100%;
+    height: auto; }
+
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%;
+    background-color: #ccc; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #headBox > h1 {
+      width: 80px;
+      height: 40px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 40px;
+      background-color: #fff;
+      float: right; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    background-color: #d9a; }
+    #ad > .tip_box {
+      display: none; }
+
+  #content {
+    width: 100%;
+    height: 100px;
+    background-color: #ffa; }
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    background-color: #f00; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #container {
+    width: 100%;
+    height: auto; }
+
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%;
+    background-color: #ccc; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #headBox > h1 {
+      width: 80px;
+      height: 40px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 40px;
+      background-color: #fff;
+      float: right; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    background-color: #d9a;
+    position: relative; }
+    #ad > .tip_box {
+      width: 30%;
+      height: 3.89vw;
+      background-color: #d1a;
+      position: absolute;
+      top: 10%;
+      left: 12%;
+      z-index: 300; }
+
+  #content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 600px;
+    background-color: #0fa; }
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    background-color: #f00; } }
+@media screen and (min-width: 1025px) {
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%;
+    background-color: #ccc; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #headBox > h1 {
+      width: 80px;
+      height: 40px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 40px;
+      background-color: #fff;
+      float: right; }
+
+  #pcAd {
+    display: block;
+    width: 100%;
+    height: 40vw;
+    background-color: #9a9;
+    text-align: center;
+    line-height: 40vw;
+    font-size: 10vw;
+    font-weight: bold; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    background-color: #d9a;
+    position: relative; }
+    #ad > .tip_box {
+      width: 20%;
+      height: 12vw;
+      background-color: #d1a;
+      position: absolute;
+      top: 10%;
+      left: 12%;
+      z-index: 300; }
+
+  #content {
+    width: 90%;
+    height: 700px;
+    background-color: #ffa;
+    margin: 0 auto; }
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    background-color: #f00; } }
+
+/*# sourceMappingURL=rwd_01.css.map */
