@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.png">
 	<link rel="apple-touch-icon" href="./favicon/favicon.png">
 	<link rel="stylesheet" href="./css/lib/reset.css">
@@ -20,31 +20,70 @@
 	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
 	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
 	<script src="./js/jquery/jquery-ui.min.js"></script>
-	<title>Document</title>
+	<title>timberland</title>
 	<style type="text/css"></style>
-	<script>$(document).ready(function(){});</script>
+	<script>
+		$(document).ready(function(){
+
+			
+		
+		});
+	</script>
 	
 </head>
 <body>
 	<div id="container">
 		<header id="headerBox">
-			<h1>LOGO</h1>
-			<nav id="lnb">LNB</nav>
-			<nav id="gnb">GNB</nav>
+			<h1><a href="#"><span>logo</span></a></h1>
+			<nav id="gnb">
+				<ul>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Online shop</a></li>
+					<li><a href="#"><span>facebook logo</span></a></li>
+					<li><a href="#"><span>instagram logo</span></a></li>
+					<li><a href="#"><span>youtube logo</span></a></li>
+				</ul>
+			</nav>
 		</header>
-		<article id="banner">BANNER</article>
-		<section id="content1">
-			<div>DIV</div>
-			<div>DIV</div>
-			<div>DIV</div>
-			<div>DIV</div>
+
+		<section id="mainBanner">
+			<div class="shop"><a href="#">Shop<br />now</a></div>
+			<div class="btn"><a href="#sectionBox1"></a></div>
 		</section>
-		<section id="content2">CONTENT1</section>
-		<section id="content3">CONTENT2</section>
+
+		<section id="sectionBox1">
+			<article id="newArrivals">
+				<div class="minibox">
+					<a href="#">New Arrivals</a>
+				</div>
+				<div class="bigbox"></div>
+			</article>
+		</section>
+
+		<section id="sectionBox2">
+			<article id="collection">
+				<div class="bigbox"></div>
+				<div class="minibox">
+					<a href="#">Collection</a>
+				</div>
+			</article>
+		</section>
+
+		<section id="sectionBox3">
+			<article id="press">
+				<div class="minibox">
+					<a href="#">Press</a>
+				</div>
+				<div class="bigbox"></div>
+			</article>
+		</section>
+
 		<footer id="footerBox">
-			<h1>FH1</h1>
-			<div id="text">TEXT</div>
+			<h1></h1>
+			<div class="up"><a href="#mainBanner">위로</a></div>
 		</footer>
+		
 	</div>
 </body>
 </html>
