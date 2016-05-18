@@ -7,7 +7,7 @@ html, body {
 #container header#headerBox {
   background-color: rgba(204, 204, 204, 0.5); }
 #container footer#footerBox {
-  background-color: #8a3; }
+  background-color: rgba(0, 0, 0, 0.7); }
 
 @media screen and (max-width: 480px) {
   #container {
@@ -42,7 +42,7 @@ html, body {
         float: right; }
         #container > #headerBox > #gnb > ul {
           float: right;
-          width: 130px;
+          width: 155px;
           margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
@@ -54,8 +54,9 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 70px;
-              margin-right: 0; }
+              width: 100px;
+              margin-right: 0;
+              background-color: #919; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
               display: none; }
             #container > #headerBox > #gnb > ul > li:nth-child(5) {
@@ -139,7 +140,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -178,7 +178,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -217,7 +216,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -230,14 +228,17 @@ html, body {
           display: none; }
     #container #footerBox {
       width: 100%;
-      padding-top: 30px;
-      height: 60px; }
+      padding-top: 10px;
+      height: 40px; }
       #container #footerBox > h1 {
         display: none; }
       #container #footerBox > .up {
         width: 200px;
         height: 30px;
-        background-color: #000;
+        background-color: rgba(0, 63, 133, 0.8);
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 3px;
         margin: 0 auto; }
         #container #footerBox > .up > a {
           width: 100%;
@@ -249,7 +250,7 @@ html, body {
           line-height: 30px; }
           #container #footerBox > .up > a:hover {
             background-color: #fff;
-            color: #000; } }
+            color: #003f85; } }
 @media screen and (min-width: 481px) and (max-width: 640px) {
   #container {
     width: 100%;
@@ -380,7 +381,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -419,7 +419,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -458,7 +457,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -471,14 +469,17 @@ html, body {
           display: none; }
     #container #footerBox {
       width: 100%;
-      padding-top: 30px;
-      height: 60px; }
+      padding-top: 10px;
+      height: 40px; }
       #container #footerBox > h1 {
         display: none; }
       #container #footerBox > .up {
         width: 200px;
         height: 30px;
-        background-color: #000;
+        background-color: rgba(0, 63, 133, 0.8);
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 3px;
         margin: 0 auto; }
         #container #footerBox > .up > a {
           width: 100%;
@@ -490,7 +491,7 @@ html, body {
           line-height: 30px; }
           #container #footerBox > .up > a:hover {
             background-color: #fff;
-            color: #000; } }
+            color: #003f85; } }
 @media screen and (min-width: 641px) and (max-width: 768px) {
   #container {
     width: 100%;
@@ -618,7 +619,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -662,7 +662,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -706,7 +705,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -850,7 +848,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -894,7 +891,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -938,7 +934,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -1109,7 +1104,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -1154,7 +1148,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;
@@ -1200,7 +1193,6 @@ html, body {
               left: 50%;
               margin-left: -75px;
               margin-top: -15px;
-              background-color: #9af;
               display: block;
               width: 150px;
               height: 30px;

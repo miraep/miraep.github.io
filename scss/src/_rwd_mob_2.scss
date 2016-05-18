@@ -135,7 +135,6 @@
                             left: 50%;
                             margin-left: -75px;
                             margin-top: -15px;
-                            background-color: #9af  ;
                             display: block;
                             width: 150px;
                             height: 30px;
@@ -176,7 +175,6 @@
                             left: 50%;
                             margin-left: -75px;
                             margin-top: -15px;
-                            background-color: #9af  ;
                             display: block;
                             width: 150px;
                             height: 30px;
@@ -217,7 +215,6 @@
                             left: 50%;
                             margin-left: -75px;
                             margin-top: -15px;
-                            background-color: #9af  ;
                             display: block;
                             width: 150px;
                             height: 30px;
@@ -233,13 +230,16 @@
     //______FOOTER_________________________________
         #footerBox{
             width: 100%;
-            padding-top: 30px;
-            height: 60px;
+            padding-top: 10px;
+            height: 40px;
             >h1{display: none;}
             >.up{
                 width: 200px;
                 height: 30px;
-                background-color: #000;
+                background-color: rgba(#003f85,0.8);
+                border: 1px solid #fff;
+                box-sizing:border-box;
+                border-radius: 3px;
                 margin: 0 auto;
                 >a{
                     width: 100%;
@@ -249,7 +249,7 @@
                     font-size: 1rem;
                     text-align: center;
                     line-height: 30px;
-                &:hover{background-color: #fff; color: #000;}
+                &:hover{background-color: #fff; color: #003f85;}
                 }//a
             }//.up
         }//footerBox
