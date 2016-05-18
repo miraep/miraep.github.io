@@ -42,7 +42,7 @@ html, body {
         float: right; }
         #container > #headerBox > #gnb > ul {
           float: right;
-          width: 120px;
+          width: 130px;
           margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
@@ -54,7 +54,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 65px;
+              width: 70px;
               margin-right: 0; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
               display: none; }
@@ -63,7 +63,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(6) {
               display: none; }
             #container > #headerBox > #gnb > ul > li > a {
-              font-size: 0.8rem;
+              font-size: 0.7rem;
               color: #003f85;
               text-align: center; }
               #container > #headerBox > #gnb > ul > li > a:hover {
@@ -283,7 +283,7 @@ html, body {
         float: right; }
         #container > #headerBox > #gnb > ul {
           float: right;
-          width: 120px;
+          width: 130px;
           margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
@@ -295,7 +295,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 65px;
+              width: 70px;
               margin-right: 0; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
               display: none; }
@@ -304,7 +304,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(6) {
               display: none; }
             #container > #headerBox > #gnb > ul > li > a {
-              font-size: 0.8rem;
+              font-size: 0.7rem;
               color: #003f85;
               text-align: center; }
               #container > #headerBox > #gnb > ul > li > a:hover {
