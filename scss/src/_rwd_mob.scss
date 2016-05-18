@@ -7,6 +7,7 @@
         position: relative;
         min-height: 400px;
         min-width: 370px;
+    //______HEADER_________________________________
         >#headerBox{
                 width: calc(100% - 20px);
                 height: 50px;
@@ -35,6 +36,7 @@
                     >ul{
                         float: right;
                         width: 120px;
+                        margin-right: 10px;
                         height: auto;
                         >li{
                             float: left;
@@ -56,13 +58,14 @@
                     }//ul
                 } //gnb
         } //header
+    //______BANNER_________________________________
 		>#mainBanner{
 			width: 100%;
 			height: 100%;
-            background-image: url("../img/bg/bg_02.jpg");
+            background-image: url("../img/pp/sulli/02.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: -500px 0;
+            background-position: -150px 0;
             position: relative;
 
             >.shop{
@@ -102,10 +105,8 @@
                         background-size: 100% 100%;}
                 } //a
             }//btn
-
 		} //#mainBanner
-
-
+    //______SECTION BOX 1__________________________
 		>#sectionBox1{
             border-bottom: 1px solid  #000;
             width: 100%;
@@ -122,22 +123,32 @@
                     float: left;
                     background: url(../img/pp/sulli/01.jpg) no-repeat;
                     background-size: 100% 100%;
-                    overflow: hidden;
+                    position: relative;
                     >a{
-                        padding-top: 100%;
                         display: block;
                         width: 100%;
                         height: 100%;
-                        font-size: 2rem;
-                        text-align: center;
-                        color: #fff;} //a
+                        position: relative;
+                        >span{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -75px;
+                            margin-top: -15px;
+                            background-color: #9af  ;
+                            display: block;
+                            width: 150px;
+                            height: 30px;
+                            font-size: 2rem;
+                            text-align: center;
+                            color: #fff;}
+                    } //a
                 &:hover a{background-color: rgba(#000, 0.6); }
                 } //.minibox
                 >.bigbox{display: none;}
             } //#newArrivals
         } //sectionBox1
-
-
+    //______SECTION BOX 2__________________________
         >#sectionBox2{
             border-bottom: 1px solid  #000;
             width: 100%;
@@ -154,22 +165,31 @@
                     float: left;
                     background: url(../img/pp/sulli/03.jpg) no-repeat;
                     background-size: 100% 100%;
-                    // background-size: 1;
-                    overflow: hidden;
                     >a{
-                        padding-top: 100%;
                         display: block;
                         width: 100%;
                         height: 100%;
-                        font-size: 2rem;
-                        text-align: center;
-                        color: #fff;} //a
+                        position: relative;
+                        >span{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -75px;
+                            margin-top: -15px;
+                            background-color: #9af  ;
+                            display: block;
+                            width: 150px;
+                            height: 30px;
+                            font-size: 2rem;
+                            text-align: center;
+                            color: #fff;}
+                    } //a
                 &:hover a{background-color: rgba(#000, 0.6); }
                 } //.minibox
                 >.bigbox{display: none;}
             } //#collection
         } //sectionBox2
-
+    //______SECTION BOX 3__________________________
         >#sectionBox3{
             border-bottom: 1px solid  #000;
             width: 100%;
@@ -186,21 +206,31 @@
                     float: left;
                     background: url(../img/pp/sulli/05.jpg) no-repeat;
                     background-size: 100% 100%;
-                    overflow: hidden;
                     >a{
-                        padding-top: 100%;
                         display: block;
                         width: 100%;
                         height: 100%;
-                        font-size: 2rem;
-                        text-align: center;
-                        color: #fff;} //a
+                        position: relative;
+                        >span{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -75px;
+                            margin-top: -15px;
+                            background-color: #9af  ;
+                            display: block;
+                            width: 150px;
+                            height: 30px;
+                            font-size: 2rem;
+                            text-align: center;
+                            color: #fff;}
+                    } //a
                 &:hover a{background-color: rgba(#000, 0.6); }
                 } //.minibox
                 >.bigbox{display: none;}
             } //#collection
         } //sectionBox3
-
+    //______FOOTER__________________________
         #footerBox{
             width: 100%;
             padding-top: 30px;

@@ -43,6 +43,7 @@ html, body {
         #container > #headerBox > #gnb > ul {
           float: right;
           width: 120px;
+          margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
             float: left;
@@ -70,10 +71,10 @@ html, body {
     #container > #mainBanner {
       width: 100%;
       height: 100%;
-      background-image: url("../img/bg/bg_02.jpg");
+      background-image: url("../img/pp/sulli/02.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: -500px 0;
+      background-position: -150px 0;
       position: relative; }
       #container > #mainBanner > .shop {
         width: 200px;
@@ -126,15 +127,25 @@ html, body {
           float: left;
           background: url(../img/pp/sulli/01.jpg) no-repeat;
           background-size: 100% 100%;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox1 > #newArrivals > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox1 > #newArrivals > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox1 > #newArrivals > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox1 > #newArrivals > .bigbox {
@@ -155,16 +166,25 @@ html, body {
           height: 100%;
           float: left;
           background: url(../img/pp/sulli/03.jpg) no-repeat;
-          background-size: 100% 100%;
-          overflow: hidden; }
+          background-size: 100% 100%; }
           #container > #sectionBox2 > #collection > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox2 > #collection > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox2 > #collection > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox2 > #collection > .bigbox {
@@ -185,16 +205,25 @@ html, body {
           height: 100%;
           float: left;
           background: url(../img/pp/sulli/05.jpg) no-repeat;
-          background-size: 100% 100%;
-          overflow: hidden; }
+          background-size: 100% 100%; }
           #container > #sectionBox3 > #press > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox3 > #press > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox3 > #press > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox3 > #press > .bigbox {
@@ -255,6 +284,7 @@ html, body {
         #container > #headerBox > #gnb > ul {
           float: right;
           width: 120px;
+          margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
             float: left;
@@ -282,8 +312,10 @@ html, body {
     #container > #mainBanner {
       width: 100%;
       height: 100%;
-      background-image: url("../img/bg/bg_06.jpg");
+      background-image: url("../img/pp/sulli/02.jpg");
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -150px 0;
       position: relative; }
       #container > #mainBanner > .shop {
         width: 200px;
@@ -327,13 +359,36 @@ html, body {
       #container > #sectionBox1 > #newArrivals {
         width: 90%;
         height: 90%;
-        margin: 5%;
-        background-image: url("../img/bg/bg_01.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        position: relative; }
-        #container > #sectionBox1 > #newArrivals > .minibox {
+        margin: 5%; }
+        #container > #sectionBox1 > #newArrivals > .shop {
           display: none; }
+        #container > #sectionBox1 > #newArrivals > .minibox {
+          width: 100%;
+          height: 100%;
+          float: left;
+          background: url(../img/pp/sulli/01.jpg) no-repeat;
+          background-size: 100% 100%;
+          position: relative; }
+          #container > #sectionBox1 > #newArrivals > .minibox > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative; }
+            #container > #sectionBox1 > #newArrivals > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
+          #container > #sectionBox1 > #newArrivals > .minibox:hover a {
+            background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox1 > #newArrivals > .bigbox {
           display: none; }
     #container > #sectionBox2 {
@@ -342,14 +397,37 @@ html, body {
       height: calc(100% - 70px);
       padding-top: 70px; }
       #container > #sectionBox2 > #collection {
-        width: 100%;
-        height: 100%;
-        background-image: url("../img/bg/bg_01.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        position: relative; }
-        #container > #sectionBox2 > #collection > .minibox {
+        width: 90%;
+        height: 90%;
+        margin: 5%; }
+        #container > #sectionBox2 > #collection > .shop {
           display: none; }
+        #container > #sectionBox2 > #collection > .minibox {
+          width: 100%;
+          height: 100%;
+          float: left;
+          background: url(../img/pp/sulli/03.jpg) no-repeat;
+          background-size: 100% 100%; }
+          #container > #sectionBox2 > #collection > .minibox > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative; }
+            #container > #sectionBox2 > #collection > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
+          #container > #sectionBox2 > #collection > .minibox:hover a {
+            background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox2 > #collection > .bigbox {
           display: none; }
     #container > #sectionBox3 {
@@ -360,13 +438,35 @@ html, body {
       #container > #sectionBox3 > #press {
         width: 90%;
         height: 90%;
-        margin: 5%;
-        background-image: url("../img/bg/bg_01.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        position: relative; }
-        #container > #sectionBox3 > #press > .minibox {
+        margin: 5%; }
+        #container > #sectionBox3 > #press > .shop {
           display: none; }
+        #container > #sectionBox3 > #press > .minibox {
+          width: 100%;
+          height: 100%;
+          float: left;
+          background: url(../img/pp/sulli/05.jpg) no-repeat;
+          background-size: 100% 100%; }
+          #container > #sectionBox3 > #press > .minibox > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative; }
+            #container > #sectionBox3 > #press > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
+          #container > #sectionBox3 > #press > .minibox:hover a {
+            background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox3 > #press > .bigbox {
           display: none; }
     #container #footerBox {
@@ -451,7 +551,7 @@ html, body {
     #container > #mainBanner {
       width: 100%;
       height: 100%;
-      background-image: url("../img/BG/bg_21.jpg");
+      background-image: url("../img/pp/sulli/02.jpg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       position: relative; }
@@ -469,7 +569,7 @@ html, body {
           font: bold 4.5rem/4rem "arial";
           color: #fff; }
           #container > #mainBanner > .shop > a:hover {
-            color: #333; }
+            color: rgba(0, 63, 133, 0.8); }
       #container > #mainBanner > .btn {
         width: 100px;
         height: 30px;
@@ -506,15 +606,25 @@ html, body {
           float: left;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox1 > #newArrivals > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox1 > #newArrivals > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox1 > #newArrivals > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox1 > #newArrivals > .bigbox {
@@ -540,15 +650,25 @@ html, body {
           float: right;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox2 > #collection > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox2 > #collection > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox2 > #collection > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox2 > #collection > .bigbox {
@@ -574,15 +694,25 @@ html, body {
           float: left;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox3 > #press > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox3 > #press > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox3 > #press > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox3 > #press > .bigbox {
@@ -653,7 +783,7 @@ html, body {
     #container > #mainBanner {
       width: 100%;
       height: 100%;
-      background-image: url("../img/BG/bg_21.jpg");
+      background-image: url("../img/pp/sulli/02.jpg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       position: relative; }
@@ -671,7 +801,7 @@ html, body {
           font: bold 4.5rem/4rem "arial";
           color: #fff; }
           #container > #mainBanner > .shop > a:hover {
-            color: #333; }
+            color: rgba(0, 63, 133, 0.8); }
       #container > #mainBanner > .btn {
         width: 100px;
         height: 30px;
@@ -708,15 +838,25 @@ html, body {
           float: left;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox1 > #newArrivals > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox1 > #newArrivals > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox1 > #newArrivals > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox1 > #newArrivals > .bigbox {
@@ -742,15 +882,25 @@ html, body {
           float: right;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox2 > #collection > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox2 > #collection > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox2 > #collection > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox2 > #collection > .bigbox {
@@ -776,15 +926,25 @@ html, body {
           float: left;
           background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox3 > #press > .minibox > a {
-            padding-top: 100%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 2rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox3 > #press > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox3 > #press > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox3 > #press > .bigbox {
@@ -900,7 +1060,7 @@ html, body {
           font: bold 4.5rem/4rem "arial";
           color: #fff; }
           #container > #mainBanner > .shop > a:hover {
-            color: #333; }
+            color: rgba(0, 63, 133, 0.8); }
       #container > #mainBanner > .btn {
         width: 100px;
         height: 30px;
@@ -937,15 +1097,25 @@ html, body {
           float: left;
           background: url(../img/pp/sulli/01.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox1 > #newArrivals > .minibox > a {
-            padding-top: 55%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 3rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox1 > #newArrivals > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox1 > #newArrivals > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox1 > #newArrivals > .bigbox {
@@ -972,15 +1142,25 @@ html, body {
           float: right;
           background: url(../img/pp/p_03.jpg) no-repeat;
           background-size: 100% 100%;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox2 > #collection > .minibox > a {
-            padding-top: 60%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 3rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox2 > #collection > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox2 > #collection > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox2 > #collection > .bigbox {
@@ -1008,15 +1188,25 @@ html, body {
           float: left;
           background: url(../img/pp/sulli/03.jpg) no-repeat;
           background-size: cover;
-          overflow: hidden; }
+          position: relative; }
           #container > #sectionBox3 > #press > .minibox > a {
-            padding-top: 55%;
             display: block;
             width: 100%;
             height: 100%;
-            font-size: 3rem;
-            text-align: center;
-            color: #fff; }
+            position: relative; }
+            #container > #sectionBox3 > #press > .minibox > a > span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -75px;
+              margin-top: -15px;
+              background-color: #9af;
+              display: block;
+              width: 150px;
+              height: 30px;
+              font-size: 2rem;
+              text-align: center;
+              color: #fff; }
           #container > #sectionBox3 > #press > .minibox:hover a {
             background-color: rgba(0, 0, 0, 0.6); }
         #container > #sectionBox3 > #press > .bigbox {
