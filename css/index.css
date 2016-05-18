@@ -42,7 +42,7 @@ html, body {
         float: right; }
         #container > #headerBox > #gnb > ul {
           float: right;
-          width: 135px;
+          width: 125px;
           margin-right: 10px;
           height: auto; }
           #container > #headerBox > #gnb > ul > li {
@@ -54,7 +54,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 80px;
+              width: 70px;
               margin-right: 0;
               background-color: #919; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
@@ -535,7 +535,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 65px;
+              width: 70px;
               margin-right: 0; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
               display: none; }
@@ -764,7 +764,7 @@ html, body {
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
               width: 45px; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              width: 65px;
+              width: 70px;
               margin-right: 0; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
               display: none; }
