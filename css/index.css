@@ -4,20 +4,17 @@
 #container {
   width: 100%;
   height: 100%; }
-  #container > #headerBox {
-    background-color: #fe1; }
-  #container > #banner {
-    background-color: #030; }
   #container > #sectionBox1 {
-    background-color: #310; }
+    background-image: url(../img/bg/section_bg1.jpg);
+    background-repeat: no-repeat; }
   #container > #sectionBox2 {
-    background-color: #acc; }
+    background-image: url(../img/bg/section_bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
   #container > #sectionBox3 {
-    background-color: #d31; }
-  #container > #sectionBox4 {
-    background-color: #a47; }
-  #container > #sectionBox5 {
-    background-color: #8f8; }
+    background-image: url(../img/bg/box3.jpg);
+    background-size: 100% 100%; }
   #container > #footerBox {
     background-color: #000; }
 
@@ -40,13 +37,15 @@
         display: block;
         width: 100%;
         height: 100%;
+        margin-top: 3px;
         background: url(../img/header/h1.png) no-repeat center; }
     #container > #headerBox .inbox > #gnb {
       cursor: pointer;
       width: 40px;
       height: 40px;
-      background-color: #fff;
-      float: right; }
+      float: right;
+      background: url(../img/btn/gnb_mini.png) no-repeat;
+      background-size: 100% 100%; }
       #container > #headerBox .inbox > #gnb > ul {
         display: none; }
   #container > #banner {
@@ -54,6 +53,22 @@
     height: 300px;
     overflow: hidden;
     position: relative; }
+    #container > #banner > #left_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      left: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/left.png") no-repeat; }
+    #container > #banner > #right_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      right: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/right.png") no-repeat; }
     #container > #banner > ol {
       width: 50px;
       height: 10px;
@@ -86,31 +101,45 @@
           height: 100%; }
         #container > #banner > ul > li:nth-child(1) > button {
           background: url(../img/bg/bg_01.jpg) no-repeat;
-          background-size: 100%; }
+          background-size: cover;
+          background-position: center; }
         #container > #banner > ul > li:nth-child(2) > button {
-          background: url(../img/bg/bg_03.jpg) no-repeat;
-          background-size: 100%; }
+          background: url(../img/bg/bg_02.jpg) no-repeat;
+          background-size: cover;
+          background-position: center; }
         #container > #banner > ul > li:nth-child(3) > button {
           background: url(../img/bg/bg_03.jpg) no-repeat;
-          background-size: 100%; }
+          background-size: cover;
+          background-position: center; }
   #container > #sectionBox1 {
     width: 100%;
-    height: 150px; }
-    #container > #sectionBox1 > .inbox > #box_01 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #d9d; }
-    #container > #sectionBox1 > .inbox > #box_02 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #19d; }
-    #container > #sectionBox1 > .inbox > #box_03 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #d00; }
+    height: 200px; }
+    #container > #sectionBox1 > .inbox > h1 {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold; }
+    #container > #sectionBox1 > .inbox > ul.accodion {
+      width: 100%;
+      height: calc(100% - 40px); }
+      #container > #sectionBox1 > .inbox > ul.accodion > li {
+        float: left;
+        width: 25%;
+        height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.orderWidth {
+          width: calc(50% / 3); }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(1) {
+          background-color: #dd9; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(2) {
+          background-color: #ad9; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(3) {
+          background-color: #dda; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(4) {
+          background-color: #d81; }
   #container > #sectionBox2 {
     display: none; }
   #container > #sectionBox3 {
@@ -118,20 +147,20 @@
     height: auto; }
     #container > #sectionBox3 > .inbox > h1 {
       width: 100%;
-      height: 50px;
-      line-height: 50px;
+      height: 40px;
+      line-height: 40px;
       text-align: center; }
     #container > #sectionBox3 > .inbox > #box_04 {
       width: 100%;
-      height: 150px;
+      height: 160px;
       background-color: #f9f; }
     #container > #sectionBox3 > .inbox > #box_05 {
       width: 100%;
-      height: 150px;
+      height: 160px;
       background-color: #a9f; }
     #container > #sectionBox3 > .inbox > #box_06 {
       width: 100%;
-      height: 150px;
+      height: 160px;
       background-color: #f9a; }
   #container > #sectionBox4 {
     display: none; }
@@ -139,26 +168,253 @@
     width: 100%;
     height: auto; }
     #container > #sectionBox5 > .inbox {
-      width: calc(100% - 40px);
-      height: 260px;
-      padding: 20px;
-      background-color: #d91; }
+      height: 260px; }
       #container > #sectionBox5 > .inbox > h1 {
-        background-color: #ddd;
         width: 100%;
         height: 40px;
         line-height: 40px;
         text-align: center; }
+        #container > #sectionBox5 > .inbox > h1 > a {
+          color: #003d87;
+          font-style: italic; }
       #container > #sectionBox5 > .inbox > ul {
         width: 100%;
-        height: calc(100% - 50px);
-        background-color: #ada; }
+        height: calc(100% - 40px); }
         #container > #sectionBox5 > .inbox > ul > li {
           float: left;
           width: calc(100% / 3);
           height: 50%;
-          border: 1px solid;
-          box-sizing: border-box; }
+          position: relative; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1) {
+            background-image: url(../img/insta/insta_01.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2) {
+            background-image: url(../img/insta/insta_02.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3) {
+            background-image: url(../img/insta/insta_03.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4) {
+            background-image: url(../img/insta/insta_04.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5) {
+            background-image: url(../img/insta/insta_05.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6) {
+            background-image: url(../img/insta/insta_06.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover a {
+              opacity: 1; }
           #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
             display: none; }
           #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
@@ -167,19 +423,21 @@
             display: none; }
           #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
             display: none; }
-          #container > #sectionBox5 > .inbox > ul > li:hover {
-            background-color: #f87; }
   #container > #footerBox {
     width: 100%;
     height: 40px;
     padding-top: 10px; }
-    #container > #footerBox > .inbox > #top {
+    #container > #footerBox > .inbox > h1 {
       margin: 0 auto;
       width: 200px;
-      height: 30px;
-      background: url(../img/footer/top.png) no-repeat; }
-      #container > #footerBox > .inbox > #top:hover {
-        background: url(../img/footer/_top.png) no-repeat; } }
+      height: 30px; }
+      #container > #footerBox > .inbox > h1 > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url(../img/footer/top.png) no-repeat; }
+        #container > #footerBox > .inbox > h1 > a:hover {
+          background: url(../img/footer/_top.png) no-repeat; } }
 @media screen and (min-width: 481px) and (max-width: 640px) {
   .inbox {
     width: inherit;
@@ -199,13 +457,15 @@
         display: block;
         width: 100%;
         height: 100%;
+        margin-top: 3px;
         background: url(../img/header/h1.png) no-repeat center; }
     #container > #headerBox .inbox > #gnb {
       cursor: pointer;
       width: 40px;
       height: 40px;
-      background-color: #fff;
-      float: right; }
+      float: right;
+      background: url(../img/btn/gnb_mini.png) no-repeat;
+      background-size: 100% 100%; }
       #container > #headerBox .inbox > #gnb > ul {
         display: none; }
   #container > #banner {
@@ -213,6 +473,462 @@
     height: 300px;
     overflow: hidden;
     position: relative; }
+    #container > #banner > #left_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      left: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/left.png") no-repeat; }
+    #container > #banner > #right_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      right: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/right.png") no-repeat; }
+    #container > #banner > ol {
+      width: 50px;
+      height: 10px;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      margin-left: -25px; }
+      #container > #banner > ol > li {
+        cursor: pointer;
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 50%; }
+        #container > #banner > ol > li:last-child {
+          margin-right: 0; }
+        #container > #banner > ol > li:hover {
+          background-color: #f06; }
+    #container > #banner > ul {
+      width: 300%;
+      height: 100%;
+      margin-left: -100%; }
+      #container > #banner > ul > li {
+        width: calc(100% / 3);
+        height: 100%;
+        float: left; }
+        #container > #banner > ul > li > button {
+          width: 100%;
+          height: 100%; }
+        #container > #banner > ul > li:nth-child(1) > button {
+          background: url(../img/bg/bg_01.jpg) no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #banner > ul > li:nth-child(2) > button {
+          background: url(../img/bg/bg_02.jpg) no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #banner > ul > li:nth-child(3) > button {
+          background: url(../img/bg/bg_03.jpg) no-repeat;
+          background-size: cover;
+          background-position: center; }
+  #container > #sectionBox1 {
+    width: 100%;
+    height: 200px; }
+    #container > #sectionBox1 > .inbox > h1 {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold; }
+    #container > #sectionBox1 > .inbox > ul.accodion {
+      width: 100%;
+      height: calc(100% - 40px); }
+      #container > #sectionBox1 > .inbox > ul.accodion > li {
+        float: left;
+        width: 25%;
+        height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.orderWidth {
+          width: calc(50% / 3); }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(1) {
+          background-color: #dd9; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(2) {
+          background-color: #ad9; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(3) {
+          background-color: #dda; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(4) {
+          background-color: #d81; }
+  #container > #sectionBox2 {
+    display: none; }
+  #container > #sectionBox3 {
+    width: 100%;
+    height: auto; }
+    #container > #sectionBox3 > .inbox > h1 {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center; }
+    #container > #sectionBox3 > .inbox > #box_04 {
+      width: 100%;
+      height: 160px;
+      background-color: #f9f; }
+    #container > #sectionBox3 > .inbox > #box_05 {
+      width: 100%;
+      height: 160px;
+      background-color: #a9f; }
+    #container > #sectionBox3 > .inbox > #box_06 {
+      width: 100%;
+      height: 160px;
+      background-color: #f9a; }
+  #container > #sectionBox4 {
+    display: none; }
+  #container > #sectionBox5 {
+    width: 100%;
+    height: auto; }
+    #container > #sectionBox5 > .inbox {
+      height: 260px; }
+      #container > #sectionBox5 > .inbox > h1 {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center; }
+        #container > #sectionBox5 > .inbox > h1 > a {
+          color: #003d87;
+          font-style: italic; }
+      #container > #sectionBox5 > .inbox > ul {
+        width: 100%;
+        height: calc(100% - 40px);
+        background-color: #ada; }
+        #container > #sectionBox5 > .inbox > ul > li {
+          float: left;
+          width: calc(100% / 3);
+          height: 50%;
+          position: relative; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1) {
+            background-image: url(../img/insta/insta_01.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2) {
+            background-image: url(../img/insta/insta_02.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3) {
+            background-image: url(../img/insta/insta_03.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4) {
+            background-image: url(../img/insta/insta_04.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5) {
+            background-image: url(../img/insta/insta_05.png);
+            background-repeat: no-repeat;
+            background-size: 100%; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6) {
+            background-image: url(../img/insta/insta_06.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: transparent; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a {
+                width: 140px;
+                height: 20px;
+                font-size: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -10px;
+                display: block;
+                opacity: 0; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span {
+                  color: #fff;
+                  width: 40px;
+                  height: 20px;
+                  padding-left: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(1) {
+                    float: left;
+                    background-image: url(../img/insta/heart.png);
+                    background-repeat: no-repeat;
+                    margin-right: 20px; }
+                  #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(2) {
+                    float: left;
+                    background-image: url(../img/insta/bubble.png);
+                    background-repeat: no-repeat; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover div {
+              background-color: rgba(0, 0, 0, 0.6); }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover a {
+              opacity: 1; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
+            display: none; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
+            display: none; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(9) {
+            display: none; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
+            display: none; }
+  #container > #footerBox {
+    width: 100%;
+    height: 40px;
+    padding-top: 10px; }
+    #container > #footerBox > .inbox > h1 {
+      margin: 0 auto;
+      width: 200px;
+      height: 30px; }
+      #container > #footerBox > .inbox > h1 > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url(../img/footer/top.png) no-repeat; }
+        #container > #footerBox > .inbox > h1 > a:hover {
+          background: url(../img/footer/_top.png) no-repeat; } }
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .inbox {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px; }
+
+  #container > #headerBox {
+    width: 100%;
+    height: 70px; }
+    #container > #headerBox .inbox > #sitemap {
+      display: none; }
+    #container > #headerBox .inbox > h1 {
+      width: 200px;
+      height: 40px;
+      float: left; }
+      #container > #headerBox .inbox > h1 > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../img/header/h1.png) no-repeat;
+        background-size: 100%; }
+    #container > #headerBox .inbox > #gnb {
+      width: 355px;
+      height: 30px;
+      float: right;
+      margin-top: 10px; }
+      #container > #headerBox .inbox > #gnb > ul {
+        width: 100%;
+        height: 100%; }
+        #container > #headerBox .inbox > #gnb > ul > li {
+          float: left;
+          margin-right: 15px;
+          line-height: 30px; }
+          #container > #headerBox .inbox > #gnb > ul > li > a {
+            font-size: 0.9rem;
+            color: #595959; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(1) {
+            width: 60px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(2) {
+            width: 84px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(3) {
+            width: 64px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(4) {
+            width: 102px;
+            height: 30px;
+            margin-right: 0; }
+  #container > #banner {
+    width: 100%;
+    height: 46.801872vw;
+    overflow: hidden;
+    position: relative; }
+    #container > #banner > #left_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      left: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/left.png") no-repeat; }
+    #container > #banner > #right_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      right: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/right.png") no-repeat; }
     #container > #banner > ol {
       width: 50px;
       height: 10px;
@@ -247,98 +963,1118 @@
           background: url(../img/bg/bg_01.jpg) no-repeat;
           background-size: 100%; }
         #container > #banner > ul > li:nth-child(2) > button {
-          background: url(../img/bg/bg_03.jpg) no-repeat;
+          background: url(../img/bg/bg_02.jpg) no-repeat;
           background-size: 100%; }
         #container > #banner > ul > li:nth-child(3) > button {
           background: url(../img/bg/bg_03.jpg) no-repeat;
           background-size: 100%; }
   #container > #sectionBox1 {
     width: 100%;
-    height: 150px; }
-    #container > #sectionBox1 > .inbox > #box_01 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #d9d; }
-    #container > #sectionBox1 > .inbox > #box_02 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #19d; }
-    #container > #sectionBox1 > .inbox > #box_03 {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left;
-      background-color: #d00; }
+    height: 300px; }
+    #container > #sectionBox1 > .inbox > h1 {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25rem; }
+    #container > #sectionBox1 > .inbox > ul.accodion {
+      width: 100%;
+      height: calc(100% - 30px); }
+      #container > #sectionBox1 > .inbox > ul.accodion > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        position: relative; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li > a {
+          left: 10px;
+          bottom: 10px;
+          position: absolute;
+          display: block;
+          text-align: center;
+          line-height: 20px;
+          width: 60px;
+          height: 20px;
+          font-size: 1rem;
+          border-radius: 50%;
+          background-color: #ccc;
+          color: #fff; }
+          #container > #sectionBox1 > .inbox > ul.accodion > li > a:hover {
+            background-color: #003d87; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.orderWidth {
+          width: calc(50% / 3); }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(1) {
+          background-image: url(../img/special/tatami.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(2) {
+          background-image: url(../img/special/s7.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(3) {
+          background-image: url(../img/special/s8.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(4) {
+          background-image: url(../img/special/s3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top left; }
   #container > #sectionBox2 {
-    display: none; }
+    width: 100%;
+    height: 400px; }
+    #container > #sectionBox2 > .inbox > #miniBanner {
+      margin-left: 5%;
+      width: 50%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative; }
+      #container > #sectionBox2 > .inbox > #miniBanner > ol {
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        width: 60px;
+        height: 20px; }
+        #container > #sectionBox2 > .inbox > #miniBanner > ol > li {
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          float: left;
+          margin-right: 20px;
+          background-color: #fff; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ol > li:nth-child(1) {
+            background: url(../img/btn/left.png) no-repeat;
+            background-size: 100% 100%; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ol > li:nth-child(2) {
+            margin-right: 0;
+            background: url(../img/btn/right.png) no-repeat;
+            background-size: 100% 100%; }
+      #container > #sectionBox2 > .inbox > #miniBanner > ul {
+        width: 200%;
+        height: 100%;
+        margin-left: -100%; }
+        #container > #sectionBox2 > .inbox > #miniBanner > ul > li {
+          width: calc(100% / 2);
+          height: 100%;
+          float: left; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(1) {
+            background-color: #d81; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(2) {
+            background-image: url(../img/pp/sulli/03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+    #container > #sectionBox2 > .inbox > #miniText {
+      padding: 80px 0 0 50px;
+      width: 30%;
+      height: 33%;
+      float: left;
+      overflow: hidden; }
+      #container > #sectionBox2 > .inbox > #miniText > ul {
+        width: 200%;
+        height: 100%; }
+        #container > #sectionBox2 > .inbox > #miniText > ul > li {
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.1);
+          text-align: center;
+          font-size: 0.875rem;
+          float: left;
+          width: calc(100% / 2);
+          height: 100%; }
+          #container > #sectionBox2 > .inbox > #miniText > ul > li > span {
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.5rem; }
   #container > #sectionBox3 {
     width: 100%;
-    height: auto; }
+    height: 300px; }
     #container > #sectionBox3 > .inbox > h1 {
       width: 100%;
-      height: 50px;
-      line-height: 50px;
-      text-align: center; }
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25rem; }
     #container > #sectionBox3 > .inbox > #box_04 {
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
+      background-image: url(../img/a/1.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    #container > #sectionBox3 > .inbox > #box_05 {
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
+      background-image: url(../img/a/2.png);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    #container > #sectionBox3 > .inbox > #box_06 {
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
+      background-image: url(../img/a/3.png);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+  #container > #sectionBox4 {
+    display: none; }
+  #container > #sectionBox5 {
+    width: 100%;
+    height: 300px; }
+    #container > #sectionBox5 > .inbox > h1 {
       width: 100%;
-      height: 150px;
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25rem; }
+      #container > #sectionBox5 > .inbox > h1 > a {
+        color: #003d87;
+        font-style: italic; }
+    #container > #sectionBox5 > .inbox > ul {
+      width: 100%;
+      height: calc(100% - 30px); }
+      #container > #sectionBox5 > .inbox > ul > li {
+        float: left;
+        width: calc(100% / 4);
+        height: 50%;
+        position: relative; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(1) {
+          background-image: url(../img/insta/insta_01.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(2) {
+          background-image: url(../img/insta/insta_02.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(3) {
+          background-image: url(../img/insta/insta_03.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(4) {
+          background-image: url(../img/insta/insta_04.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(5) {
+          background-image: url(../img/insta/insta_05.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(6) {
+          background-image: url(../img/insta/insta_06.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
+          background-image: url(../img/insta/insta_07.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
+          background-image: url(../img/insta/insta_08.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(9) {
+          display: none; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
+          display: none; }
+  #container > #footerBox {
+    width: 100%;
+    height: auto; }
+    #container > #footerBox > .inbox {
+      padding: 10px;
+      width: calc(100% - 20px);
+      height: 30px; }
+      #container > #footerBox > .inbox > h1 {
+        margin: 0 auto;
+        width: 200px;
+        height: 30px; }
+        #container > #footerBox > .inbox > h1 > a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: url(../img/footer/top.png) no-repeat; }
+          #container > #footerBox > .inbox > h1 > a:hover {
+            background: url(../img/footer/_top.png) no-repeat; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .inbox {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px; }
+
+  #container > #headerBox {
+    width: 100%;
+    height: 70px; }
+    #container > #headerBox .inbox > #sitemap {
+      display: none; }
+    #container > #headerBox .inbox > h1 {
+      width: 200px;
+      height: 40px;
+      float: left; }
+      #container > #headerBox .inbox > h1 > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../img/header/h1.png) no-repeat;
+        background-size: 100%; }
+    #container > #headerBox .inbox > #gnb {
+      width: 355px;
+      height: 30px;
+      float: right;
+      margin-top: 10px; }
+      #container > #headerBox .inbox > #gnb > ul {
+        width: 100%;
+        height: 100%; }
+        #container > #headerBox .inbox > #gnb > ul > li {
+          float: left;
+          margin-right: 15px;
+          line-height: 30px; }
+          #container > #headerBox .inbox > #gnb > ul > li > a {
+            font-size: 0.9rem;
+            color: #595959; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(1) {
+            width: 60px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(2) {
+            width: 84px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(3) {
+            width: 64px;
+            height: 100%; }
+          #container > #headerBox .inbox > #gnb > ul > li:nth-child(4) {
+            width: 102px;
+            height: 30px;
+            margin-right: 0; }
+  #container > #banner {
+    width: 100%;
+    height: 46.801872vw;
+    overflow: hidden;
+    position: relative; }
+    #container > #banner > #left_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      left: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/left.png") no-repeat; }
+    #container > #banner > #right_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      right: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/right.png") no-repeat; }
+    #container > #banner > ol {
+      width: 50px;
+      height: 10px;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      margin-left: -25px; }
+      #container > #banner > ol > li {
+        cursor: pointer;
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 50%; }
+        #container > #banner > ol > li:last-child {
+          margin-right: 0; }
+        #container > #banner > ol > li:hover {
+          background-color: #f06; }
+    #container > #banner > ul {
+      width: 300%;
+      height: 100%;
+      margin-left: -100%; }
+      #container > #banner > ul > li {
+        width: calc(100% / 3);
+        height: 100%;
+        float: left; }
+        #container > #banner > ul > li > button {
+          width: 100%;
+          height: 100%; }
+        #container > #banner > ul > li:nth-child(1) > button {
+          background: url(../img/bg/bg_01.jpg) no-repeat;
+          background-size: 100%; }
+        #container > #banner > ul > li:nth-child(2) > button {
+          background: url(../img/bg/bg_02.jpg) no-repeat;
+          background-size: 100%; }
+        #container > #banner > ul > li:nth-child(3) > button {
+          background: url(../img/bg/bg_03.jpg) no-repeat;
+          background-size: 100%; }
+  #container > #sectionBox1 {
+    width: 100%;
+    height: 300px; }
+    #container > #sectionBox1 > .inbox > h1 {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    #container > #sectionBox1 > .inbox > ul.accodion {
+      width: 100%;
+      height: calc(100% - 30px); }
+      #container > #sectionBox1 > .inbox > ul.accodion > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        position: relative; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li > a {
+          left: 10px;
+          bottom: 10px;
+          position: absolute;
+          display: block;
+          text-align: center;
+          line-height: 20px;
+          width: 60px;
+          height: 20px;
+          font-size: 1rem;
+          border-radius: 50%;
+          background-color: #ccc;
+          color: #fff; }
+          #container > #sectionBox1 > .inbox > ul.accodion > li > a:hover {
+            background-color: #003d87; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.orderWidth {
+          width: calc(50% / 3); }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(1) {
+          background-image: url(../img/special/tatami.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(2) {
+          background-image: url(../img/special/s7.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(3) {
+          background-image: url(../img/special/s8.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(4) {
+          background-image: url(../img/special/s3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top left; }
+  #container > #sectionBox2 {
+    width: 100%;
+    height: 400px; }
+    #container > #sectionBox2 > .inbox > #miniBanner {
+      margin-left: 5%;
+      width: 50%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative; }
+      #container > #sectionBox2 > .inbox > #miniBanner > ol {
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        width: 60px;
+        height: 20px; }
+        #container > #sectionBox2 > .inbox > #miniBanner > ol > li {
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          float: left;
+          margin-right: 20px;
+          background-color: #fff; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ol > li:nth-child(1) {
+            background: url(../img/btn/left.png) no-repeat;
+            background-size: 100% 100%; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ol > li:nth-child(2) {
+            margin-right: 0;
+            background: url(../img/btn/right.png) no-repeat;
+            background-size: 100% 100%; }
+      #container > #sectionBox2 > .inbox > #miniBanner > ul {
+        width: 200%;
+        height: 100%;
+        margin-left: -100%; }
+        #container > #sectionBox2 > .inbox > #miniBanner > ul > li {
+          width: calc(100% / 2);
+          height: 100%;
+          float: left; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(1) {
+            background-color: #d81; }
+          #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(2) {
+            background-image: url(../img/pp/sulli/03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+    #container > #sectionBox2 > .inbox > #miniText {
+      padding: 80px 0 0 50px;
+      width: 30%;
+      height: 33%;
+      float: left;
+      overflow: hidden; }
+      #container > #sectionBox2 > .inbox > #miniText > ul {
+        width: 200%;
+        height: 100%; }
+        #container > #sectionBox2 > .inbox > #miniText > ul > li {
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.1);
+          text-align: center;
+          font-size: 0.875rem;
+          float: left;
+          width: calc(100% / 2);
+          height: 100%; }
+          #container > #sectionBox2 > .inbox > #miniText > ul > li > span {
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.5rem; }
+  #container > #sectionBox3 {
+    width: 100%;
+    height: 400px; }
+    #container > #sectionBox3 > .inbox > h1 {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    #container > #sectionBox3 > .inbox > #box_04 {
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
       background-color: #f9f; }
     #container > #sectionBox3 > .inbox > #box_05 {
-      width: 100%;
-      height: 150px;
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
       background-color: #a9f; }
     #container > #sectionBox3 > .inbox > #box_06 {
-      width: 100%;
-      height: 150px;
+      width: calc(100% / 3);
+      height: calc(100% - 40px);
+      float: left;
       background-color: #f9a; }
   #container > #sectionBox4 {
     display: none; }
   #container > #sectionBox5 {
     width: 100%;
-    height: auto; }
-    #container > #sectionBox5 > .inbox {
-      width: calc(100% - 40px);
-      height: 260px;
-      padding: 20px;
-      background-color: #d91; }
-      #container > #sectionBox5 > .inbox > h1 {
-        background-color: #ddd;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center; }
-      #container > #sectionBox5 > .inbox > ul {
-        width: 100%;
-        height: calc(100% - 50px);
-        background-color: #ada; }
-        #container > #sectionBox5 > .inbox > ul > li {
-          float: left;
-          width: calc(100% / 3);
-          height: 50%;
-          border: 1px solid;
-          box-sizing: border-box; }
-          #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
-            display: none; }
-          #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
-            display: none; }
-          #container > #sectionBox5 > .inbox > ul > li:nth-child(9) {
-            display: none; }
-          #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
-            display: none; }
-          #container > #sectionBox5 > .inbox > ul > li:hover {
-            background-color: #f87; }
+    height: 300px; }
+    #container > #sectionBox5 > .inbox > h1 {
+      width: 100%;
+      height: 30px;
+      text-align: center; }
+      #container > #sectionBox5 > .inbox > h1 > a {
+        color: #003d87;
+        font-style: italic; }
+    #container > #sectionBox5 > .inbox > ul {
+      width: 100%;
+      height: calc(100% - 30px); }
+      #container > #sectionBox5 > .inbox > ul > li {
+        float: left;
+        width: calc(100% / 4);
+        height: 50%;
+        position: relative; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(1) {
+          background-image: url(../img/insta/insta_01.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(2) {
+          background-image: url(../img/insta/insta_02.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(3) {
+          background-image: url(../img/insta/insta_03.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(4) {
+          background-image: url(../img/insta/insta_04.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(5) {
+          background-image: url(../img/insta/insta_05.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(6) {
+          background-image: url(../img/insta/insta_06.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
+          background-image: url(../img/insta/insta_07.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
+          background-image: url(../img/insta/insta_08.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(9) {
+          display: none; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
+          display: none; }
   #container > #footerBox {
     width: 100%;
-    height: 40px;
-    padding-top: 10px; }
-    #container > #footerBox > .inbox > #top {
-      margin: 0 auto;
-      width: 200px;
-      height: 30px;
-      background: url(../img/footer/top.png) no-repeat; }
-      #container > #footerBox > .inbox > #top:hover {
-        background: url(../img/footer/_top.png) no-repeat; } }
+    height: auto; }
+    #container > #footerBox > .inbox {
+      padding: 10px;
+      width: calc(100% - 20px);
+      height: 30px; }
+      #container > #footerBox > .inbox > h1 {
+        margin: 0 auto;
+        width: 200px;
+        height: 30px; }
+        #container > #footerBox > .inbox > h1 > a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: url(../img/footer/top.png) no-repeat; }
+          #container > #footerBox > .inbox > h1 > a:hover {
+            background: url(../img/footer/_top.png) no-repeat; } }
 @media screen and (min-width: 1025px) {
   .inbox {
     width: 960px;
@@ -355,8 +2091,7 @@
       #container > #headerBox > .inbox > #sitemap {
         width: calc(100% - 10px);
         padding: 2px 10px 2px 0;
-        height: 20px;
-        background-color: #0a0; }
+        height: 20px; }
         #container > #headerBox > .inbox > #sitemap > ul {
           float: right;
           width: 300px;
@@ -396,21 +2131,24 @@
                 height: 100%; }
           #container > #headerBox > .inbox > #sitemap > ul > span {
             width: 5px;
-            height: 13px;
-            margin: 2px 10px 0 5px;
-            border-right: 1px solid #010101;
+            height: 10px;
+            margin: 4px 10px 0 4px;
+            border-right: 1px solid #ccc;
             float: left; }
       #container > #headerBox > .inbox > h1 {
         width: 200px;
         height: 50px;
         margin-top: 10px;
         margin-left: 10px;
-        background: url(../img/header/h1.png) no-repeat 100%;
         float: left; }
+        #container > #headerBox > .inbox > h1 > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../img/header/h1.png) no-repeat 100%; }
       #container > #headerBox > .inbox > #gnb {
-        width: 530px;
+        width: 540px;
         height: 30px;
-        background-color: #acc;
         float: right;
         margin-top: 30px;
         margin-right: 10px; }
@@ -419,7 +2157,7 @@
           height: 100%; }
           #container > #headerBox > .inbox > #gnb > ul > li {
             float: left;
-            margin-right: 15px;
+            margin-right: 20px;
             line-height: 30px; }
             #container > #headerBox > .inbox > #gnb > ul > li > a {
               font-size: 1rem;
@@ -458,7 +2196,8 @@
                 background-size: 100%; }
             #container > #headerBox > .inbox > #gnb > ul > li:nth-child(7) {
               width: 20px;
-              height: 24px; }
+              height: 24px;
+              margin-right: 0; }
               #container > #headerBox > .inbox > #gnb > ul > li:nth-child(7) > a {
                 display: block;
                 width: 100%;
@@ -471,6 +2210,22 @@
     height: 700px;
     overflow: hidden;
     position: relative; }
+    #container > #banner > #left_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      left: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/left.png") no-repeat; }
+    #container > #banner > #right_btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      right: 10px;
+      width: 30px;
+      height: 100px;
+      background: url("../img/btn/right.png") no-repeat; }
     #container > #banner > ol {
       position: absolute;
       bottom: 30px;
@@ -494,63 +2249,100 @@
       width: 300%;
       height: 100%;
       margin-left: -100%; }
-    #container > #banner > ul > li {
-      width: calc(100% / 3);
-      height: 100%;
-      float: left; }
-      #container > #banner > ul > li > button {
-        width: 100%;
-        height: 100%; }
-      #container > #banner > ul > li:nth-child(1) > button {
-        background: url(../img/bg/bg_01.jpg) no-repeat;
-        background-size: 100%; }
-      #container > #banner > ul > li:nth-child(2) > button {
-        background: url(../img/bg/bg_01.jpg) no-repeat;
-        background-size: 100%; }
-      #container > #banner > ul > li:nth-child(3) > button {
-        background: url(../img/bg/bg_03.jpg) no-repeat;
-        background-size: 100%; }
+      #container > #banner > ul > li {
+        width: calc(100% / 3);
+        height: 100%;
+        float: left; }
+        #container > #banner > ul > li > button {
+          width: 100%;
+          height: 100%; }
+        #container > #banner > ul > li:nth-child(1) > button {
+          background: url(../img/bg/bg_01.jpg) no-repeat;
+          background-size: 100%; }
+        #container > #banner > ul > li:nth-child(2) > button {
+          background: url(../img/bg/bg_02.jpg) no-repeat;
+          background-size: 100%; }
+        #container > #banner > ul > li:nth-child(3) > button {
+          background: url(../img/bg/bg_03.jpg) no-repeat;
+          background-size: 100%; }
   #container > #sectionBox1 {
     width: 100%;
     height: 500px; }
-    #container > #sectionBox1 > .inbox > #box_01 {
-      width: 30%;
-      height: 100%;
-      background-color: #f8f;
-      float: left; }
-    #container > #sectionBox1 > .inbox > #box_02 {
-      width: 40%;
-      height: 100%;
-      background-color: #a8f;
-      float: left; }
-    #container > #sectionBox1 > .inbox > #box_03 {
-      width: 30%;
-      height: 100%;
-      background-color: #fff;
-      float: left; }
+    #container > #sectionBox1 > .inbox > h1 {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem; }
+    #container > #sectionBox1 > .inbox > ul.accodion {
+      width: 100%;
+      height: calc(100% - 50px); }
+      #container > #sectionBox1 > .inbox > ul.accodion > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        position: relative; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li > a {
+          left: 30px;
+          bottom: 30px;
+          position: absolute;
+          display: block;
+          text-align: center;
+          line-height: 30px;
+          width: 80px;
+          height: 30px;
+          font-size: 1.3rem;
+          border-radius: 50%;
+          background-color: #ccc;
+          color: #fff; }
+          #container > #sectionBox1 > .inbox > ul.accodion > li > a:hover {
+            background-color: #003d87; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li.orderWidth {
+          width: calc(50% / 3); }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(1) {
+          background-image: url(../img/special/tatami.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(2) {
+          background-image: url(../img/special/s7.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(3) {
+          background-image: url(../img/special/s8.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        #container > #sectionBox1 > .inbox > ul.accodion > li:nth-child(4) {
+          background-image: url(../img/special/s3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top left; }
   #container > #sectionBox2 {
     width: 100%;
     height: 700px; }
     #container > #sectionBox2 > .inbox > #miniBanner {
-      width: 500px;
+      width: 50%;
       height: 100%;
-      background-color: #f11;
-      box-shadow: 20px 20px 20px #888;
-      position: relative;
-      overflow: hidden; }
+      float: left;
+      overflow: hidden;
+      position: relative; }
       #container > #sectionBox2 > .inbox > #miniBanner > ol {
         position: absolute;
-        left: 20%;
-        bottom: 10%;
-        width: 60px;
-        height: 20px; }
+        left: 10%;
+        bottom: 5%;
+        width: 90px;
+        height: 30px; }
         #container > #sectionBox2 > .inbox > #miniBanner > ol > li {
           cursor: pointer;
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           float: left;
-          margin-right: 20px;
-          background-color: #fff; }
+          margin-right: 30px; }
           #container > #sectionBox2 > .inbox > #miniBanner > ol > li:nth-child(1) {
             background: url(../img/btn/left.png) no-repeat;
             background-size: 100% 100%; }
@@ -569,77 +2361,513 @@
           #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(1) {
             background-color: #d81; }
           #container > #sectionBox2 > .inbox > #miniBanner > ul > li:nth-child(2) {
-            background-color: #dd1; }
+            background-image: url(../img/pp/sulli/03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+    #container > #sectionBox2 > .inbox > #miniText {
+      padding: 170px 0 0 170px;
+      width: calc(50% - 170px);
+      height: calc(60% - 170px);
+      float: left;
+      overflow: hidden; }
+      #container > #sectionBox2 > .inbox > #miniText > ul {
+        width: 200%;
+        height: 100%; }
+        #container > #sectionBox2 > .inbox > #miniText > ul > li {
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.1);
+          text-align: center;
+          font-size: 1rem;
+          float: left;
+          width: calc(100% / 2);
+          height: 100%; }
+          #container > #sectionBox2 > .inbox > #miniText > ul > li > span {
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 4rem; }
   #container > #sectionBox3 {
     width: 100%;
     height: 500px; }
     #container > #sectionBox3 > .inbox > h1 {
-      border: 1px solid;
       width: 100%;
       height: 50px;
-      line-height: 50px;
-      text-align: center; }
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem; }
     #container > #sectionBox3 > .inbox > #box_04 {
       width: 30%;
       height: calc(100% - 50px);
       float: left;
-      background-color: #f1a; }
+      background-image: url(../img/a/1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+      #container > #sectionBox3 > .inbox > #box_04:hover {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
     #container > #sectionBox3 > .inbox > #box_05 {
       width: 40%;
       height: calc(100% - 50px);
       float: left;
-      background-color: #a91; }
+      background-image: url(../img/a/2.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center; }
+      #container > #sectionBox3 > .inbox > #box_05:hover {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
     #container > #sectionBox3 > .inbox > #box_06 {
       width: 30%;
       height: calc(100% - 50px);
       float: left;
-      background-color: #f1a; }
+      background-image: url(../img/a/3.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+      #container > #sectionBox3 > .inbox > #box_06:hover {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
   #container > #sectionBox4 {
     width: 100%;
-    height: 600px; }
+    height: 600px;
+    background-color: rgba(0, 61, 135, 0.1); }
     #container > #sectionBox4 > .inbox > h1 {
       width: 100%;
       height: 50px;
-      line-height: 50px;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem; }
     #container > #sectionBox4 > .inbox > #movie {
       width: 100%;
-      height: calc(100% - 50px);
-      background-color: #91a; }
+      height: calc(100% - 50px); }
       #container > #sectionBox4 > .inbox > #movie > video {
-        padding: 20px;
-        width: calc(60% - 40px);
-        height: calc( 100% - 40px);
-        background-color: #d9a;
+        margin-top: -40px;
+        width: 60%;
+        height: 100%;
         float: left; }
       #container > #sectionBox4 > .inbox > #movie > #videoText {
-        padding: 20px;
-        width: calc(40% - 40px);
-        height: calc( 100% - 40px);
-        background-color: #ddd;
-        float: left; }
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        width: calc(40% - 20px);
+        height: 100%;
+        float: left;
+        overflow-y: auto; }
+        #container > #sectionBox4 > .inbox > #movie > #videoText > p {
+          width: calc(100% - 60px);
+          height: auto;
+          padding: 30px 30px; }
   #container > #sectionBox5 {
     width: 100%;
     height: 500px; }
     #container > #sectionBox5 > .inbox > h1 {
       width: 100%;
-      height: 30px;
-      line-height: 30px;
-      text-align: center; }
-      #container > #sectionBox5 > .inbox > h1 > em {
-        color: blue; }
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem; }
+      #container > #sectionBox5 > .inbox > h1 > a {
+        color: #003d87;
+        font-style: italic; }
     #container > #sectionBox5 > .inbox > ul {
       width: 100%;
-      height: calc(100% - 30px);
+      height: calc(100% - 50px);
       background-color: #ada; }
       #container > #sectionBox5 > .inbox > ul > li {
         float: left;
         width: calc(100% / 5);
         height: 50%;
-        border: 1px solid;
-        box-sizing: border-box; }
-        #container > #sectionBox5 > .inbox > ul > li:hover {
-          background-color: #f87; }
+        position: relative; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(1) {
+          background-image: url(../img/insta/insta_01.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(1) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(1):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(2) {
+          background-image: url(../img/insta/insta_02.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(2) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(2):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(3) {
+          background-image: url(../img/insta/insta_03.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(3) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(3):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(4) {
+          background-image: url(../img/insta/insta_04.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a {
+              width: 150px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -70px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span {
+                color: #fff;
+                width: 45px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(4) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(4):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(5) {
+          background-image: url(../img/insta/insta_05.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(5) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(5):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(6) {
+          background-image: url(../img/insta/insta_06.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(6) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(6):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(7) {
+          background-image: url(../img/insta/insta_07.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(7) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(7):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(8) {
+          background-image: url(../img/insta/insta_08.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(8) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(8):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(9) {
+          background-image: url(../img/insta/insta_09.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(9) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(9) > div > a {
+              width: 150px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -70px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(9) > div > a > span {
+                color: #fff;
+                width: 45px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(9) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(9) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(9):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(9):hover a {
+            opacity: 1; }
+        #container > #sectionBox5 > .inbox > ul > li:nth-child(10) {
+          background-image: url(../img/insta/insta_10.png);
+          background-repeat: no-repeat;
+          background-size: 100%; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(10) > div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: transparent; }
+            #container > #sectionBox5 > .inbox > ul > li:nth-child(10) > div > a {
+              width: 140px;
+              height: 20px;
+              font-size: 1rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -60px;
+              margin-top: -10px;
+              display: block;
+              opacity: 0; }
+              #container > #sectionBox5 > .inbox > ul > li:nth-child(10) > div > a > span {
+                color: #fff;
+                width: 40px;
+                height: 20px;
+                padding-left: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(10) > div > a > span:nth-of-type(1) {
+                  float: left;
+                  background-image: url(../img/insta/heart.png);
+                  background-repeat: no-repeat;
+                  margin-right: 20px; }
+                #container > #sectionBox5 > .inbox > ul > li:nth-child(10) > div > a > span:nth-of-type(2) {
+                  float: left;
+                  background-image: url(../img/insta/bubble.png);
+                  background-repeat: no-repeat; }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(10):hover div {
+            background-color: rgba(0, 0, 0, 0.6); }
+          #container > #sectionBox5 > .inbox > ul > li:nth-child(10):hover a {
+            opacity: 1; }
   #container > #footerBox {
     width: 100%;
     height: 12.5rem; }

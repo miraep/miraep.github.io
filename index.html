@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.png">
 	<link rel="apple-touch-icon" href="./favicon/favicon.png">
-	<link rel="stylesheet" href="./css/lib/reset.css">
+	<link rel="stylesheet" href="./css/lib/normalize.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
 	<link rel="stylesheet" href="./js/dist/ie9.min.js">
 	<link rel="stylesheet" href="./js/dist/PIE.js">
@@ -24,8 +25,19 @@
 	<style type="text/css"></style>
 	<script>
 		$(document).ready(function(){
-		
-		});
+			
+			// 아코디언 가로형 만들기
+			var acc = $('.accodion'),
+				acc_btn = acc.find('li');
+
+			acc_btn.on('click', function(){
+				var $this = $(this);
+				$this.addClass('widthview').removeClass('orderWidth');
+				$this.siblings().removeClass('widthview').addClass('orderWidth');
+			});
+			// 아코디언 끝 !
+
+		}); //all
 	</script>
 	
 </head>
@@ -63,6 +75,8 @@
 		</header>
 		<article id="banner">
 			<h2>메인배너</h2>
+			<div id="left_btn"></div>
+			<div id="right_btn"></div>
 			<ol>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
@@ -76,11 +90,14 @@
 		</article>
 		
 		<section id="sectionBox1">
-			<h2>회원가입해택 3종</h2>
 			<div class="inbox">
-				<div id="box_01"></div>
-				<div id="box_02"></div>
-				<div id="box_03"></div>
+				<h1>NEW ARRIVALS</h1>
+				<ul class="accodion">
+					<li><a href="#">View</a></li>
+					<li><a href="#">View</a></li>
+					<li><a href="#">View</a></li>
+					<li><a href="#">View</a></li>
+				</ul>
 			</div>
 		</section> <!--sectionBox1-->
 		
@@ -88,13 +105,26 @@
 			<h2>페이지안에 배너</h2>
 			<div class="inbox">
 				<div id="miniBanner">
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
 					<ol>
 						<li></li>
 						<li></li>
 					</ol>
+				</div>
+
+				<div id="miniText">
 					<ul>
-						<li></li>
-						<li></li>
+						<li>
+							<span>Sulli's It item</span><br />
+							<br / >
+							MILANO / 밀라노<br />
+							Best item<br /><br /><br />
+							<a href="#">-other pictures</a>
+						</li>
+						<li>text</li>
 					</ul>
 				</div>
 			</div>
@@ -118,32 +148,60 @@
 					<video controls>
 						<source src="./img/video/birken.mp4" type="video/mp4">
 					</video>
-					<div id="videoText">비디오의 설명쓰</div>
+					<div id="videoText">
+						<p><em> - CODE OF CONDUCT</em> <br /><br />
+							WE ARE AWARE OF OUR RESPONSIBILITY<br /><br />
+
+							BIRKENSTOCK is a major global shoe manufacturer. We are aware of our responsibility to our customers and our employees. That is why we have set ethical and social rules for ourselves that guide us in our business. We expect our suppliers, i.e., those companies that maintain a business relationship with BIRKENSTOCK Group companies as suppliers, to act according to the same ethical principles.<br />
+							For this reason, BIRKENSTOCK has developed a Code of Conduct. This Code of Conduct is based largely on the Business Social Compliance Initiative and the conventions of the International Labour Organization.<br />
+							For this reason, BIRKENSTOCK has developed a Code of Conduct. This Code of Conduct is based largely on the Business Social Compliance Initiative and the conventions of the International Labour Organization.
+						</p>	
+					</div>
 				</div>
 			</div>
 		</section> <!--sectionBox4-->
 		
 		<section id="sectionBox5">
 			<div class="inbox">
-				<h1>INSTAGRAM <em>#birkenstock</em></h1>
+				<h1>INSTAGRAM <a href="https://www.instagram.com/explore/tags/brikenstock/" target="_blank">#birkenstock</a></h1>
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><div>
+						<a href="#"><span>&nbsp;15</span><span>&nbsp;3</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;9</span><span>&nbsp;3</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;27</span><span>&nbsp;13</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;289</span><span>&nbsp;3</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;15</span><span>&nbsp;2</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;55</span><span>&nbsp;3</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;58</span><span>&nbsp;3</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;2</span><span>&nbsp;6</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;695</span><span>&nbsp;200</span></a>
+					</div></li>
+					<li><div>
+						<a href="#"><span>&nbsp;371</span><span>&nbsp;154</span></a>
+					</div></li>
 				</ul>
 			</div>
 		</section> <!--sectionBox5-->
 
 		<footer id="footerBox">
 			<div class="inbox">
-				<div id="top"></div>
+				<h1><a href="#"></a></h1>
 			</div>
 		</footer>
 	</div>

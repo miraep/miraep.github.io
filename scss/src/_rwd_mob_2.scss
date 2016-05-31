@@ -1,10 +1,8 @@
 
 // mobile_v
 @media screen and (min-width:481px) and (max-width:640px) {
-    .inbox{
-    width: inherit;
-    height: inherit;
-}
+ 
+.inbox{ width: inherit; height: inherit; }
     #container{
     //_____headerBox____________________
         >#headerBox{
@@ -20,14 +18,16 @@
                         display: block;
                         width: 100%;
                         height: 100%;
+                        margin-top: 3px;
                         background: url(../img/header/h1.png) no-repeat center;}
                 }//h1
                 >#gnb{
                     cursor: pointer;
                     width: 40px;
                     height: 40px;
-                    background-color: #fff;
                     float: right;
+                    background: url(../img/btn/gnb_mini.png) no-repeat;
+                    background-size:  100% 100%;
                     >ul{display: none;}
                 }//#gnb
           }//inbox
@@ -39,6 +39,24 @@
             height: 300px;
             overflow: hidden;
             position: relative;
+            >#left_btn{
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+                left: 10px;
+                width: 30px;
+                height: 100px;
+                background: url('../img/btn/left.png') no-repeat;
+            }
+            >#right_btn{
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+                right: 10px;
+                width: 30px;
+                height: 100px;
+                background: url('../img/btn/right.png') no-repeat;
+            }
             >ol{
                 width: 50px;
                 height: 10px;
@@ -71,13 +89,16 @@
                     height: 100%; }
                 &:nth-child(1)>button{
                     background: url(../img/bg/bg_01.jpg) no-repeat;
-                    background-size: 100%;}
+                    background-size: cover;
+                    background-position: center;}
                 &:nth-child(2)>button{
-                    background: url(../img/bg/bg_03.jpg) no-repeat;
-                    background-size: 100%; }
+                    background: url(../img/bg/bg_02.jpg) no-repeat;
+                    background-size: cover;
+                    background-position: center; }
                 &:nth-child(3)>button{
                     background: url(../img/bg/bg_03.jpg) no-repeat;
-                    background-size: 100%; }
+                    background-size: cover;
+                    background-position: center; }
                 }//li
             }//ul
         }//#banner
@@ -85,27 +106,36 @@
     //_____sectionBox1____________________
         >#sectionBox1{
             width: 100%;
-            height: 150px;
+            height: 200px;
             >.inbox{
-                >#box_01{
-                    width: calc(100% / 3);
-                    height: 100%;
-                    float: left;
-                    background-color: #d9d;
-                }
-                >#box_02{
-                    width: calc(100% / 3);
-                    height: 100%;
-                    float: left;
-                    background-color: #19d;
-                }
-                >#box_03{
-                    width: calc(100% / 3);
-                    height: 100%;
-                    float: left;
-                    background-color: #d00;
-                }
-            }
+                >h1{
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-weight: bold;
+                }//h1
+                >ul.accodion{
+                    width: 100%;
+                    height: calc(100% - 40px);
+                    >li{
+                        float: left;
+                        width: 25%;
+                        height: 100%;
+                    &.widthview{width: 50%;height: 100%;}
+                    &.orderWidth{width:calc(50% / 3);}
+                    &:nth-child(1){
+                        background-color: #dd9; }
+                    &:nth-child(2){
+                        background-color: #ad9; }
+                    &:nth-child(3){
+                        background-color: #dda; }
+                    &:nth-child(4){
+                        background-color: #d81; }
+                    }//li
+
+                }//ul
+            }//inbox
         }//#section1
 
     //_____sectionBox2____________________
@@ -118,23 +148,23 @@
             >.inbox{
                 >h1{
                     width: 100%;
-                    height: 50px;
-                    line-height: 50px;
+                    height: 40px;
+                    line-height: 40px;
                     text-align: center;
                 }
                 >#box_04{
                     width: 100%;
-                    height: 150px;
+                    height: 160px;
                     background-color: #f9f;
                 }
                 >#box_05{
                     width: 100%;
-                    height: 150px;
+                    height: 160px;
                     background-color: #a9f;
                 }
                 >#box_06{
                     width: 100%;
-                    height: 150px;
+                    height: 160px;
                     background-color: #f9a;
                 }
             }
@@ -148,40 +178,267 @@
             width: 100%;
             height: auto;
             >.inbox{
-                width: calc(100% - 40px);
                 height: 260px;
-                padding: 20px;
-                background-color: #d91;
                 >h1{
-                    background-color: #ddd;
                     width: 100%;
                     height: 40px;
                     line-height: 40px;
                     text-align: center;
+                    >a{
+                        color: #003d87;
+                        font-style: italic;}
                 }//h1
                 >ul{
                     width: 100%;
-                    height: calc(100% - 50px);
+                    height: calc(100% - 40px);
                     background-color: #ada;
                     >li{
                         float: left;
                         width: calc(100% / 3);
                         height: 50%;
-                        border: 1px solid;
-                        box-sizing:border-box;
-                    &:nth-child(1){}
-                    &:nth-child(2){}
-                    &:nth-child(3){}
-                    &:nth-child(4){}
-                    &:nth-child(5){}
-                    &:nth-child(6){}
+                        position: relative;
+                    &:nth-child(1){
+                        background-image: url(../img/insta/insta_01.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
+                    &:nth-child(2){
+                        background-image: url(../img/insta/insta_02.png);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
+                    &:nth-child(3){
+                        background-image: url(../img/insta/insta_03.png);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
+                    &:nth-child(4){
+                        background-image: url(../img/insta/insta_04.png);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
+                    &:nth-child(5){
+                        background-image: url(../img/insta/insta_05.png);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
+                    &:nth-child(6){
+                        background-image: url(../img/insta/insta_06.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: transparent;
+                            >a{
+                                width: 140px;
+                                height: 20px;
+                                font-size:1rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-left: -60px;
+                                margin-top: -10px;
+                                display: block;
+                                opacity: 0;
+                                >span{
+                                    color:#fff;
+                                    width: 40px;
+                                    height: 20px;
+                                    padding-left: 20px;
+                                &:nth-of-type(1){
+                                    float: left;
+                                    background-image: url(../img/insta/heart.png);
+                                    background-repeat: no-repeat;
+                                    margin-right: 20px;}
+                                &:nth-of-type(2){
+                                    float: left;
+                                    background-image: url(../img/insta/bubble.png);
+                                    background-repeat: no-repeat;}
+                                }//span
+                            }//p
+                        }//div
+                    &:hover div{background-color: rgba(#000,0.6);}
+                    &:hover a{opacity: 1;} }
                     &:nth-child(7){display: none;}
-                    &:nth-child(8){display: none;}
+                    &:nth-child(8){display: none;}                    
                     &:nth-child(9){display: none;}
                     &:nth-child(10){display: none;}
-                    &:hover{background-color: #f87;}
-                    }
-                }
+                    }// li all
+                }//ul
             }//.inbox
         }//#section5
 
@@ -191,12 +448,17 @@
             height: 40px;
             padding-top: 10px;
             >.inbox{
-                >#top{
+                >h1{
                     margin: 0 auto;
                     width: 200px;
                     height: 30px;
-                    background: url(../img/footer/top.png) no-repeat;
-                &:hover{background: url(../img/footer/_top.png) no-repeat;}
+                    >a{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        background: url(../img/footer/top.png) no-repeat;
+                    &:hover{background: url(../img/footer/_top.png) no-repeat;}
+                    }//a
                 }//#top
             }//.inbox
         }//#footer

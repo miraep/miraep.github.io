@@ -5,8 +5,8 @@
     padding: 0;
     border: 0;
     color: #333;
-    font: none normal 100%/1.2em arial,"myriad pro",nanumGothic,"돋움",dotum,sans-serif;
-    /*margin: 0 auto;*/
+    font: 100%/1.2em 'Indie Flower',cursive, arial,"myriad pro",nanumGothic,"돋움",dotum,sans-serif;
+    /*font-family: 'Indie Flower', cursive;*/
 }
 
 table, tr, td, th, thead, tbody, tfoot{
