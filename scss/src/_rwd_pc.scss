@@ -7,10 +7,49 @@
     width: 960px;
     height: calc(100% - 100px);
     margin: 0 auto;
-    // background-color: #ac8;
     padding: 50px 0;
 }
-
+#topAdd{
+        width: 100%;
+        height: 3rem;
+        background-color: #ddd;
+        padding: 1rem 0;
+        >.inbox{
+            height: 100%;
+            padding: 0;
+            position: relative;
+            >p{
+                float: left;
+                width: 90%;
+                height: 50%;
+                line-height: 1.5rem;
+                text-align: center;
+                font-size: 1rem;
+                color: #f00; }//p
+            >.addbox{
+                text-align: center;
+                float: left;
+                width: 90%;
+                height: 50%;
+                >a{
+                    margin: 0 auto;
+                    font-size: 1rem;
+                    display: block;
+                    color:#f00; 
+                    line-height: 1.5rem;}
+            }//addbox
+            >button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3rem;
+                height: 3rem; 
+                float: right;
+                color:#fff;
+                font-weight: bold;
+                font-size: 1.5rem;} //btn
+        }
+    }//topadd
     #container{
     //_____headerBox____________________
     	>#headerBox{
@@ -80,6 +119,7 @@
                         height: 100%;
                         >li{
                             float: left;
+                            margin-top: 10px;
                             margin-right: 20px;
                             line-height: 30px;
                             >a{font-size: 1rem; color:#595959;}
@@ -109,11 +149,9 @@
                             >a{
                                 display: block;
                                 width: 100%;
-                                height: calc(100% - 4px);
-                                margin-top: 4px;
+                                height: 100%;
                                 background: url(../img/logo/facebook_logo.png) no-repeat;
-                                background-size: 100%;
-                            }
+                                background-size: 100%; }
                         }
                         &:nth-child(6){
                             width: 20px;
@@ -121,11 +159,9 @@
                             >a{
                                 display: block;
                                 width: 100%;
-                                height: calc(100% - 4px);
-                                margin-top: 4px;
+                                height: 100%;
                                 background: url(../img/logo/instagram.png) no-repeat;
-                                background-size: 100%;
-                            }
+                                background-size: 100%; }
                         }
                         &:nth-child(7){
                             width: 20px;
@@ -134,11 +170,9 @@
                             >a{
                                 display: block;
                                 width: 100%;
-                                height: calc(100% - 4px);
-                                margin-top: 4px;
+                                height: 100%;
                                 background: url(../img/logo/youtube_logo.png) no-repeat;
-                                background-size: 100%;
-                            }
+                                background-size: 100%; }
                         }
                       }//li
                     }//ul
@@ -150,67 +184,32 @@
     	>#banner{
             width: 100%;
             height: 700px;
-            overflow: hidden;
             position: relative;
-            >#left_btn{
+            >.left_btn{
                 position: absolute;
                 top: 50%;
                 margin-top: -30px;
                 left: 10px;
                 width: 30px;
-                height: 100px;
-                background: url('../img/btn/left.png') no-repeat;
-            }
-            >#right_btn{
+                height: 50px;
+                >button{
+                    width: 100%;
+                    height: 100%; 
+                    background: url('../img/btn/left.png') no-repeat; }
+            }//btn
+            >.right_btn{
                 position: absolute;
                 top: 50%;
                 margin-top: -30px;
                 right: 10px;
                 width: 30px;
-                height: 100px;
-                background: url('../img/btn/right.png') no-repeat;
-            }
-            >ol{
-                position: absolute;
-                bottom: 30px;
-                left: 50%;
-                margin-left: 0 30px;
-                width: 50px;
-                height: 10px;
-                >li{
-                    cursor: pointer;
-                    background-color: #fff;
-                    width: 10px;
-                    height: 10px;
-                    margin-right: 10px;
-                    float: left;
-                    border-radius: 50%;
-                &:last-child{margin-right: 0;}
-                &:hover{background-color: #f06;}
-                }//li
-            }//ol
-            >ul{
-                width: 300%;
-                height: 100%;
-                margin-left: -100%;
-                >li{
-                    width: calc(100% / 3);
-                    height: 100%;
-                    float: left;
-                    >button{
+                height: 50px;
+                >button{
                     width: 100%;
-                    height: 100%; }
-                &:nth-child(1)>button{
-                    background: url(../img/bg/bg_01.jpg) no-repeat;
-                    background-size: 100%;}
-                &:nth-child(2)>button{
-                    background: url(../img/bg/bg_02.jpg) no-repeat;
-                    background-size: 100%; }
-                &:nth-child(3)>button{
-                    background: url(../img/bg/bg_03.jpg) no-repeat;
-                    background-size: 100%; }
-                }//li
-            }//ul
+                    height: 100%; 
+                    background: url('../img/btn/right.png') no-repeat; }
+            }//btn
+            >.bslide{/* rwd_all */}//bslide
         }//#banner
 
     //_____sectionBox1____________________
@@ -250,7 +249,7 @@
                         &:hover{background-color: #003d87;}
                         } //a
                     &.widthview{width: 50%;height: 100%;}
-                    &.orderWidth{width:calc(50% / 3);}
+                    &.otherWidth{width:calc(50% / 3);}
                     &:nth-child(1){
                         background-image: url(../img/special/tatami.jpg);
                         background-repeat: no-repeat;
@@ -272,7 +271,6 @@
                         background-size: cover;
                         background-position: top left; }
                     }//li
-
                 }//ul
             }//inbox
         }//#section1
@@ -288,49 +286,42 @@
                     float: left;
                     overflow: hidden;
                     position: relative;
-                    >ol{ //버튼
+                    box-shadow: 20px 20px 20px #ccc;
+                    //미니배너
+                    >ul{/* rwd_all */}//ul
+                    >.mini_left_btn{
                         position: absolute;
-                        left: 10%;
-                        bottom: 5%;
-                        width: 90px;
-                        height: 30px;
-                        >li{
-                            cursor: pointer;
-                            width: 30px;
-                            height: 30px;
-                            float: left;
-                            margin-right: 30px;;
-                        &:nth-child(1){
-                            background: url(../img/btn/left.png) no-repeat; background-size: 100% 100%;}
-                        &:nth-child(2){
-                            margin-right: 0;
-                            background: url(../img/btn/right.png) no-repeat; background-size: 100% 100%;}
-                        }//li
-                    }//ol
-                    >ul{
-                        width: 200%;
-                        height: 100%;
-                        margin-left: -100%;
-                        >li{
-                            width: calc(100% / 2);
-                            height: 100%;
-                            float: left;
-                        &:nth-child(1){background-color: #d81;}
-                        &:nth-child(2){
-                            background-image: url(../img/pp/sulli/03.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;  }
-                       }//li
-                    }//ul
+                        top: 50%;
+                        margin-top: -30px;
+                        left: 10px;
+                        width: 30px;
+                        height: 50px;
+                        >button{
+                            width: 100%;
+                            height: 100%; 
+                            background: url('../img/btn/left.png') no-repeat; }
+                    }//btn
+                    >.mini_right_btn{
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -30px;
+                        right: 10px;
+                        width: 30px;
+                        height: 50px;
+                        >button{
+                            width: 100%;
+                            height: 100%; 
+                            background: url('../img/btn/right.png') no-repeat; }
+                    }//btn
                 }//minibanner
                 >#miniText{
-                    padding: 170px 0 0 170px;
+                    margin: 170px 0 0 170px;
                     width: calc(50% - 170px);
                     height: calc(60% - 170px);
-                    float: left; overflow: hidden;
+                    float: left;
+                    overflow: hidden;
                     >ul{
-                        width: 200%;
+                        width: 300%;
                         height: 100%;
                         >li{
                             border-radius: 20px;
@@ -338,7 +329,7 @@
                             text-align: center;
                             font-size: 1rem;
                             float: left;
-                            width: calc(100% / 2);
+                            width: calc(100% / 3);
                             height: 100%;
                             >span{
                                 font-weight: bold;
@@ -367,6 +358,7 @@
                     width: 30%;
                     height: calc(100% - 50px);
                     float: left;
+                    margin-right: 5%;
                     background-image: url(../img/a/1.png);
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
@@ -378,10 +370,11 @@
                             transform: rotateY(180deg); } //hover
                 }//box_04
                 >#box_05{
-                    width: 40%;
+                    width: 30%;
                     height: calc(100% - 50px);
                     float: left;
-                    background-image: url(../img/a/2.png);
+                    margin-right: 5%;
+                    background-image: url(../img/a/4.png);
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                     background-position: center;
@@ -426,7 +419,6 @@
                     width: 100%;
                     height: calc(100% - 50px);
                     >video{
-                        margin-top: -40px;
                         width: 60%;
                         height: 100%;
                         float: left;
@@ -466,7 +458,6 @@
                 >ul{
                     width: 100%;
                     height: calc(100% - 50px);
-                    background-color: #ada;
                     >li{
                         float: left;
                         width: calc(100% / 5);

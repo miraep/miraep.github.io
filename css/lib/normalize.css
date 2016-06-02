@@ -44,7 +44,7 @@
 *, h1,h2,h3,h4,h5,h6, p, blockque, figcaption, div, form, fieldset{
 	margin: 0; padding: 0; border: 0; color:#333; vertical-align: top;
 	font-size:100%; line-height:1.2em;
-	font-family:'Indie Flower',"myriad pro", arial, nanumGothic, dotum, sans-serif;}
+	font-family:"myriad pro", arial, nanumGothic, dotum, sans-serif;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none; color:#777;}
 a:hover, a:active{text-decoration: underline; color:#0af;}
@@ -97,3 +97,4 @@ button{cursor: pointer; }
 .me_line-bar>li:first-child{padding-left: 0;}
 .me_line-bar>li:last-child{padding-right: 0;border-right:0;}
 .me_help{cursor: help;}
+.me_char{font-family: 'Indie Flower';}

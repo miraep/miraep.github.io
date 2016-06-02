@@ -21,27 +21,35 @@
 	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
 	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
 	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<script src="./js/slidebanner.js"></script>
+	<script src="./js/slide_mini.js"></script>
+	<script src="./js/topadd.js"></script>
+	<script src="./js/accodion.js"></script>
 	<title>Birkenstock</title>
 	<style type="text/css"></style>
 	<script>
 		$(document).ready(function(){
-			
-			// 아코디언 가로형 만들기
-			var acc = $('.accodion'),
-				acc_btn = acc.find('li');
-
-			acc_btn.on('click', function(){
-				var $this = $(this);
-				$this.addClass('widthview').removeClass('orderWidth');
-				$this.siblings().removeClass('widthview').addClass('orderWidth');
-			});
-			// 아코디언 끝 !
-
+			//슬라이드 배너
+			slideBanner( $('.bslide') );
+			minislide( $('#miniBanner') );
+			// 아코디언
+			accodion( $('.accodion') );
+			// 팝업창
+			topAdd( $('#topAdd') );
 		}); //all
 	</script>
 	
 </head>
 <body>
+	<div id="topAdd">
+		<div class="inbox">
+			<p>* 본 페이지는 영리를 목적으로 하지 않고, 개인 포트폴리오 제작을 위한 학습 사이트 입니다. *</p>
+			<div class="addbox">
+				<a href="#">이미지 출처 바로가기</a>
+			</div>
+			<button type="button" aria-laber="닫기" class="addbtn">X</button>
+		</div>
+	</div>
 	<div id="container">
 
 		<header id="headerBox">
@@ -75,28 +83,25 @@
 		</header>
 		<article id="banner">
 			<h2>메인배너</h2>
-			<div id="left_btn"></div>
-			<div id="right_btn"></div>
-			<ol>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ol>
-			<ul>
-				<li class="b1"><button></button></li>
-				<li class="b2"><button></button></li>
-				<li class="b3"><button></button></li>
-			</ul>
+			<div class="left_btn"><button aria-label="슬라이드 왼쪽 버튼"></button></div>
+			<div class="right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
+			<div class="bslide">
+				<ul>
+					<li class="b1"></li>
+					<li class="b2"></li>
+					<li class="b3"></li>
+				</ul>
+			</div>
 		</article>
 		
 		<section id="sectionBox1">
 			<div class="inbox">
 				<h1>NEW ARRIVALS</h1>
 				<ul class="accodion">
-					<li><a href="#">View</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">View</a></li>
+					<li><a href="#" class="me_char">View</a></li>
+					<li><a href="#" class="me_char">View</a></li>
+					<li><a href="#" class="me_char">View</a></li>
+					<li><a href="#" class="me_char">View</a></li>
 				</ul>
 			</div>
 		</section> <!--sectionBox1-->
@@ -106,25 +111,36 @@
 			<div class="inbox">
 				<div id="miniBanner">
 					<ul>
-						<li></li>
-						<li></li>
+						<li class="mb1"></li>
+						<li class="mb2"></li>
+						<li class="mb3"></li>
 					</ul>
-					<ol>
-						<li></li>
-						<li></li>
-					</ol>
+					<div class="mini_left_btn"><button aria-label="슬라이드 왼쪽 버튼"></button></div>
+					<div class="mini_right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
 				</div>
-
 				<div id="miniText">
 					<ul>
-						<li>
-							<span>Sulli's It item</span><br />
+						<li class="mb1">
+							<span class="me_char">Sulli's It item</span><br />
 							<br / >
 							MILANO / 밀라노<br />
 							Best item<br /><br /><br />
 							<a href="#">-other pictures</a>
 						</li>
-						<li>text</li>
+						<li class="mb2">
+							<span class="me_char">Mirae's It item</span><br />
+							<br / >
+							KORSIKA / 코르시카<br />
+							Special item<br /><br /><br />
+							<a href="#">-other pictures</a>
+						</li>
+						<li class="mb3">
+							<span class="me_char">Man's It item</span><br />
+							<br / >
+							GIZEH / 지제<br />
+							Best item<br /><br /><br />
+							<a href="#">-other pictures</a>
+						</li>
 					</ul>
 				</div>
 			</div>
