@@ -1,225 +1,39 @@
-<!DOCTYPE html>
-<html lang="ko-KR">	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.png">
-	<link rel="apple-touch-icon" href="./favicon/favicon.png">
-	<link rel="stylesheet" href="./css/lib/normalize.css">
-	<link rel="stylesheet" href="./css/index.css">
-	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
-	<link rel="stylesheet" href="./js/dist/ie9.min.js">
-	<link rel="stylesheet" href="./js/dist/PIE.js">
-	<!--[if lte IE 9]>
-		<script src="./js/dist/html5shiv.min.js"></script>
-        <script src="./js/dist/ie9.min.js"></script>
-        <script src="./js/dist/PIE.js"></script>
-        <script src="./js/dist/responsive.min.js"></script>
-	<![endif]-->
-	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
-	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
-	<script src="./js/jquery/jquery-ui.min.js"></script>
-	<script src="./js/slidebanner.js"></script>
-	<script src="./js/slide_mini.js"></script>
-	<script src="./js/topadd.js"></script>
-	<script src="./js/accodion.js"></script>
-	<title>Birkenstock</title>
-	<style type="text/css"></style>
-	<script>
-		$(document).ready(function(){
-			//슬라이드 배너
-			slideBanner( $('.bslide') );
-			minislide( $('#miniBanner') );
-			// 아코디언
-			accodion( $('.accodion') );
-			// 팝업창
-			topAdd( $('#topAdd') );
-		}); //all
-	</script>
-	
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <title> main page </title>
+    <style type="text/css">
+        .box{background-color: #aad ;}
+    </style>
+    <script type="text/jscript"> </script>
 </head>
+
+
+
 <body>
-	<div id="topAdd">
-		<div class="inbox">
-			<p>* 본 페이지는 영리를 목적으로 하지 않고, 개인 포트폴리오 제작을 위한 학습 사이트 입니다. *</p>
-			<div class="addbox">
-				<a href="#">이미지 출처 바로가기</a>
-			</div>
-			<button type="button" aria-laber="닫기" class="addbtn">X</button>
-		</div>
-	</div>
-	<div id="container">
+  
+  
+    <h1><a href="./index.html">Hi! Mirae's webpage</a></h1>
 
-		<header id="headerBox">
-			<div class="inbox">
-				<div id="sitemap">
-					<ul>
-						<li><a href="#">LOGIN</a></li>
-						<span><!--bar--></span>
-						<li><a href="#">JOIN</a></li>
-						<span><!--bar--></span>
-						<li><a href="#">CART</a></li>
-						<span><!--bar--></span>
-						<li><a href="#">ORDER</a></li>
-						<span><!--bar--></span>
-						<li><a href="#">MY PAGE</a></li>
-					</ul>
-				</div>
-				<h1><a href="#"><span>logo</span></a></h1>
-				<nav id="gnb">
-					<ul>
-						<li><a href="#">Collection</a></li>
-						<li><a href="#">16s Lookbook</a></li>
-						<li><a href="#">Customize</a></li>
-						<li><a href="#">Club Birkenstock</a></li>
-						<li><a href="#"><span>facebook</span></a></li>
-						<li><a href="#"><span>instagram</span></a></li>
-						<li><a href="#"><span>youtube</span></a></li>
-					</ul>
-				</nav>
-				</div> <!-- 담는박스 -->
-		</header>
-		<article id="banner">
-			<h2>메인배너</h2>
-			<div class="left_btn"><button aria-label="슬라이드 왼쪽 버튼"></button></div>
-			<div class="right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
-			<div class="bslide">
-				<ul>
-					<li class="b1"></li>
-					<li class="b2"></li>
-					<li class="b3"></li>
-				</ul>
-			</div>
-		</article>
-		
-		<section id="sectionBox1">
-			<div class="inbox">
-				<h1>NEW ARRIVALS</h1>
-				<ul class="accodion">
-					<li><a href="#" class="me_char">View</a></li>
-					<li><a href="#" class="me_char">View</a></li>
-					<li><a href="#" class="me_char">View</a></li>
-					<li><a href="#" class="me_char">View</a></li>
-				</ul>
-			</div>
-		</section> <!--sectionBox1-->
-		
-		<section id="sectionBox2">
-			<h2>페이지안에 배너</h2>
-			<div class="inbox">
-				<div id="miniBanner">
-					<ul>
-						<li class="mb1"></li>
-						<li class="mb2"></li>
-						<li class="mb3"></li>
-					</ul>
-					<div class="mini_left_btn"><button aria-label="슬라이드 왼쪽 버튼"></button></div>
-					<div class="mini_right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
-				</div>
-				<div id="miniText">
-					<ul>
-						<li class="mb1">
-							<span class="me_char">Sulli's It item</span><br />
-							<br / >
-							MILANO / 밀라노<br />
-							Best item<br /><br /><br />
-							<a href="#">-other pictures</a>
-						</li>
-						<li class="mb2">
-							<span class="me_char">Mirae's It item</span><br />
-							<br / >
-							KORSIKA / 코르시카<br />
-							Special item<br /><br /><br />
-							<a href="#">-other pictures</a>
-						</li>
-						<li class="mb3">
-							<span class="me_char">Man's It item</span><br />
-							<br / >
-							GIZEH / 지제<br />
-							Best item<br /><br /><br />
-							<a href="#">-other pictures</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section> <!--sectionBox2-->
-		
-		<section id="sectionBox3">
-			<h2>Best 3</h2>
-			<div class="inbox">
-				<h1>Best 3</h1>
-				<div id="box_04"></div>
-				<div id="box_05"></div>
-				<div id="box_06"></div>
-			</div>
-		</section> <!--sectionBox3-->
-		
-		<section id="sectionBox4">
-			<h2>비디오</h2>
-			<div class="inbox">
-				<h1>BIRKENSTOCK Video</h1>
-				<div id="movie">
-					<video controls>
-						<source src="./img/video/birken.mp4" type="video/mp4">
-					</video>
-					<div id="videoText">
-						<p><em> - CODE OF CONDUCT</em> <br /><br />
-							WE ARE AWARE OF OUR RESPONSIBILITY<br /><br />
+    <p>현재페이지는 메인 페이지 입니다.</p>
 
-							BIRKENSTOCK is a major global shoe manufacturer. We are aware of our responsibility to our customers and our employees. That is why we have set ethical and social rules for ourselves that guide us in our business. We expect our suppliers, i.e., those companies that maintain a business relationship with BIRKENSTOCK Group companies as suppliers, to act according to the same ethical principles.<br />
-							For this reason, BIRKENSTOCK has developed a Code of Conduct. This Code of Conduct is based largely on the Business Social Compliance Initiative and the conventions of the International Labour Organization.<br />
-							For this reason, BIRKENSTOCK has developed a Code of Conduct. This Code of Conduct is based largely on the Business Social Compliance Initiative and the conventions of the International Labour Organization.
-						</p>	
-					</div>
-				</div>
-			</div>
-		</section> <!--sectionBox4-->
-		
-		<section id="sectionBox5">
-			<div class="inbox">
-				<h1>INSTAGRAM <a href="https://www.instagram.com/explore/tags/brikenstock/" target="_blank">#birkenstock</a></h1>
-				<ul>
-					<li><div>
-						<a href="#"><span>&nbsp;15</span><span>&nbsp;3</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;9</span><span>&nbsp;3</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;27</span><span>&nbsp;13</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;289</span><span>&nbsp;3</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;15</span><span>&nbsp;2</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;55</span><span>&nbsp;3</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;58</span><span>&nbsp;3</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;2</span><span>&nbsp;6</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;695</span><span>&nbsp;200</span></a>
-					</div></li>
-					<li><div>
-						<a href="#"><span>&nbsp;371</span><span>&nbsp;154</span></a>
-					</div></li>
-				</ul>
-			</div>
-		</section> <!--sectionBox5-->
+    <div class="box">
+    
+    <p>메인 페이지
+        <ul>
+            <li><a href="./portfolio/index.html" target="_self">포트폴리오</a></li>
+            <li><a href="./resume/index.html" target="_self">개인 이력서</a></li>
+            <li><a href="./study/index.html" target="_self">학습페이지</a></li>
+            <li><a href="../etc/index.html" target="_self">ETC</a></li>
 
-		<footer id="footerBox">
-			<div class="inbox">
-				<h1><a href="#"></a></h1>
-			</div>
-		</footer>
-	</div>
+        </ul>
+    </p>
+    
+    </div>
+    
 </body>
+
 </html>

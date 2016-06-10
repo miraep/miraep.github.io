@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko-KR">	
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" href="./images/favicon/favicon.ico">
+	<link rel="stylesheet" href="./css/lib/normalize.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
+	<link rel="stylesheet" href="./js/dist/ie9.min.js">
+	<link rel="stylesheet" href="./js/dist/PIE.js">
+	<!--[if lte IE 9]>
+		<script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+	<![endif]-->
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	
+	<title>THE SIMPSON</title>
+	<style type="text/css">
+		.indWidth{width: 40px; background-color: #f06;}
+	</style>
+	<script>
+		$(function(){
+			//top
+			// $('#footerBox').find('button').on('click', function(){
+			// 	$('html,body').animate({'scrollTop':0},300);
+			// });
+
+			var section_H = $('section').height(),
+				timed = 1000;
+
+			
+			$('html,body').on('mousewheel DOMMouseScroll',function(e){
+				
+				var E = e.originalEvent;
+				var delta = E.deltaY;
+
+				if (delta > 0) {
+					$('html,body').stop().animate({'scrollTop':'+=' + section_H},timed);
+					console.log('마우스 휠을 내렸습니다');
+
+				}else{
+					$('html,body').stop().animate({'scrollTop':'-=' + section_H},timed);
+					console.log('마우스 휠을 올렸습니다');
+				};
+			});
+		});//all
+	</script>
+	
+</head>
+<body>
+	<div id="container">
+
+		<header id="headerBox">
+			<h1><a href="#"><span>LOGO</span></a></h1>
+			<nav id="gnb">
+				<ul>
+					<li> <div> <a href="#homer">HOMER</a> </div> </li>
+					<li> <div> <a href="#marge">MARGE</a> </div> </li>
+					<li> <div> <a href="#bart">BART</a> </div> </li>
+					<li> <div> <a href="#lisa">LISA</a> </div> </li>
+					<li> <div> <a href="#maggie">MAGGIE</a> </div> </li>
+					<li> <div> <a href="#pet">PET</a> </div> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="main">
+			<div id="bannerBox">
+				<ul class="ban">
+					<li class="box1"><span class="me_hidde">배너-1</span></li>
+					<li class="box2"><span class="me_hidde">배너-2</span></li>
+					<li class="box3"><span class="me_hidde">배너-3</span></li>
+					<li class="box4"><span class="me_hidde">배너-4</span></li>
+					<li class="box5"><span class="me_hidde">배너-5</span></li>
+					<li class="box6"><span class="me_hidde">배너-6</span></li>
+				</ul>
+				<ul class="ind">
+					<li class="ind1"><span class="me_hidden">인디케이터-1</span></li>
+					<li class="ind2"><span class="me_hidden">인디케이터-2</span></li>
+					<li class="ind3"><span class="me_hidden">인디케이터-3</span></li>
+					<li class="ind4"><span class="me_hidden">인디케이터-4</span></li>
+					<li class="ind5"><span class="me_hidden">인디케이터-5</span></li>
+					<li class="ind6"><span class="me_hidden">인디케이터-6</span></li>
+				</ul>
+				<div class="l_btn"><span class="me_hidden">왼쪽버튼</span></div>
+				<div class="r_btn"><span class="me_hidden">오른쪽버튼</span></div>
+			</div>
+		</section>
+
+		<section id="homer">
+			<h2>HOMER</h2>
+		</section>
+
+		<section id="marge">
+			<h2>MARGE</h2>
+		</section>
+
+		<section id="bart">
+			<h2>BART</h2>
+		</section>
+
+		<section id="lisa">
+			<h2>LISA</h2>
+		</section>
+
+		<section id="maggie">
+			<h2>MAGGIE</h2>
+		</section>
+
+		<section id="pet">
+			<h2>PETS</h2>
+		</section>
+
+		<footer id="footerBox">footer</footer>
+	</div>
+	<!-- 인디케이터 + 버튼 자동스크롤 -->
+	<script src="./js/banner.js"></script>
+</body>
+</html>

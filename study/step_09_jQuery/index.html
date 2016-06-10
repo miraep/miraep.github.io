@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko-KR">	
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.png">
+	<link rel="apple-touch-icon" href="./favicon/favicon.png">
+	<link rel="stylesheet" href="./css/lib/reset.css">
+	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
+	<link rel="stylesheet" href="./js/dist/ie9.min.js">
+	<link rel="stylesheet" href="./js/dist/PIE.js">
+	<!--[if lte IE 9]>
+		<script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+	<![endif]-->
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<title>Document</title>
+	<style type="text/css"></style>
+	<script>
+        $(document).ready(function(){
+            var  text, k;
+//                box= null;
+                test= 'aaaa';
+                k= 5;
+                pas = parseInt(k) + '%';
+            //pas = 숫자로 만들다 105로 만듬
+            
+            console.log(k); // 10 5
+            console.log(pas); // 105
+            console.log(pas+5); // 110
+            
+            
+            
+            var arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+            var arr2 = ["도형","미나","민아","수정","예빈","상희"];
+            
+            console.log(arr[2]);
+            console.log(arr2[5]);
+            console.log(arr);
+            
+            var arr3 = ['윤혜','승엽','ㅇㅇ'];
+            var str = '이어붙이기';
+            var str2 = str.concat("내용");
+            var con = arr2.concat(arr3);
+            
+            console.log(str2);
+            console.log(con);
+            con.pop();
+            //맨뒤 빼내기
+            console.log(con);
+            
+         
+            //함수
+            
+            
+            var fn = function(){};
+            function f2(){};
+            (function(){})();
+            
+            
+            var fn = function(i, j){
+                var box = "test";
+                var num = 100 + i ;
+                console.log(box + num + j);
+            };
+            fn(100, "추가");
+            fn(800, "또다른");
+            fn(200, "또다른");
+            console.log(box);
+            console.log(num);
+            
+        });
+    </script>
+	
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

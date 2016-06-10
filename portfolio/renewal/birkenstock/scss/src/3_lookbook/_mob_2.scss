@@ -1,0 +1,97 @@
+
+// mobile_v
+@media screen and (min-width:481px) and (max-width:640px) {
+   .inbox{
+        width: inherit;
+        height: inherit; }
+    #container{
+    //_____headerBox____________________
+        >#headerBox{
+            width: calc(100% - 20px);
+            height: 40px;
+            padding: 10px;
+            .inbox{
+                >#sitemap{display: none;}
+                >h1{width: 200px;
+                    height: 30px;
+                    float: left;
+                    >a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 3px;
+                        background: url(../img/header/h1.png) no-repeat center;}
+                }//h1
+                >#gnb{
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    float: right;
+                    background: url(../img/btn/gnb_mini.png) no-repeat;
+                    background-size:  100% 100%;
+                    >ul{display: none;}
+                }//#gnb
+          }//inbox
+        }//#header
+    //_____CONTENT___________________
+        >#content{
+            width: 100%;
+            height: auto;
+            >.inbox{
+                position: relative;
+                >#popupFade{
+                    width: 100%;
+                    height: 100%;
+                    position: fixed; z-index: 500; top: 0; left: 0;
+                    background-color: rgba(0,0,0,0.1);
+                    display: none;
+                    >.popupbox{
+                        width: 80%; height: auto; background-color: #fff;
+                        border: 3px solid #67a; border-radius: 10px; box-sizing: border-box;
+                        position: absolute; left: 10%; top: 15%;
+                        box-shadow: 3px 3px 3px #ccc; overflow: hidden; }//box
+                    >button{
+                        width: 3rem; height: 3rem; background-color: #333;
+                        position: absolute; right: calc(10% - 1.5rem); top: calc(15% - 1.5rem); z-index: 700;
+                        border-radius: 50%; box-shadow: 2px 2px 2px #333;
+                    &:hover{background-color: #bc1339;}
+                    }//btn
+                }//popup
+                >h1{
+                    padding: 10px 0;
+                    width: 100%;
+                    height: 30px; //총 50px
+                    font-size: 1.75rem;
+                    text-align: center
+                }//h1
+                >#popupUl{
+                    width: 100%; height: auto; border: 5px solid #fcc; box-sizing: border-box;
+                    background-color: #fff;
+                    >li{
+                        width: calc(100% / 3); height: 6rem;
+                        background-color: #ffa;
+                        float: left; border: 1px solid #ccc; box-sizing: border-box;
+                        >a{width: 100%; height: 100%; display: block;}
+                    }//li
+                }//ul
+            }//inbox
+        }//content
+    //_____FOOTER____________________
+        >#footerBox{
+            width: 100%;
+            height: 40px;
+            padding-top: 10px;
+            >button{
+                margin: 0 auto;
+                display: block;
+                width: 40%;
+                height: 30px;
+                background-image: url(../img/footer/top.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                &:hover{ background-image: url(../img/footer/_top.png); }
+            }//btn
+            >.inbox{display: none;}//.inbox
+        }//#footer
+    }//#container
+} //all

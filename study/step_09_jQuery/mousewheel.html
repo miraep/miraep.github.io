@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">	
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" href="./images/favicon/favicon.ico">
+	<link rel="stylesheet" href="./css/lib/normalize.css">
+	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
+	<link rel="stylesheet" href="./js/dist/ie9.min.js">
+	<link rel="stylesheet" href="./js/dist/PIE.js">
+	<!--[if lte IE 9]>
+		<script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+	<![endif]-->
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	
+	<title>mousewheel</title>
+	<style type="text/css">
+		#container{
+			width: 100vw;
+			height: auto;
+		}
+		section{
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+			line-height: 100vh;
+			font-size: 10rem;
+		}
+		#box_1{background-color: #aff;}
+		#box_2{background-color: #fdd;}
+		#box_3{background-color: #123;}
+		#box_4{background-color: #f83;}
+		#box_5{background-color: #acf;}
+		#box_6{background-color: #f06;}
+		#box_7{background-color: #a8a;}
+	</style>
+	<script>
+		$(function(){
+
+
+			var section_H = $('section').height(),
+				timed = 1000;
+
+
+			$('section').on('mouseenter',function(){
+				var win_index = $(this).index();
+				console.log( $(this).index() );
+				console.log( $(this).offset().top );
+			});
+
+			
+			$('html,body').on('mousewheel DOMMouseScroll',function(e){
+				
+				var E = e.originalEvent;
+				var delta = E.deltaY;
+				var win_index = $(this).index();
+				var win_i = win_index - 1;
+				var win_offset = $(this).offset().top;
+
+
+				if (delta > 0) {
+					$('html,body').stop().animate({'scrollTop':'+=' + section_H},timed);
+					console.log('마우스 휠을 내렸습니다');
+
+				}
+				else{
+					$('html,body').stop().animate({'scrollTop':'-=' + section_H},timed);
+					console.log('마우스 휠을 올렸습니다');
+				};
+			});
+		});//all
+	</script>
+	
+</head>
+<body>
+	<div id="container">
+		<section id="box_1">001</section>
+		<section id="box_2">002</section>
+		<section id="box_3">003</section>
+		<section id="box_4">004</section>
+		<section id="box_5">005</section>
+		<section id="box_6">006</section>
+		<section id="box_7">007</section>
+	</div>
+</body>
+</html>

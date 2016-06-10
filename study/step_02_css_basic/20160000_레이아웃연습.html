@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>레이아웃 나누기 연습</title>
+    <style type="text/css">
+    /*RESET CSS*/
+        *{  margin: 0;
+            padding: 0;
+            border: 0; }
+/*        design*/
+        #header{
+            width: 960px;
+            height: 120px;
+            background-color: darkgoldenrod;
+        }
+        #article{
+            width: 960px;
+            height: 500px;
+            background-color:#fff;
+        }
+        .aside{}
+        .container{}
+        .box_01{}
+        #footer{
+            width: 960px;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        
+        h1{
+            float: left;
+/*            background-color: blueviolet;*/
+        }
+        ol, ol li{
+            float: right;
+        }
+        li{
+            list-style: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    
+    <div id="wrap">
+        <div id="header">
+            <h1>logo</h1>
+            <ol>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+            </ol>
+        </div><!--#header-->
+        
+        <div id="article">
+            <div class="aside">
+                
+            </div><!--#aside-->
+            
+            <div class="container">
+                
+            </div><!--#container-->
+            
+            <div class="box_01">
+                
+            </div><!--#box_1-->
+        </div><!--#article-->
+        
+        <div id="footer">
+            
+        </div><!--#footer-->
+    </div><!--#wrap-->
+</body>
+</html>

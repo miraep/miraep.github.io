@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+
+		var box;
+		box = 2;
+
+		document.write(box);
+		console.log(box);
+	</script>
+</head>
+<body>
+	<select name="" id="">
+		<option value="">2016</option>
+		<option value="">2015</option>
+		<option value="">2014</option>
+		<option value="">2013</option>
+		<option value="">2012</option>
+		<option value="">2011</option>
+		<option value="">1890</option>
+	</select>
+	<script>
+		document.write('<select id="" name="" >');
+		document.write('<option>선택하라</option>');
+
+		var i;
+		for( i=1900; i>=2100; i++ ){
+			document.write(i + "<br />");
+		};
+
+
+		document.write('</select>');
+	</script>
+</body>
+</html>

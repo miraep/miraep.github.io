@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Document</title>
+	<style type = "text/css">
+        /*RESET CSS*/
+        *{margin: 0; padding: 0;}
+        /*DESIGN*/
+        #wrap{
+            width: 960px;
+            height: 1340px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+        
+        #header{
+            width: 100%;
+            height: 60px;
+            background-color:cadetblue;
+            float:left;
+/*            같은레벨 이면 다같이 플롯주도록해.*/
+        }
+        h1{
+            width: 150px;
+            height: 40px;
+            background-color: aliceblue;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        h2{
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        #header>#gnb>ul{
+            width: 60%;
+            float:right;
+            margin-top: 20px;
+            background-color:aliceblue;
+        }
+        #header>#gnb>ul>li{
+            width: 14%;
+            list-style: none;
+            float:left;
+            font-size: 20px;
+            background-color: aqua;
+        }
+        #header>ul>li>a{
+            display: block;
+        }
+        #header .last_menu{
+/*            margin:0%*/
+        }
+        #body{
+            width:100%;
+            height: 1200px;
+/*            background-color: yellowgreen;*/
+        }
+        #aside{
+            width: 250px;
+            height: 100%;
+            background-color:cornflowerblue;
+            float:left;
+        }
+        .box_01{
+            width:100px;
+            height:250px;
+            background-color:pink;
+            margin-left: 75px;
+            margin-top: 100px;
+        }
+        .box_02{
+            width:100px;
+            height:500px;
+            background-color:pink;
+            margin-left: 75px;
+            margin-top: 250px;
+        }
+        #article{
+            width: 710px;
+            height: 1200px;
+            background-color:aquamarine;
+            float:left;
+        }
+        .box_03{
+            width:670px;
+            height:250px;
+            background-color:pink;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+        .box_09{
+            width:50%;
+            height:100%;
+            background-color:#fff;
+            float:right;
+        }
+        .box_10{
+            width:50%;
+            height:100%;
+            background-color:#5d1;
+        }
+        .box_04{
+            width:670px;
+            height:250px;
+            background-color:coral;
+            margin-left: 20px;
+        }
+        .box_05{
+            width:670px;
+            height:250px;
+            background-color:pink;
+            margin-left: 20px;
+        }
+        .box_06{
+            width:670px;
+            height:250px;
+            background-color:coral;
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+        #footer{
+            width: 100%;
+            height: 80px;
+            background-color: dimgray;
+            float:left;
+        }
+        .box_07{
+            width:150px;
+            height:40px;
+            background-color:#fff;
+            float:left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .box_08{
+            width:500px;
+            height:40px;
+            background-color:#fff;
+            float:left;
+            margin-left: 290px;
+            margin-top: 10px;
+        }
+        
+    </style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+    
+	    <div id="header">
+	        <h1>logo</h1>
+                <div id="gnb">
+                    <ul>
+                        <h2>네비게이션 영역</h2>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li class="last_menu"><a href="#">menu</a></li>
+                    </ul>
+                </div>
+	    </div><!-- #header-->
+	    
+	    <div id="body">
+	        <div id="aside">
+	            <div class="box_01">box01</div>
+	            <div class="box_02">box02</div>
+	        </div> <!-- #aside-->
+	        <div id="article">
+	            <div class="box_03">
+	                <div class="box_09">box09</div>
+	                <div class="box_10">box10</div>
+	            </div>
+	            <div class="box_04">box04</div>
+	            <div class="box_05">box05</div>
+	            <div class="box_06">box06</div>
+	        </div><!-- #article-->
+	    </div><!-- #body-->
+	    <div id="footer">
+	        <div class="box_07">box07</div>
+	        <div class="box_08">box08</div>
+	    </div><!-- #footer-->
+	</div><!-- #wrap-->
+</body>
+</html>

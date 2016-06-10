@@ -1,0 +1,148 @@
+/*RESET CSS*/
+
+*,
+html,body,h1,h2,h3,h4,h5,h6,p,div,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    color: #333;
+    font: 100%/1.2 "myriad pro", arial, "noto sans", nanumGothic, dotum, sans-serif;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #777;
+}
+a:hover {
+    text-decoration: underline;
+    color: #d05;
+}
+table,tr,td,th,thead,tfoot,tbody {
+    border: 1px solid #777;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*보더스페이싱, 보더컬립스*/
+
+address {
+    font-style: normal;
+}
+
+/**
+        class, id  이름 사용법 규칙:  
+        
+        *단순히 body 에 이름 생성 후 직접 디자인시에는 단어와 단어 사이에는 _ 를 붙인다
+                                                              (예: word_box)
+        *form 영역내에 이름 생성시 뒤에 오는 단어 첫 글자를 대문자로 사용한다 (예 : wordBox)
+        *normalize 형식으로 작성시에는 단어사이에 -(하이픈)을 붙인다. (예 : word-box)
+        *단, 개인이 미리 작성한 내용일 경우(부트스트랩, awesome 류 제외) 앞글자에 me를 붙인다.
+     
+        */
+
+
+/*  normalize  */
+
+.firstLeft {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+.lastRight {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*clearfix : float 기능 버그를 위한 핵*/
+#wrap {
+    width: 960px;
+    height: 1340px;
+    background-color: #444;
+    margin: 0 auto;
+}
+#header {
+    width: 940px;
+    height: 40px;
+    background-color: #88f;
+    padding: 10px;
+}
+#logo {
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+}
+#container {
+    width: 960px;
+    height: 1200px;
+    background-color: #3aa;
+}
+#aside {
+    width: 250px;
+    height: 100%;
+    background-color: #2af;
+    float: left;
+}
+#menu_01 {
+    width: 100px;
+    height: 250px;
+    background-color: #fad;
+    margin: 100px auto;
+}
+#menu_02 {
+    width: 100px;
+    height: 500px;
+    background-color: #fad;
+    margin: 250px auto;
+}
+#article {
+    width: 710px;
+    height: 1200px;
+    background-color: #fff;
+    float: left;
+}
+ul {
+    width: 670px;
+    height: 1000px;
+    background-color: #afa;
+    padding: 100px 20px;
+}
+#one, #three {
+    width: 100%;
+    height: 250px;
+    background-color: #f88;
+}
+#two, #four {
+    width: 100%;
+    height: 250px;
+    background-color: #7af;
+}
+#footer {
+    width: 960px;
+    height: 80px;
+    background-color: #ddd;
+    margin-bottom: 0 auto;
+}
+#footer_01 {
+    width: 150px;
+    height: 40px;
+    background-color: #909;
+    margin: 10px;
+    float: left;
+}
+#footer_02 {
+    width: 500px;
+    height: 40px;
+    background-color: #4f4;
+    margin: 10px;
+    float: right;
+}

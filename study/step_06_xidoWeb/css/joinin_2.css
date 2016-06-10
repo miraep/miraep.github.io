@@ -1,0 +1,223 @@
+
+#join{
+	width: 620px;
+	height: auto;
+}
+#join>form{
+	width: 100%;
+	height: 100%;
+}
+#join>form>fieldset{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid  #595959;
+	padding-bottom: 15px;
+	margin-bottom: 24px;
+}
+
+
+/*000000000000000000000000000*/
+ .j{
+ 	background-image: url(../img/join/join/join_icon.png);
+ 	background-repeat: no-repeat;
+ }
+ label>span{
+ 	width: 0;
+ 	height: 0;
+ 	display: block;
+ 	overflow: hidden;
+ }
+
+ .hyphen{
+ 	width: 10px;
+ 	height: 15px;
+ 	border-bottom: 1px solid;
+ 	display: block;
+ 	float: left;
+ 	margin-right: 10px;
+ }
+ p{
+ 	font-size: 0.875rem;
+ 	line-height: 30px;
+ }
+ p.tt{
+ 	display: inline-block;
+ 	width: 0.8rem;
+ 	height: 0.8rem;
+ 	line-height: 30px;
+ 	float: left;
+ 	margin-right: 15px;
+ }
+
+/*0000000000000000000000000000000*/
+
+
+/* form 1 */
+#join fieldset.form_01{}
+/* form 2 */
+#join fieldset.form_02{}
+/* form 3 */
+#join fieldset.form_03{
+	border-bottom: 0;
+}
+#join>form>fieldset>dl{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+#join>form>fieldset>dl>dt{
+	width: 100px;
+	height: 100%;
+	padding-left: 7px;
+	float: left;
+}
+#join>form>fieldset>dl>dd{
+	width: 500px;
+	height: 100%;
+	padding-left: 7px;
+	float: left;
+}
+
+ dt>i{
+ 	width: 16px;
+ 	height: 20px;
+ 	margin: 5px 7px;
+ 	display: block;
+ 	float: left;
+ }
+ dt>label{
+ 	width: 60px;
+ 	height: 20px;
+ 	margin: 5px;
+ 	display: block;
+ 	float: left;
+ }
+ dt>label>span,
+ dd>button>span{
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+ }
+ dd>input{
+ 	height: 240px;
+ 	height: 30px;
+ 	border: 2px solid #595959;
+ 	border-radius: 5px;
+ 	box-sizing: border-box;
+ 	margin-right: 20px;
+ 	float: left;
+ }
+ dd>button{
+ 	width: 100px;
+ 	height: 30px;
+ 	cursor: pointer;
+ 	text-indent: 0.06rem;
+ 	float: left;
+ }
+
+/*_____ .join_1 아이디_________________*/
+ .join_1 dt>i{background-position: -50px 0;}
+ .join_1 dt>label{background-position: -70px 0;}
+ .join_1 dd>button{background-position: -135px -160px;}
+
+/*_____ .join_2 비밀번호_________________*/
+ .join_2 dt>i{background-position: -50px -20px;}
+ .join_2 dt>label{background-position: -70px -20px;}
+ .join_2 dd>label{font-size: 0.875rem; line-height: 1.875rem;}
+
+/*_____ .join_3 번호확인_________________*/
+ .join_3 dt>i{background-position: -50px -40px;}
+ .join_3 dt>label{background-position: -70px -40px;}
+ .join_3 dd>label{font-size: 0.875rem; line-height: 1.875rem;}
+
+/*_____ .join_4 이름_________________*/
+ .join_4 dt>i{background-position: -50px -60px;}
+ .join_4 dt>label{background-position: -70px -60px;}
+ .join_4 dd>label{font-size: 0.875rem; line-height: 1.875rem;}
+
+/*_____ .join_5 별명 _________________*/
+ .join_5 dt>i{background-position: -50px -80px;}
+ .join_5 dt>label{background-position: -70px -80px;}
+ .join_5 dd>button{background-position: -135px -160px;}
+
+/*_____ .join_6 연락처 _________________*/
+ .join_6 dt>i{background-position: -50px -100px;}
+ .join_6 dt>label{background-position: -70px -100px;}
+ .join_6 dd>input{
+ 	width: 100px;
+ 	height: 30px;
+ 	margin-right: 10px;
+ }
+
+/*_____ .join_7 이메일 _________________*/
+ .join_7 dt>i{background-position: -50px -120px;}
+ .join_7 dt>label{background-position: -70px -120px;}
+ .join_7 dd>input:first-child{
+ 	width: 120px;
+ 	margin-right: 30px;
+ }
+ .join_8 dd>input:last-child{
+ 	width: 200px;
+ }
+/*_____ .join_8 생년월일 _________________*/
+ .join_8 dt>i{background-position: -50px -140px;}
+ .join_8 dt>label{background-position: -70px -140px;}
+ .join_8 dd>input{
+ 	width: 100px;
+ 	height: 30px;
+ }
+/*_____ .join_9 우편번호 _________________*/
+ .join_9 dt>i{background-position: -50px -160px;}
+ .join_9 dt>label{background-position: -70px -160px;}
+ .join_9 dd>input{
+ 	width: 100px;
+ 	margin-right: 10px;
+ }
+ .join_9 dd>input:last-child{
+  	margin-right: 30px;
+  }
+ .join_9 dd>button{background-position: -240px -160px; margin-left: 30px;}
+
+/*_____ .join_10 주소_________________*/
+ .join_10 dt>i{background-position: -50px -160px;}
+ .join_10 dt>label{background-position: -70px -180px;}
+ .join_10 dd>input{
+ 	width: 360px;
+ 	height: 30px;
+ }
+
+
+
+
+
+
+
+
+/* form 4 */
+#join .form_04{
+	width: 100%;
+	height: 40px;
+	border-bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+	.form_04>button{
+		width: 140px;
+		height: 40px;
+	}
+	button[type="submit"]{
+		margin-left: 130px;
+		float: left;
+		background-color: #f09;
+		cursor: pointer;
+		font-size: 1.25rem;
+		letter-spacing: 0.0625rem;
+	}
+	button[type="reset"]{
+		margin-right: 130px;
+		float: right;
+		cursor: pointer;
+		font-size: 1.25rem;
+		letter-spacing: 0.0625rem;
+	}

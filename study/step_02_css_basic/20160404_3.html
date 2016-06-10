@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+   
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_day_01</title>
+    <!--[if lte IE 9]>
+        <script type="text/javascript">
+        alert("구형 브라우저를 사용하고 계십니다
+                크롬이나 최신 브라우저를 이용하세요.");
+        </script>
+    <![endif]-->
+    <style type="text/css">
+        li>a{color: #faf; text-decoration: none;}
+/*        div > ul > li > ul > a{}해도 됨ㅋ*/
+        .ul_box>li>a{color:crimson}/*ul박스 안에 li안에 a새끼 자식선택자.*/
+        .list_box
+    </style>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+   <div id="wrap">
+    <div id="header">
+        <h1>H1<a href="http://www.naver.com" target="_blank">제목</a></h1>
+        <div>
+            <ul class="ul_box">
+                <li><a href="#">plustext_01</a></li>
+                <li><a href="#">plustext_02</a></li>
+                <li><a href="#">plustext_03</a></li>
+                <li>
+                    <ul class="list_box">
+                        <li><a href="#">추가 리스트</a></li>
+                        <li><a href="#">추가 리스트</a></li>
+                        <li><a href="#">추가 리스트</a></li>
+                        <li><a href="#">추가 리스트</a></li>
+                        <li><a href="#">추가 리스트</a></li>
+                    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="article">
+        <ol class="ul_box">
+            <li>1</li>
+            <li>11</li>
+            <li>11</li>
+            <li>11</li>
+            <li>11</li>
+        </ol>
+    </div>
+    <hr />
+    <div id="footer">
+        <ol class="ul_box">
+            <li>1</li>
+            <li>12131231231</li>
+            <li>11</li>
+            <li>11</li>
+            <li>11</li>
+        </ol>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

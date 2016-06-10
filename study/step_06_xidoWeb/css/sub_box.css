@@ -1,0 +1,11 @@
+#certify{
+	margin: 0 auto;
+	padding: 170px 0 200px;
+	width: 550px;
+	height: 300px;
+}
+
+#certify>iframe{
+	width: 500px;
+	height: 500px;
+}

@@ -1,0 +1,243 @@
+
+input:focus{outline: 2px solid #988177;}
+input[type="text"]:focus{background-color: #ffa;}
+
+#wrap{
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+#formhead{
+	width: calc(100% - 52px);
+	height: 50px;
+	padding: 15px 26px;
+	background-image: linear-gradient(45deg, #fff 70%, #ccc);
+	background-color: #ccc;
+}
+#formhead>h1{
+	width: 120px;
+	height: 100%;
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #f70;
+	line-height: 60px;
+	letter-spacing: 2px;
+	float: left;
+}
+#formhead>p{
+	width: 300px;
+	margin-left: 20px;
+	line-height: 50px;
+	float: left;
+}
+#formhead>p>strong{
+	font-weight: bolder;
+	color: #f03;
+}
+/*_____________*/
+#formbox{
+	width: calc(100% - 52px);
+	height: 484px;
+	padding: 26px;
+	background-color: rgba(255,100,0,0.5);
+}
+#formbox>form{
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px #333;
+}
+#formbox>form>fieldset{
+	width: 100%;
+	height: 100%;
+}
+#formbox>form>fieldset>legend{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+/*_____________*/
+.infobox{
+	width: 160px;
+	height: 100%;
+	float: left;
+	background-color: #fca;
+}
+
+.inputbox{
+	width: calc(100% - 160px);
+	height: 100%;
+	float: left;
+	background-color: #fda;
+}
+fieldset li{
+	width: calc(100% - 40px);
+	height: 28px;
+	border-bottom: 5px solid #fff;
+	padding: 10px 20px;
+}
+fieldset li:nth-child(6){
+	width: 100%;
+	height: 70px;
+}
+fieldset li:nth-child(7){
+	width: 100%;
+	height: 50px;
+}
+fieldset li:last-child{
+	border-bottom: 0;
+}
+
+.infobox>li>label{
+	line-height: 33px;
+	font-size: 1rem;
+	color: #926b5b;
+	float: left;
+}
+.infobox>li>label>span{
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+.point::before{
+	content: "*";
+	color:#bc1339;
+	font-size: 1.5rem;
+	float: left;
+}
+.inputbox li>input{
+	width: 40%;
+	height: 80%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+.inputbox li>label{
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+.inputbox li>button{
+	width: 100px;
+	height: 100%;
+	box-shadow: 1px 1px 1px #777;
+	cursor: pointer;
+}
+.inputbox li:nth-child(6)>select{
+	width: 15%;
+	height: 30px;
+}
+.inputbox li:nth-child(6)>span{
+	width: 7px;
+	height: 13px;
+	border-bottom: 1px solid #333;
+	display: inline-block;
+}
+.inputbox li:nth-child(6)>input{
+	width: 20%;
+	height: 30px;
+}
+.inputbox li:nth-child(6)>button{
+	width: 18%;
+	height: 20px;
+}
+.inputbox li:nth-child(6)>.sms{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+}
+	.sms>dt{
+	float: left;
+	width: 20%;
+	height: 100%;
+ }
+	.sms>dd{
+	float: left;
+	width: 100px;
+	height: 100%;
+ }
+	.sms>dd>input{
+		width: 15px;
+		height: 15px;
+		/*margin-top: 15px;*/
+	}
+	.sms>dd>label{
+		line-height: 30px;
+	}
+.inputbox li:nth-child(7)>input{
+	width: 40%;
+	height: 20px;
+	float: left;
+}
+.inputbox li:nth-child(7)>.email{
+	width: 50%;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+	.email>dt{
+		float: left;
+		width: 40%;
+		height: 30px;
+	}
+	.email>dd{
+		float: left;
+		width: 20%;
+		height: 30px;
+	}
+.inputbox li:nth-child(7)>p{
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height: 40px;
+	font-size: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

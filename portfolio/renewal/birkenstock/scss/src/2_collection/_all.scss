@@ -1,0 +1,100 @@
+
+.indWidth{background-color: #6593db;}
+
+#container{
+	width: 100%;
+	height: 100%;
+   	>#headerBox{}
+        >#banner{
+         overflow: hidden;
+         position: relative;
+         >.left_btn{
+             position: absolute;
+             z-index: 100;
+             top: 50%;
+             margin-top: -30px;
+             left: 10px;
+             width: 30px;
+             height: 50px;
+             >button{
+                 width: 100%;
+                 height: 100%; 
+                 background: url('../img/btn/left.png') no-repeat; }
+         }//btn
+         >.right_btn{
+             position: absolute;
+             z-index: 100;
+             top: 50%;
+             margin-top: -30px;
+             right: 10px;
+             width: 30px;
+             height: 50px;
+             >button{
+                 width: 100%;
+                 height: 100%; 
+                 background: url('../img/btn/right.png') no-repeat; }
+         }//btn
+         >.bslide{
+            width: 100%;
+            height: 100%;
+            >.ban{
+               width: 800%;
+               height: 100%;
+               
+            margin-left: -100%;
+               >li{
+                  width: calc(100% / 8);
+                  height: 100%;
+                  float: left;
+               &.b1{
+                  background: url(../img/bg/bg_06.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너1
+               &.b2{
+                  background: url(../img/bg/bg_07.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너2
+               &.b3{
+                  background: url(../img/bg/bg_08.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너3
+               &.b4{
+                  background: url(../img/bg/bg_09.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너3
+               &.b5{
+                  background: url(../img/bg/bg_01.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너3
+               &.b6{
+                  background: url(../img/bg/bg_02.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너3
+               &.b7{
+                  background: url(../img/bg/bg_03.jpg) no-repeat;
+                  background-size: 100% 100%; }//메인배너3
+               }//li
+            }//ul.ban
+            >.ind{
+               transition: all 0.3s;
+               position: absolute;
+               z-index: 100;
+               bottom: 10px;
+               left: 50%;
+               margin-left: -50px;
+               width: 200px;
+               height: 20px;
+               >li{
+                  transition: all 0.2s;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  float: left;
+                  width: 10px;
+                  height: 10px;
+                  margin-right: 5px;
+                  border: 2px solid #333;
+               }//li
+            }//.ind
+         }//bslide
+      }
+    #kind{
+        *{transition: all 0.3s;}
+    }
+    >#footerBox{
+      background-color: #acc;
+    }
+}//#container

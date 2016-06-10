@@ -1,0 +1,97 @@
+#banner {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  #container #headerBox {
+    width: calc(100% - 10px);
+    height: 70px;
+    padding: 5px;
+    background-color: #1f8; }
+    #container #headerBox > h1 {
+      margin-left: 10px;
+      width: 150px;
+      height: 70px;
+      float: left;
+      background-color: #d9a; }
+    #container #headerBox > #gnb {
+      display: none; }
+    #container #headerBox > #lnb {
+      width: 70px;
+      height: 70px;
+      float: right;
+      background-color: #a9a; }
+  #container #sectionBox1 {
+    width: 100%;
+    height: 300px;
+    background-color: #ffa; }
+    #container #sectionBox1 > #leftB {
+      padding: 5%;
+      width: 90%;
+      height: 90%;
+      background-color: #c11; }
+    #container #sectionBox1 > #rightB {
+      display: none; }
+  #container #sectionBox2 {
+    width: 100%;
+    height: 400px;
+    background-color: #0a0; }
+    #container #sectionBox2 > div {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #fff;
+      box-sizing: border-box; }
+  #container #footerBox {
+    width: 100%;
+    height: 80px;
+    background-color: #d99; } }
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  #container #headerBox {
+    width: calc(100% - 10px);
+    height: 70px;
+    padding: 5px;
+    background-color: #1f8; }
+    #container #headerBox > h1 {
+      margin-left: 10px;
+      width: 150px;
+      height: 70px;
+      float: left;
+      background-color: #d9a; }
+    #container #headerBox > #gnb {
+      display: none; }
+    #container #headerBox > #lnb {
+      width: 70px;
+      height: 70px;
+      float: right;
+      background-color: #a9a; }
+  #container #sectionBox1 {
+    width: 100%;
+    height: 300px;
+    background-color: #ffa; }
+    #container #sectionBox1 > #leftB {
+      padding: 5%;
+      width: 90%;
+      height: 90%;
+      background-color: #c11; }
+    #container #sectionBox1 > #rightB {
+      display: none; }
+  #container #sectionBox2 {
+    width: 100%;
+    height: 400px;
+    background-color: #0a0; }
+    #container #sectionBox2 > div {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #fff;
+      box-sizing: border-box; }
+  #container #footerBox {
+    width: 100%;
+    height: 80px;
+    background-color: #d99; } }
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  body {
+    background-color: #cda; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: #000; } }
+
+/*# sourceMappingURL=index_02.css.map */

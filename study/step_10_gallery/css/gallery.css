@@ -1,0 +1,79 @@
+#container > #headerBox {
+  width: 100%;
+  height: 4.375rem;
+  background-color: #0ac; }
+  #container > #headerBox > h1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 4.375rem; }
+#container > #gallery {
+  width: 100%;
+  height: 500px;
+  background-color: #fdfdad;
+  padding-top: 50px; }
+  #container > #gallery > .box {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    border: 3px solid #0ac;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative; }
+    #container > #gallery > .box > span {
+      width: calc(100% - 20px);
+      height: 80px;
+      display: block;
+      position: absolute;
+      bottom: -100px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: #fff; }
+  #container > #gallery > ul {
+    width: 80%;
+    height: 50px;
+    padding: 10px 10%;
+    border-top: 1px solid #777; }
+    #container > #gallery > ul > li {
+      width: 10%;
+      height: 100%;
+      float: left;
+      border-right: 1px solid #0ac;
+      box-sizing: border-box; }
+      #container > #gallery > ul > li:last-child {
+        border-right: 0; }
+      #container > #gallery > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        line-height: 50px;
+        transition: all 0.3s;
+        background-size: 100%; }
+        #container > #gallery > ul > li > a:hover {
+          background-size: 150%;
+          color: #fff; }
+      #container > #gallery > ul > li:nth-child(1) > a {
+        background-image: url(../images/j01.jpg); }
+      #container > #gallery > ul > li:nth-child(2) > a {
+        background-image: url(../images/j02.jpg); }
+      #container > #gallery > ul > li:nth-child(3) > a {
+        background-image: url(../images/j03.jpg); }
+      #container > #gallery > ul > li:nth-child(4) > a {
+        background-image: url(../images/j04.jpg); }
+      #container > #gallery > ul > li:nth-child(5) > a {
+        background-image: url(../images/j05.jpg); }
+      #container > #gallery > ul > li:nth-child(6) > a {
+        background-image: url(../images/j06.jpg); }
+      #container > #gallery > ul > li:nth-child(7) > a {
+        background-image: url(../images/j07.jpg); }
+      #container > #gallery > ul > li:nth-child(8) > a {
+        background-image: url(../images/j08.jpg); }
+      #container > #gallery > ul > li:nth-child(9) > a {
+        background-image: url(../images/j09.jpg); }
+      #container > #gallery > ul > li:nth-child(10) > a {
+        background-image: url(../images/j10.jpg); }
+
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>레이아웃 나누기 연습</title>
+    <style type="text/css">
+    /*RESET CSS*/
+        *{  margin: 0;
+            padding: 0;
+            border: 0; }
+/*        design*/
+        #wrap{
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        #header{
+            width: 100%;
+            height: 120px;
+            background-color: #8aff99;
+        }
+        h1{
+            width: 60px; 
+            height: 60px; 
+            background-color: #567;
+            font-size: 1em;
+            margin: 20px;
+            float:left;
+        }
+/*        여백값(공백)을 만들때에는 마진 속성을 사용한다*/
+        #gnb{
+            width: 600px;
+            height: 30px;
+            background-color: beige;
+            margin-top: 40px;
+            margin-right: 40px;
+            float:right;
+        }
+/*        #gnb h2{text-indent: -9999em;}*/
+/*        h2를 지웠다..들리지만 보이진않아.위에꺼는 예전방법 밑에방법으로 쓰면 되겠다.*/
+        #gnb h2{
+            width: 0; 
+            height: 0; 
+            overflow: hidden;
+        }
+        #gnb>ul>li{
+            width: 13%;
+            height: 100%;
+            float: left;
+            list-style: none;
+            background-color: #f12;
+            margin: 2%;
+        }
+        #gnb>ul>li>a{
+            width: 95%;
+            height: 100%;
+            background-color:darkcyan;
+            display: block;
+        }
+        /*#gnb>ul>li.last_margin{margin-right: 0;}*/
+        #gnb .last_margin{
+            margin-right: 0;
+        }
+        #article{
+            width: 100%;
+            height: 500px;
+            background-color:aquamarine;
+        }
+        #aside{
+            width: 30%;
+            height: 100%;
+            background-color: #444;
+            float: left;
+        }
+            .aside_menu1{
+                width:30%;
+                height:40%;
+                background-color:pink;
+                margin: 25px auto;
+            }
+            .aside_menu2{
+                width: 30%;
+                height:40%;
+                background-color:pink;
+                margin: 50px auto;
+
+            }
+        #container{
+            width: 70%;
+            height: 50%;
+            background-color:#999;
+            float: left;
+        }
+        #box{
+            width: 70%;
+            height: 50%;
+            background-color:#313;
+            float: left;
+        }
+        #footer{
+            width: 100%;
+            height: 100px;
+            background-color: cornflowerblue;
+        
+    </style>
+</head>
+<body>
+    
+    
+    <div id="wrap">
+        <div id="header">
+            <h1>logo</h1>
+            <div id="gnb">
+                <h2>메뉴영역</h2>
+                <ul>
+                    <li><a href="#">menu_01</a></li>
+                    <li><a href="#">menu_02</a></li>
+                    <li><a href="#">menu_03</a></li>
+                    <li><a href="#">menu_04</a></li>
+                    <li><a href="#">menu_05</a></li>
+                    <li class="last_margin"><a href="#">menu_06</a></li>
+                </ul>
+            </div>
+        </div><!--#header-->
+        
+        <div id="article">
+            <div id="aside">
+                <h2 class="aside_menu1">aside1</h2>
+                <h2 class="aside_menu2">aside2</h2>
+            </div><!--#aside-->
+            
+            <div id="container">
+                
+            </div><!--#container-->
+            
+            <div id="box">
+                
+            </div><!--#box_1-->
+        </div><!--#article-->
+        
+        <div id="footer">
+            
+        </div><!--#footer-->
+    </div><!--#wrap-->
+</body>
+</html>

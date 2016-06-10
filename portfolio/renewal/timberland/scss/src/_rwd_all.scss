@@ -1,0 +1,13 @@
+
+
+* {
+	transition: all 0.5s ease;}
+html,body{height: 100%;}
+#container{
+	header#headerBox{ background-color: rgba(#ccc,0.5); }
+	// section#mainBanner{ background-color: #f06; }
+	// section#sectionBox1{ background-color: #acc; }
+	// section#sectionBox2{ background-color: #a3f; }
+	// section#sectionBox3{ background-color: #f8a; }
+	footer#footerBox{ background-color: rgba(#000,0.7); }
+}

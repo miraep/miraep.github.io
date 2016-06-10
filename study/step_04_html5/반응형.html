@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+/*		reset */
+		*{margin: 0; padding: 0; border: 0; list-style: none; 
+			text-decoration: none; color:#333;}
+		a{color:#777;}
+/*		design */
+		
+	/*64rem = 1024px*/
+		
+		#wrap{}
+		#boxHead{background-color: #fac;}
+		#nBox{background-color: #fc0; transition: all 1s ease;}
+		#indexCon{background-color: #acf;}
+		#boxFoot{background-color: #999;}
+		/* 기본 */
+		@media screen and (max-width:64rem){			
+			#wrap{width: 960px;height: 1500px;margin: 0 auto;}
+			#boxHead{width: 100%;height: 300px;}
+			#nBox{width: 50px; height: 50px; margin: 20px; 
+				border-radius:50%;}
+			#indexCon{width: 100%;height: 800px;}
+			#boxFoot{width: 100%;height: 400px; background-color: #5a5;}
+		}
+		/* 커져라~~ */
+		@media screen and (min-width:1025px){
+			body, html{height: 100%;}
+			#wrap{width: 100%; height: 100%;}
+			#boxHead{width: 30%; height: 100%; float: left;}
+			#nBox{width: 50%; height: 50%; margin:10px;}
+			#indexCon{width: 70%; height: 80%; float: left;}
+			#boxFoot{width: 70%; height: 20%; float: left;}			
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="boxHead">boxHead
+			<nav id="nBox1">asdfasdfasdf</nav>
+		</header>
+		<article id="indexCon">indexCon</article>
+		<footer id="boxFoot">boxFoot</footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

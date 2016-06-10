@@ -1,0 +1,45 @@
+
+
+
+
+/*--------------//FOOTER------------------------------*/
+#wrap>#footer{
+	width: 100%;
+	height: 120px;
+	border-top: 1px solid #e8e8e8;
+	background-color: #fac;
+}
+#footerbox{
+	padding: 35px 6px 30px;
+	width: 948px;
+	height: 55px;
+	margin: 0 auto;
+}
+#footerbox>h2{
+	float: left;
+	width: 92px;
+	height: 52px;
+	background-color: #af5;
+}
+#addbox{
+	float: left;
+	width: 515px;
+	height: 52px;
+	margin-left: 20px;
+	background-color: #1f4
+}
+#mark{
+	width: 168px;
+	height: 90px;
+	float: right;
+	background-color: #fff;
+	margin-top: -20px;
+}
+
+
+
+
+
+
+
+

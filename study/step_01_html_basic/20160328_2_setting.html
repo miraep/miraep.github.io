@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3D//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta charset="utf-8">
+
+	<title>setting</title>
+
+	<style type="text/css">
+
+
+
+	.asdasdasd{background-color: #000}
+	/*           *{font-size:10px;}    *가 전체, 전체 폰트사이즈를 10으로 줄이겠다는것이다.   */
+	h1{background-color:#f06; color:#fff; width: 500px; height: 200px;}
+	h2{background-color:#0ff; color:#fff;}
+	/*p{background-color: #acc;} /*display: inline;}  블럭형식: size oo*/
+	span{background-color:#fa0;width: 500px; height: 100px;
+		display: block;} /*인라인형식: size nono display로 강제로 블럭형식으로 바꿔줌*/
+	strong,em,ins,del{color: #90c;} /*인라인형식: size nono*/
+	/*  이름 주는방법
+	첫글자: 영문소문자
+	띄어쓰기 : x (띄어쓰기 쓰면 또 다른이름이 하나 더 생김 )
+	첫글자 숫자 : x
+	이름구분 : 단어/형용사로 표시 : _,뒤단어 첫글자 대문자
+	특수문자 : x                */
+	p+.box_color{background-color: #ccc;}
+	/* 띄어쓰기는 자식, +는 뒤에오는애, > 도 자*/
+	p.box_color2{color:#fff; background-color:#f00;}
+	pre.one{background-color:#aff;} /*id는 한번만 쓰세요 class는 여러번써도 됩니다.*/
+	</style>
+
+	<script type="text/javascript"></script>
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+	<div> sdfsdfsdfdsf
+
+
+
+
+
+
+	<h1>제목을 표현하는 태그, 가장 중요한 제목 ,헤드라인,전체문서에서 단 한번만 사용가능. -사장</h1>
+	<h2 class="box_color">두번째 중요한 제목, 여러번 사용이 가능, -부장</h2>
+	<h3>세번째겠지, -차장</h3>
+	<h4>네번째겠지, -과장</h4>
+	<h5>다섯번째겠지요? ,-대리</h5>
+	<h6>가장 마지막 중요한 제목,-주임</h6>    <hr />
+
+	<!-- 주석 빨리하려면 커맨드 슬러시 C+/
+	hr은 이전내용과 다음의 내용을 분리시켜주는 태그-->
+	</div>
+	<p>p태그는 문단을 표현하는 <span>태그(element)</span> p태그는 사원.</p>
+	내용을 분리할때는 문단과 문단으로 구분한다.<br />
+	하지만 단순하게 내용을 줄바꿈 할 경우에는 <br />
+	&lt;br태그&gt;를 사용한다. 
+
+
+	<!-- <는 &lt;
+	 	 >는 &gt; -->
+
+
+
+	<p class="asdasdasd">특수문자를 사용할때에는  &amp; &lt; &gt;  &copy; </p>
+	
+
+
+	<!-- box1,2같은 준거는 박스1애들좌라라라라락 같은데 박스2넣어서 뭔가 하나만 좀 다르게 설정할수 있는거. -->
+	<p class="box_color box_color2">문단을 나타내는 p태그(element)는 줄바꿈이 자동으로 되지않는다. 그래서 p태그 안에 br코드를 넣어라<br />
+	띄어쓰기 하나 이상 적용되지 않는다.</p>
+
+	<pre class="one">
+	pre태그는 띄어쓰기 줄바꿈 탭기능..............           모두 보이는데로 적용 된다.
+	이
+	렇ㄱㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㄱㅋㄱ 게말이다 .                     .
+	하지만 사용하지않음......  p로 정리하는것이 더욱 깔끔하다.
+	</pre>
+
+	<p>p태그 안에는 내용상 그룹을 표현하는 태그를 쓴다.
+	<span>span이라는 태그, 내용상 그룹을 표현하는 태그, 태그안에서 사용!!</span><br />
+	큰의미없는 그룹의 역할</p>
+
+
+	<p> 
+	<span>강조를 나타내는 태그<br />
+	<b> b : bold </b>
+	<i class="box_color"> i : italic()</i>
+	<u> u : underline(밑줄)</u> 
+	<strike> s : strike </strike> 
+	는 실제로 사용하지 않습니다. </span></p>
+	
+	<p>
+	실제 웹에서 사용하는 태그는 <br />
+	b대신 <strong> strong</strong>
+	i대신 <em> em </em>
+	u대신 <ins> ins</ins>
+	s대신 <del> del</del>를 사용한다.</p>
+
+
+	<p>
+	<q> q태그 인용문: 어디선가 말한내용ㅋㅋㅋㅋㅋㅋㅋ<br />
+	'니 자신을 알라'  - 소크라테스 <br />
+	쩜쩜이가 생긱는구난</q> <br />
+
+	<cite>summary: 설명 <br />
+	솰라솰라솰라랄ㄹ랄라랄ㄹㄹ랄라</cite><br />
+
+	<abbr title="hiper text markup language"> HTML(줄임말) </abbr> <br />
+	<!-- 줄여쓴것. -->
+	</p>
+
+
+	<blockquote cite="http://인용이 적용된,사용된 실제주소"> 어딘가에서 가져온것 , 예를들어 저작권 글 담는다.</blockquote>
+	
+
+	<!-- 옆으로 나열되는 코드 : 인라인태그 
+	인라인태그는 줄바꿈,사이즈 없음
+	블럭태그는 줄바꿈,사이즈 있뜸 -->
+
+
+</body>
+</html>
+
+
+
+

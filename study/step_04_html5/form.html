@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=960">
+	<link rel="stylesheet" href="./css/lib/reset.css">
+	<link rel="stylesheet" href="./js/dist/html5shiv.min.js">
+	<link rel="stylesheet" href="./js/dist/ie9.min.js">
+	<link rel="stylesheet" href="./js/dist/PIE.js">
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="./js/jquery/jquery-1.12.min.js">
+		<link rel="stylesheet" href="./js/jquery/jquery-migrate.min.js">
+		<link rel="stylesheet" href="./js/jquery/jquery-ui.min.js">
+	<![endif]-->
+	<style type="text/css">
+	#wrap{
+		width: 600px;
+		height: auto;
+		padding: 10px;
+		background-color: #0cf;
+		margin: 0 auto;
+	}
+	fieldset{
+		border: 2px dotted #333;
+		margin-left: 20px;
+		width: 560px;
+		height: 200px;
+	}
+	legend{
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	.point:after, .point:before{
+		content: "*";
+		color:#f33;
+	}
+
+	label{
+		width: 30%;
+		height: 17px;
+		margin: 1px;
+		float: left;
+	}
+	input{
+		border: 1px solid #333;
+		width: 60%;
+		height: 15px;
+		float: left;
+	}
+	</style>
+	<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<title>html5 form</title>
+</head>
+<body>
+	<div id="wrap">
+		<form action="" method="">
+			<fieldset>
+				<legend>제목1</legend>
+				<label for="user" class="point">사용자 이름</label>
+				<input type="text" id"user" name="user" value="" required="required" />
+				<br />
+
+				<label for="num" class="point">니전화번호</label>
+				<input type="tel" id="num" name="num" value="" required="required" 
+					   placeholder="니전화번호 입력하세요" />
+				<br />
+
+				<label for="httpAddress" class="point">홈페이지주소</label>
+				<input type="url" id="httpAddress" name="httpAddress" value="" required="required" 
+					   placeholder="HTTP를 입력하세요" />
+				<br />
+
+				<label for="mail" class="point">이메일</label>
+				<input type="email" id="mail" name="mail" value="" required="required" 
+					   placeholder="E-MAiL를 입력하세요" />
+				<br />	
+
+				<label for="searchBox" class="point">SEARCH</label>
+				<input type="search" id="searchBox" name="searchBox" value=""
+					   placeholder="검색란" autocomplete="on" />
+				<br />
+				<hr />
+				<button type="submit">자료전송</button>
+			</fieldset>
+			<!-- !!!!!!!!!!! -->
+			<fieldset>
+				<legend>제목2</legend>
+				<label for="colorSelect">색상</label>
+				<input type="color" id="solorSelect" name="" value=""></input>
+<br />
+				<label for="">수량</label>
+				<input type="number" id="" name="" value="" min="1" max="10" step="3"></input>
+<br />
+				<label for="">위치</label>
+				<input type="range" id="" name="" value="" min="0" max="10" step="3"></input>
+<br />
+				<label fot="">data</label>
+				<input type="date" name="" id="" value="크롬 파폭 익스프롤러 다 달라서...잘안씀 ㅋ" />
+			</fieldset>
+			<!-- !!!!!!!!!!! -->
+			<fieldset>
+				<legend>제목3</legend>
+				<label for="sel_01">Datalist</label>
+				<input type="text" id="sel_01" list="dataBox" name="serverName" value="" placeholder="dslfkjslrkgjlrkgjk" />
+				<datalist id="dataBox">
+					<option value="내용선택1">내용</option>
+					<option value="내용선택2">내용</option>
+					<option value="내용선택3">내용</option>
+					<option value="내용선택4">내용</option>
+					<option value="내용선택5">내용</option>
+				</datalist>
+			</fieldset>
+			<!-- 1!!!!!!!!! -->
+			<fieldset>
+				<legend>제목4</legend>
+			</fieldset>
+
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

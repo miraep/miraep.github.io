@@ -1,0 +1,192 @@
+
+/*_____mvFooter____________________*/
+footer#mvFooter{
+    width: 100%;
+	height: 300px;
+	background-color: #1e1e1e;
+}
+
+
+#mvFooter #more{
+	width: 100%;
+	height: 270px;
+	border-bottom: 1px solid  #fff;
+}
+	#more>#textBox{
+		width: 1200px;
+		height: 200px;
+		margin: 0 auto;
+	}
+		
+		#textBox>#dlbox{
+			margin-left: 180px;
+			width: 840px;
+			height: 100%;
+		}
+			#dlbox>dl{
+				float: left;
+				margin-top: 10px;
+				margin-right: 35px;
+				width: 140px;
+				height: calc(100% - 10px);
+				text-align: center;
+			}
+			#dlbox>dl:last-child{
+				margin-right: 0;
+			}
+			#dlbox>dl>dt{
+				margin-bottom: 20px;
+				width: 100%;
+				height: 20px;
+			}
+			#dlbox>dl>dt>a{
+				display: block;
+				font-size: 1rem;
+				color:#fff;
+			}
+			#dlbox>dl>dd{
+				width: 100%;
+				height: 18px;
+			}
+			#dlbox>dl>dd>a{
+				display: block;
+				font: 0.75rem/0.75rem arial;
+				color:#fff;
+			}
+			#dlbox dl a:hover{
+				color:#f09;
+			}
+
+	#more>#lastLogo{
+		margin: 0 auto;
+		width: 1200px;
+		height: 70px;
+	}
+
+		#lastLogo > h2{
+			width: 100px;
+			height: 100%;
+			margin-left: 200px;
+			float: left;
+		}
+		#lastLogo>h2>a{
+			width: 100px;
+			height: 50px;
+			display: block;
+			margin-top: 10px;
+			background-image: url(../img/h1.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+
+		#lastLogo > #facebook{
+			width: 260px;
+			height: 100%;
+			float: right;
+			margin-right: 200px;
+		}
+		#facebook ul{
+			width: 100%;
+			height: 50px;
+			margin-top: 20px;
+		}
+		#facebook ul li{
+			background-color: #9a1;
+			float: left;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+		#facebook ul li:last-child{
+			margin-right: 0;
+		}
+		#facebook ul li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		#facebook ul li:nth-child(1) a{
+			background-image: url(../img/logo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 0 0;
+		}
+		#facebook ul li:nth-child(2) a{
+			background-image: url(../img/logo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: -105px 0;
+		}
+		#facebook ul li:nth-child(3) a{
+			background-image: url(../img/logo.png);
+			background-repeat: no-repeat;	
+			background-size: cover;
+			background-position: -210px 0;
+		}
+		#facebook ul li:nth-child(4) a{
+			background-image: url(../img/logo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: -210px 0;
+		}
+
+
+#mvFooter #company{
+	width: 100%;
+	height: 30px;
+}
+	#company>#companyBox{
+		width: 1000px;
+		height: 100%;
+		padding: 0 100px;
+		margin: 0 auto;
+	}
+		#companyBox ul{
+			width: 1000px;
+			height: 100%;
+		}
+		#companyBox ul li{
+			float: left;
+			height: 20px;
+			margin-top: 5px;
+		}
+		#companyBox ul li:nth-child(1){
+			width: 74px;
+			margin-left: 10px;
+			margin-right: 30px;
+		}
+		#companyBox ul li:nth-child(2){
+			width: 78px;
+			margin-right: 38px;
+		}
+		#companyBox ul li:nth-child(3){
+			width: 162px;
+			margin-right: 30px;
+		}
+		#companyBox ul li:nth-child(4){
+			width: 174px;
+			margin-right: 30px;
+		}
+		#companyBox ul li:nth-child(5){
+			width: 108px;
+			margin-right: 28px;
+		}
+		#companyBox ul li:nth-child(6){
+			width: 106px;
+			margin-right: 26px;
+		}
+		#companyBox ul li:last-child{
+			width: 96px;
+		}
+		#companyBox ul li a{
+			width: 100%;
+			height: 100%;
+			font-size:0.75rem;
+			color: #fff;
+		}
+
+
+
+
+

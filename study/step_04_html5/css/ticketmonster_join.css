@@ -1,0 +1,80 @@
+	#wrap{
+		width: 800px;
+		height: 400px;
+		margin: 0 auto;
+		font-size: 0.8em;
+	}
+	
+	/* join text */
+	#join{
+		width: 100%;
+		height: 50px;
+		background-color: rgb(243, 255, 255);
+	}
+	li.join, li.join_text{
+		float: left;
+	}
+	li.join{
+		font-size: 2.5em;
+		margin: 5px 15px 0 20px;
+	}
+	li.join_text{
+		margin-top: 15px;
+	}
+	#wrap>form{
+		width: 100%;
+		height: 100%;
+	}
+	#wrap>form>fieldset{
+		width: 90%;
+		height: 100%;
+	}
+	/* 회원가입 */
+	#wrap>form{
+		background-color: #f58124;
+	}
+	#wrap>form>fieldset>legend{
+		font-size: 1.5em;
+	}
+	/* 왼쪽 */
+	#wrap>form>fieldset>ul.label{
+		float: left;
+		width: 30%;
+		background-color: #fbcb9e;
+		font-size: 1.3em;
+	}
+	#wrap>form>fieldset>ul.label>li{
+		width: 100%;
+		height: 40px;
+		border-bottom: 1px solid #fff;
+	}
+	/* 오른쪽 */
+	#wrap>form>fieldset>ul.input{
+		float: left;
+		width: 70%;
+		background-color: #fdd7b0;
+	}
+	#wrap>form>fieldset>ul.input>li{
+		width: 100%;
+		height: 40px;
+		border-bottom: 1px solid #fff;
+	}
+	#wrap>form>fieldset>ul.input>li>ul.phone>li{
+		float: left;
+		/*width: 100px;*/
+	}
+	ul.input>li>ul.phone>p{
+		width: 10px;
+		height: 10px;
+		float: left;
+	}
+	ul.input>li>ul.sms>li{
+		float: left;
+		width: 100px;
+	}
+
+	ul.email>li{
+		float: left;
+		margin-right: 10px;
+	}
+	

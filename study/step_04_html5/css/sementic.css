@@ -1,0 +1,25 @@
+/* sementic.css */
+
+#wrap{
+	width: 960px;
+}
+header{
+	width: 100%;
+	height: 300px;
+	background-color: #afe;
+}
+section{
+	width: 100%;
+	height: 300px;
+	background-color: #f1f;
+}
+article{
+	width: 100%;
+	height: 300px;
+	background-color: #fa2;
+}
+footer{
+	width: 100%;
+	height: 300px;
+	background-color: #ccc;
+}

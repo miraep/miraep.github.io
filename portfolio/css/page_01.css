@@ -1,0 +1,113 @@
+
+/* (TEXT) */
+#text{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#text p{
+	width: 100%;
+	height: 20%;
+	margin: 50% auto;
+	color: #1e1e1e;
+	font: bold 4.5rem/5rem "OCR A Std";
+}
+#text a{
+	text-decoration: none;
+}
+
+/* (left) */
+#gnb{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+	#gnb ul{
+		width: 100%;
+		height: calc(100% - 200px);
+		padding-top: 200px;
+		padding-left: 50px;
+	}
+	#gnb ul>li{
+		width: 100%;
+		height: 30px;
+		margin-bottom: 40px;
+	}
+	#gnb ul a{
+		color: #fff;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.8rem/0.8rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: none;
+	}
+	#gnb ul a:hover{
+		color: #988177;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.85rem/0.85rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: underline;
+		transition: all 0.5s;
+	}
+	#gnb ul li:last-child>a:hover{
+		color: #F06;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.85rem/0.85rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: underline;
+		transition: all 0.5s;
+	}
+
+/* (right) */
+
+#aboutme{
+	width: 20%;
+	height: 100%;
+	float: right;
+	
+}
+	#aboutme ul{
+		width: 100%;
+		height: calc(100% - 200px);
+		padding-top: 200px;
+		padding-left: 50px;
+	}
+	#aboutme ul>li{
+		width: 100%;
+		height: 30px;
+		margin-bottom: 40px;
+	}
+	#aboutme ul a{
+		color: #fff;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.8rem/0.8rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: none;
+	}
+	#aboutme ul a:hover{
+		color: #988177;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.85rem/0.85rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: underline;
+		transition: all 0.5s;
+	}
+	#aboutme ul li:last-child>a:hover{
+		color: #F06;
+		width: 100%;
+		height: 30px;
+		display: block;
+		font: 0.85rem/0.85rem "OCR A Std";
+		letter-spacing: 0.125rem;
+		text-decoration: underline;
+		transition: all 0.5s;
+	}
