@@ -21,6 +21,7 @@
 	<script src="./js/slide_mini.js"></script>
 	<script src="./js/topadd.js"></script>
 	<script src="./js/accodion.js"></script>
+	<script src="./js/gotop.js"></script>
 	<title>_BIRKENSTOCK</title>
 	<style type="text/css"></style>
 	<script>
@@ -32,11 +33,12 @@
 			accodion( $('.accodion') );
 			// 팝업창
 			topAdd( $('#topAdd') );
-
 			//top
-			$('#footerBox').find('button').on('click', function(){
-				$('html,body').animate({'scrollTop':0},300);
-			});
+			gotop();
+
+
+
+
 		}); //all
 	</script>
 </head>
@@ -75,6 +77,12 @@
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Customize</a></li>
 						<li><a href="#">Club Birkenstock</a></li>
+						<!-- 모바일 , 타블렛용 -->
+						<li><a href="#">LOGIN</a></li>
+						<li><a href="./join.html">JOIN</a></li>
+						<li><a href="#">CART</a></li>
+						<li><a href="#">ORDER</a></li>
+						<li><a href="#">MY PAGE</a></li>
 					</ul>
 				</nav>
 				</div> <!-- 담는박스 -->
@@ -85,15 +93,18 @@
 			<div class="right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
 
 			<div class="bslide">
+				<!-- 배너 -->
 				<ul class="ban">
-					<li class="b1">1</li>
-					<li class="b2">2</li>
-					<li class="b3">3</li>
-					<li class="b4">4</li>
-					<li class="b5">5</li>
-					<li class="b6">6</li>
-					<li class="b7">7</li>
+					<li class="b1"></li>
+					<li class="b2"></li>
+					<li class="b3"></li>
+					<li class="b4"></li>
+					<li class="b5"></li>
+					<li class="b6"></li>
+					<li class="b7"></li>
 				</ul>
+
+				<!-- 인디케이 -->
 				<ul class="ind">
 					<li class="ind1"></li>
 					<li class="ind2"></li>
@@ -282,5 +293,34 @@
 		</footer>
 	</div>
 	<script src="./js/banner.js"></script>
+	<script>
+		// 모바일 , 타블렛 gnb 버튼
+		$(function(){
+	            function rwd(t){
+	                var winW = parseInt($(window).width()),
+	                    pc = 1024;
+	                // var winT = winW + t;
+	                
+	                if(winW <= pc){
+	                    $('#gnb').on('click', function(){
+
+	                    	var gnb_ul = $(this).find('ul');
+	                    	gnb_ul.slideToggle();
+
+	                    });
+	                };
+	            }; // rwd();
+	            rwd();
+	            
+	            var windowWidth = $(window).width();
+	            $(window).on('resize',function(){
+	                if(windowWidth != $(window).width()){
+	                    location.reload();  // 새로고침
+	                    rwd();
+	                    return;
+	                }
+	            });
+	        });
+	</script>
 </body>
 </html>

@@ -19,17 +19,15 @@
 	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
 	<script src="./js/jquery/jquery-ui.min.js"></script>
 	<script src="./js/popupcollection.js"></script>
+	<script src="./js/gotop.js"></script>
 	<title>_COLLECTION</title>
 	<style type="text/css"></style>
 	<script>
 		$(document).ready(function(){
-			//  scrolltop
-			var toP = $('#footerBox').find('button');
-			toP.on('click', function(){
-				$('html,body').animate({'scrollTop':0},300);
-			});
-
+			//popupcollectin
 			popupcollection();
+			//gotop
+			gotop();
 		}); //all
 	</script>
 </head>
@@ -58,6 +56,12 @@
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Customize</a></li>
 						<li><a href="#">Club Birkenstock</a></li>
+						<!-- 모바일 , 타블렛용 -->
+						<li><a href="#">LOGIN</a></li>
+						<li><a href="./join.html">JOIN</a></li>
+						<li><a href="#">CART</a></li>
+						<li><a href="#">ORDER</a></li>
+						<li><a href="#">MY PAGE</a></li>
 					</ul>
 				</nav>
 				</div> <!-- 담는박스 -->
@@ -68,6 +72,7 @@
 			<div class="right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
 
 			<div class="bslide">
+				<!-- 배너 -->
 				<ul class="ban">
 					<li class="b1"></li>
 					<li class="b2"></li>
@@ -77,6 +82,7 @@
 					<li class="b6"></li>
 					<li class="b7"></li>
 				</ul>
+				<!-- 인디케이터 -->
 				<ul class="ind">
 					<li class="ind1"></li>
 					<li class="ind2"></li>
@@ -195,20 +201,20 @@
 						<li>
 							<figure>
 								<img src="./img/aa/amsterdam.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>AMSTERDAM</figcaption>
 								<a href="#">
-									<strong>AMSTERDAM</strong><br />
+									<span class="dollar">$99.90</span><br />
 									앞이 막혀있는 동글동글한 디자인. <br />
-									Felt(펠트)로 제작된 타입이라 가볍고 따듯한 분위기.
+									Felt로 제작된 타입이라 가볍고 따듯한 분위기.
 								</a>
 							</figure>
 						</li>
 						<li>
 							<figure>
 								<img src="./img/aa/arizona.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>ARIZONA</figcaption>
 								<a href="#">
-									<strong>ARIZONA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									편한 착용감 덕분에 남자 여자 모두에게<br />
 									인기가 많고 커플 신발로도 손색이 없다.
 								</a>
@@ -217,9 +223,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/athen.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>ATHEN</figcaption>
 								<a href="#">
-									<strong>ATHEN</strong><br />
+									<span class="dollar">$99.90</span><br />
 									발목까지 가죽 스트랩이 감싸주는 디자인.
 								</a>
 							</figure>
@@ -227,20 +233,19 @@
 						<li>
 							<figure>
 								<img src="./img/aa/boston.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>BOSTON</figcaption>
 								<a href="#">
-									<strong>BOSTON</strong><br />
-									암스테르담 비슷한 디자인으로 발등 부분에 가죽 스트랩이 추가 된 디자인.<br />
-									동글동글한 디자인으로 인기가 많다.
+									<span class="dollar">$99.90</span><br />
+									암스테르담 비슷한 디자인으로 발등 부분에 가죽 스트랩이 추가 된 디자인.
 								</a>
 							</figure>
 						</li>
 						<li>
 							<figure>
 								<img src="./img/aa/eva.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>EVA</figcaption>
 								<a href="#">
-									<strong>EVA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									기존 바닥재료인 코르크의 단점을 보완하고자<br />
 									고무고무펀치
 								</a>
@@ -249,9 +254,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/florida.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>FLORIDA</figcaption>
 								<a href="#">
-									<strong>FLORIDA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									가죽 스트랩이 발등에 세줄 있는 디자인
 								</a>
 							</figure>
@@ -259,9 +264,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/gizeh.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>GIZEH</figcaption>
 								<a href="#">
-									<strong>GIZEH</strong><br />
+									<span class="dollar">$99.90</span><br />
 									조리 타입으로 편한 착용감을 자랑한다.
 								</a>
 							</figure>
@@ -269,9 +274,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/granada.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>JAVA</figcaption>
 								<a href="#">
-									<strong>JAVA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									스트랩이 나누어져 특이한 디자인으로 인기가 많다.
 								</a>
 							</figure>
@@ -279,9 +284,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/kairo.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>KAIRO</figcaption>
 								<a href="#">
-									<strong>KAIRO</strong><br />
+									<span class="dollar">$99.90</span><br />
 									지제 디자인에 발을 감싸주는 샌들형 조리.
 								</a>
 							</figure>
@@ -289,9 +294,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/korsika.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>KORSIKA</figcaption>
 								<a href="#">
-									<strong>KORSIKA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									샌들타입으로 리오와 다르게 정렬된 발등 스트랩 디자인.
 								</a>
 							</figure>
@@ -299,9 +304,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/madrid.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>MADRID</figcaption>
 								<a href="#">
-									<strong>MADRID</strong><br />
+									<span class="dollar">$99.90</span><br />
 									심플하고 간편하게 신기 좋은 슬리퍼 타입.<br />
 									발등을 덮는 밴드부분이 비교적 작은편.
 								</a>
@@ -310,9 +315,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/mayari.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>MAYARI</figcaption>
 								<a href="#">
-									<strong>MAYARI</strong><br />
+									<span class="dollar">$99.90</span><br />
 									신기방기한 디자인.
 								</a>
 							</figure>
@@ -320,9 +325,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/medina.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>MEDINA</figcaption>
 								<a href="#">
-									<strong>MEDINA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									지제와 조금 다름 잘보세요.
 								</a>
 							</figure>
@@ -330,9 +335,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/milano.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>MILANO</figcaption>
 								<a href="#">
-									<strong>MILANO</strong><br />
+									<span class="dollar">$99.90</span><br />
 									아리조나 샌들 스타일.
 								</a>
 							</figure>
@@ -340,9 +345,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/pisa.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>PISA</figcaption>
 								<a href="#">
-									<strong>PISA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									특이한 디자인이다.
 								</a>
 							</figure>
@@ -350,9 +355,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/ramses.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>RAMSES</figcaption>
 								<a href="#">
-									<strong>RAMSES</strong><br />
+									<span class="dollar">$99.90</span><br />
 									전체적 디자인은 지제와 비슷하나<br />
 									가죽밴드 부분이 좀 더 두껍고 짧다.
 								</a>
@@ -361,9 +366,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/rio.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>RIO</figcaption>
 								<a href="#">
-									<strong>RIO</strong><br />
+									<span class="dollar">$99.90</span><br />
 									샌들 타입으로 발등을 덮는<br />
 									부분 모양이 크로스 모양 디자인.
 								</a>
@@ -372,9 +377,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/roma.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>ROMA</figcaption>
 								<a href="#">
-									<strong>ROMA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									샌들 타입으로 발등을 덮는<br />
 									부분 모양이 정갈하고 깔끔한 디자인.
 								</a>
@@ -383,9 +388,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/salina.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>SALINA</figcaption>
 								<a href="#">
-									<strong>SALINA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									발등스트랩이 교차되어<br />
 									특이한 디자인으로 인기가 많다.
 								</a>
@@ -394,9 +399,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/sydney.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>SYDNEY</figcaption>
 								<a href="#">
-									<strong>SYDNEY</strong><br />
+									<span class="dollar">$99.90</span><br />
 									뭐가 다른지 나도 모른다<br />
 									스페셜 에디션인듯 싶다.									
 								</a>
@@ -405,9 +410,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/tokyo.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>TOKYO</figcaption>
 								<a href="#">
-									<strong>TOKYO</strong><br />
+									<span class="dollar">$99.90</span><br />
 									보스턴에 발목을 감싸는 스트랩이 추가된 디자인
 								</a>
 							</figure>
@@ -415,9 +420,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/yara.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>YARA</figcaption>
 								<a href="#">
-									<strong>YARA</strong><br />
+									<span class="dollar">$99.90</span><br />
 									보스턴에 발목을 감싸는 스트랩이 추가된 디자인
 								</a>
 							</figure>
@@ -425,9 +430,9 @@
 						<li>
 							<figure>
 								<img src="./img/aa/zurich.jpg" alt="잊지말고 설명쓰기!!!">
-								<figcaption>$99.9</figcaption>
+								<figcaption>ZURICH</figcaption>
 								<a href="#">
-									<strong>ZURICH</strong><br />
+									<span class="dollar">$99.90</span><br />
 									발등을 덮는 부분이 넓은 가죽으로 된 디자인.<br />
 									깔끔한 디자인으로 인기가 많다.
 								</a>
@@ -458,7 +463,7 @@
 							<form action="#">
 								<fieldset>
 									<legend>이메일 박스</legend>
-									<input type="text" placeholder="Your e-mail address" />
+									<input type="text" placeholder="Enter Your e-mail" />
 									<button>SIGN UP</button>
 								</fieldset>
 							</form>
@@ -487,12 +492,41 @@
 				<div id="company">
 					<p>CALL : (800) 867-2475 MONDAY–FRIDAY 9:00 AM–3:00 PM PST, OR <br />
 					EMAIL US ANYTIME AT INFO@SUPPORT.BIRKENSTOCKUSA.COM</p>	
-					<p>©2016 Birkenstock USA, LP Novato, CA 94945 | All rights reserved. BIRKENSTOCK® is a registered trademark of Birkenstock Sales GmbH, Germany.</p>
+					<p>©2016 Birkenstock USA, LP Novato, CA 94945 <br /> All rights reserved. BIRKENSTOCK® is a registered trademark of Birkenstock Sales GmbH, Germany.</p>
 				</div>
 			</div>
 		</footer>
 	</div>
-<script src="./js/banner.js"></script>
+	<script src="./js/banner.js"></script>
+	<script>
+		// 모바일 , 타블렛 gnb 버튼
+		$(function(){
+	            function rwd(t){
+	                var winW = parseInt($(window).width()),
+	                    pc = 1024;
+	                // var winT = winW + t;
+	                
+	                if(winW <= pc){
+	                    $('#gnb').on('click', function(){
+
+	                    	var gnb_ul = $(this).find('ul');
+	                    	gnb_ul.slideToggle();
+
+	                    });
+	                };
+	            }; // rwd();
+	            rwd();
+	            
+	            var windowWidth = $(window).width();
+	            $(window).on('resize',function(){
+	                if(windowWidth != $(window).width()){
+	                    location.reload();  // 새로고침
+	                    rwd();
+	                    return;
+	                }
+	            });
+	        });
+	</script>
 </body>
 </html>
 

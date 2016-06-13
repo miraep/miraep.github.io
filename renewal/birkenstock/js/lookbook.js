@@ -1,15 +1,16 @@
 // popupGallery.js
 
-function popupGallery(){
+function lookbook(){
 	var popupli = $('#popupUl').find('li'),
 	 	close = $('.close'),
 		popup = $('#popupFade');
 
 	popupli.on('click', function(e){
 		e.preventDefault();
-		var thisImg =  $(this).find('a').attr('href'),
-			thisNar = $(this).find('span').text();
-		popup.fadeIn(100).find('img').attr({'src': thisImg, 'alt': thisNar});
+		
+		var thisImg =  $(this).find('a').attr('href');
+
+		popup.fadeIn(100).find('img').attr( {'src': thisImg } );
 
 	});
 	close.on('click', function(){

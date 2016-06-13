@@ -149,6 +149,13 @@
 }//#container
 
 
+#gnb{
+  >ul{
+    li{
+    &:nth-child(1n+6){display: none;}
+    }
+  }
+}
 
 //다 완성 하면 활성화하기
 #topAdd{

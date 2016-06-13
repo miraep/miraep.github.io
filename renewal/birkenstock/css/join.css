@@ -1,3 +1,9 @@
+.bar {
+  width: 7px;
+  height: 13px;
+  border-bottom: 1px solid #333;
+  display: inline-block; }
+
 .indWidth {
   background-color: #333; }
 
@@ -6,13 +12,22 @@
   height: 100%; }
   #container > #headerBox {
     background-color: #fff; }
+  #container > #join {
+    background-image: url(../img/bg/section_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
   #container > #footerBox {
-    background-color: #6593db; }
+    background-color: rgba(170, 204, 204, 0.7); }
+
+#gnb > ul li:nth-child(1n+6) {
+  display: none; }
 
 @media screen and (max-width: 480px) {
   .inbox {
-    width: inherit;
-    height: inherit; }
+    width: 100%;
+    height: 100%; }
 
   #container > #headerBox {
     width: calc(100% - 20px);
@@ -36,164 +51,209 @@
       height: 40px;
       float: right;
       background: url(../img/btn/gnb_mini.png) no-repeat;
-      background-size: 100% 100%; }
+      background-size: 100% 100%;
+      position: relative; }
       #container > #headerBox .inbox > #gnb > ul {
-        display: none; }
-  #container > #joinBox {
+        display: none;
+        position: absolute;
+        z-index: 700;
+        top: 45px;
+        right: 0;
+        margin-right: -5px;
+        width: 130px;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: rgba(0, 57, 135, 0.9); }
+        #container > #headerBox .inbox > #gnb > ul > li {
+          display: block;
+          width: calc(100% - 10px);
+          height: 20px;
+          padding: 2px 5px;
+          border-bottom: 1px solid #003987; }
+          #container > #headerBox .inbox > #gnb > ul > li:last-child {
+            border-bottom: 0; }
+          #container > #headerBox .inbox > #gnb > ul > li > a {
+            text-indent: 15px;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 0.85rem;
+            line-height: 20px; }
+  #container > #join {
     width: 100%;
     height: auto; }
-    #container > #joinBox > .inbox > h1 {
+    #container > #join > .inbox > h1 {
       width: 100%;
       height: 50px;
-      font-size: 1.875rem;
+      line-height: 50px;
+      font-size: 1.5rem;
       text-align: center;
       font-weight: bold; }
-    #container > #joinBox > .inbox > #formBox {
-      width: calc(100% - 40px);
-      height: calc(100% - 40px);
-      padding: 20px; }
-      #container > #joinBox > .inbox > #formBox > form {
+    #container > #join > .inbox > #formBox {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      padding: 5px; }
+      #container > #join > .inbox > #formBox > form {
         width: 100%;
         height: 100%;
         border: 3px solid #003987;
         box-sizing: border-box; }
-        #container > #joinBox > .inbox > #formBox > form button {
-          font-size: 0.8rem; }
-        #container > #joinBox > .inbox > #formBox > form > fieldset {
+        #container > #join > .inbox > #formBox > form button {
+          font-size: 1rem; }
+        #container > #join > .inbox > #formBox > form > fieldset {
           width: 100%;
           height: 100%; }
-          #container > #joinBox > .inbox > #formBox > form > fieldset li {
+          #container > #join > .inbox > #formBox > form > fieldset li {
             width: calc(100% - 10px);
             height: 40px;
             padding: 5px;
             border-bottom: 2px solid #003987; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset li:nth-child(4) {
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(4) {
               height: 70px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset li:nth-child(5) {
-              height: 50px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset li:nth-child(6) {
-              height: 90px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset li:last-child {
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(5) {
+              height: 100px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(6) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:last-child {
               border-bottom: 0; }
-          #container > #joinBox > .inbox > #formBox > form > fieldset > .infoBox {
+          #container > #join > .inbox > #formBox > form > fieldset > .infobox {
+            text-indent: 10px;
             float: left;
-            width: 160px;
+            width: 120px;
             height: 100%; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .infoBox > li {
+            #container > #join > .inbox > #formBox > form > fieldset > .infobox > li {
               border-right: 2px solid #003987; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .infoBox > li > label {
+              #container > #join > .inbox > #formBox > form > fieldset > .infobox > li > label {
                 line-height: 40px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: #003987;
                 font-weight: bold; }
-          #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox {
-            font-size: 0.8rem;
-            float: left;
-            width: calc(100% - 160px);
+          #container > #join > .inbox > #formBox > form > fieldset > .inputbox {
+            float: right;
+            width: calc(100% - 120px);
             height: 100%; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li > span {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > span {
               line-height: 30px;
               font-weight: bold;
               font-size: 1.2rem; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li > input {
-              width: 50%;
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > input {
+              width: 56%;
               height: 100%;
               border: 1px solid #333;
               box-sizing: border-box;
               text-indent: 0.4rem;
               line-height: 30px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li > button {
-              width: 120px;
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > button {
+              font-size: 0.7rem;
               height: 100%;
               box-shadow: 1px 1px 1px #777;
               cursor: pointer;
               margin-left: 10px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > select {
-              width: 15%;
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(1) > button {
+              width: 80px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > select {
+              width: 20%;
               height: 30px;
               border: 1px solid #333; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > span {
-              width: 7px;
-              height: 13px;
-              border-bottom: 1px solid #333;
-              display: inline-block; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > input {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > input {
               width: 20%;
               height: 30px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > button {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > button {
               width: 20%;
-              height: 30px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > .sms {
-              width: 100%;
               height: 30px;
-              margin-top: 10px; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > .sms > dt {
-                width: 20%;
+              min-width: 54px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms {
+              width: calc(100% - 10px);
+              height: 30px;
+              margin-top: 10px;
+              padding-left: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dt {
+                width: 50%;
                 height: 100%;
                 float: left;
                 margin-top: 5px;
                 font-size: 0.8rem; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > .sms > dd {
-                width: 15%;
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd {
+                width: 25%;
                 height: 100%;
                 float: left;
                 font-size: 0.7rem; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > .sms > dd > input {
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > input {
+                width: 15px;
+                height: 20px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > input {
+              width: 50%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > select {
+              width: 50%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email {
+              width: 100%;
+              height: 20px;
+              float: left;
+              margin-left: 5px;
+              padding-top: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dt {
+                width: 50%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd {
+                width: 25%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > input {
                 width: 15px;
                 height: 15px;
                 margin-top: 5px; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(4) > .sms > dd > label {
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > label {
                 line-height: 30px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(5) > input {
-              width: 40%;
-              height: 30px;
-              float: left; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(5) > .email {
-              width: 50%;
-              height: 30px;
-              float: left;
-              margin-left: 10px;
-              margin-top: 5px; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(5) > .email > dt {
-                float: left;
-                width: 45%;
-                height: 100%;
-                font-size: 0.7rem; }
-              #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(5) > .email > dd {
-                float: left;
-                width: 25%;
-                height: 100%;
-                font-size: 0.7rem; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(5) > p {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > p {
               float: left;
               width: 100%;
-              height: 10px;
-              font-size: 0.7rem;
-              line-height: 20px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(6) > input:nth-of-type(1), #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(6) > input:nth-of-type(2) {
-              width: 20%;
+              height: 30px;
+              padding-top: 10px;
+              font-size: 0.65rem;
+              color: #ff0000;
+              white-space: initial; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(1), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(2) {
+              width: 15%;
               height: 30px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(6) > input:nth-of-type(3), #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(6) > input:nth-of-type(4) {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(3), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(4) {
               width: 100%;
-              height: 25px;
+              height: 22px;
               margin-top: 5px; }
-            #container > #joinBox > .inbox > #formBox > form > fieldset > .inputBox > li:nth-of-type(6) > button {
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > button {
               width: 20%;
               height: 30px; }
-      #container > #joinBox > .inbox > #formBox .btnBox {
-        width: 200px;
-        height: 30px;
-        float: right;
-        padding: 10px 0; }
-        #container > #joinBox > .inbox > #formBox .btnBox > button {
-          border-radius: 10px;
-          height: 25px;
-          background-color: rgba(0, 57, 135, 0.3); }
-          #container > #joinBox > .inbox > #formBox .btnBox > button:nth-of-type(1) {
-            width: 60px; }
-          #container > #joinBox > .inbox > #formBox .btnBox > button:nth-of-type(2) {
-            width: 100px;
-            margin-right: 30px; }
+      #container > #join > .inbox > #formBox .btnbox {
+        padding: 30px 0;
+        width: 100%;
+        height: auto; }
+        #container > #join > .inbox > #formBox .btnbox > div {
+          float: right;
+          width: 200px;
+          height: 30px; }
+          #container > #join > .inbox > #formBox .btnbox > div > button {
+            font-size: 0.8rem;
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 57, 135, 0.3); }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(1) {
+              width: 60px;
+              margin-right: 30px; }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(2) {
+              width: 100px; }
   #container > #footerBox {
     width: 100%;
     height: 40px;
@@ -212,8 +272,8 @@
       display: none; } }
 @media screen and (min-width: 481px) and (max-width: 640px) {
   .inbox {
-    width: inherit;
-    height: inherit; }
+    width: 100%;
+    height: 100%; }
 
   #container > #headerBox {
     width: calc(100% - 20px);
@@ -237,9 +297,209 @@
       height: 40px;
       float: right;
       background: url(../img/btn/gnb_mini.png) no-repeat;
-      background-size: 100% 100%; }
+      background-size: 100% 100%;
+      position: relative; }
       #container > #headerBox .inbox > #gnb > ul {
-        display: none; }
+        display: none;
+        position: absolute;
+        z-index: 700;
+        top: 45px;
+        right: 0;
+        margin-right: -5px;
+        width: 130px;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: rgba(0, 57, 135, 0.9); }
+        #container > #headerBox .inbox > #gnb > ul > li {
+          display: block;
+          width: calc(100% - 10px);
+          height: 20px;
+          padding: 2px 5px;
+          border-bottom: 1px solid #003987; }
+          #container > #headerBox .inbox > #gnb > ul > li:last-child {
+            border-bottom: 0; }
+          #container > #headerBox .inbox > #gnb > ul > li > a {
+            text-indent: 15px;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 0.85rem;
+            line-height: 20px; }
+  #container > #join {
+    width: 100%;
+    height: auto; }
+    #container > #join > .inbox > h1 {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold; }
+    #container > #join > .inbox > #formBox {
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      padding: 20px; }
+      #container > #join > .inbox > #formBox > form {
+        width: 100%;
+        height: 100%;
+        border: 3px solid #003987;
+        box-sizing: border-box; }
+        #container > #join > .inbox > #formBox > form button {
+          font-size: 1rem; }
+        #container > #join > .inbox > #formBox > form > fieldset {
+          width: 100%;
+          height: 100%; }
+          #container > #join > .inbox > #formBox > form > fieldset li {
+            width: calc(100% - 10px);
+            height: 40px;
+            padding: 5px;
+            border-bottom: 2px solid #003987; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(4) {
+              height: 70px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(5) {
+              height: 90px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(6) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:last-child {
+              border-bottom: 0; }
+          #container > #join > .inbox > #formBox > form > fieldset > .infobox {
+            text-indent: 10px;
+            float: left;
+            width: 120px;
+            height: 100%; }
+            #container > #join > .inbox > #formBox > form > fieldset > .infobox > li {
+              border-right: 2px solid #003987; }
+              #container > #join > .inbox > #formBox > form > fieldset > .infobox > li > label {
+                line-height: 40px;
+                font-size: 1rem;
+                color: #003987;
+                font-weight: bold; }
+          #container > #join > .inbox > #formBox > form > fieldset > .inputbox {
+            float: right;
+            width: calc(100% - 120px);
+            height: 100%; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > span {
+              line-height: 30px;
+              font-weight: bold;
+              font-size: 1.2rem; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > input {
+              width: 56%;
+              height: 100%;
+              border: 1px solid #333;
+              box-sizing: border-box;
+              text-indent: 0.4rem;
+              line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > button {
+              font-size: 0.8rem;
+              height: 100%;
+              box-shadow: 1px 1px 1px #777;
+              cursor: pointer;
+              margin-left: 10px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(1) > button {
+              width: 80px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > select {
+              width: 20%;
+              height: 30px;
+              border: 1px solid #333; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > input {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > button {
+              width: 20%;
+              height: 30px;
+              min-width: 62px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms {
+              width: calc(100% - 10px);
+              height: 30px;
+              margin-top: 10px;
+              padding-left: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dt {
+                width: 50%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd {
+                width: 25%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > input {
+                width: 15px;
+                height: 20px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > input {
+              width: 40%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > select {
+              width: 40%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email {
+              width: 100%;
+              height: 20px;
+              float: left;
+              margin-left: 10px;
+              padding-top: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dt {
+                width: 50%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd {
+                width: 25%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > p {
+              float: left;
+              width: 100%;
+              height: 30px;
+              padding-top: 10px;
+              font-size: 0.65rem;
+              color: #ff0000;
+              white-space: initial; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(1), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(2) {
+              width: 15%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(3), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(4) {
+              width: 100%;
+              height: 22px;
+              margin-top: 5px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > button {
+              width: 20%;
+              height: 30px; }
+      #container > #join > .inbox > #formBox .btnbox {
+        padding: 30px 0;
+        width: 100%;
+        height: auto; }
+        #container > #join > .inbox > #formBox .btnbox > div {
+          float: right;
+          width: 200px;
+          height: 30px; }
+          #container > #join > .inbox > #formBox .btnbox > div > button {
+            font-size: 0.8rem;
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 57, 135, 0.3); }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(1) {
+              width: 60px;
+              margin-right: 30px; }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(2) {
+              width: 100px; }
   #container > #footerBox {
     width: 100%;
     height: 40px;
@@ -278,52 +538,225 @@
         background: url(../img/header/h1.png) no-repeat;
         background-size: 100%; }
     #container > #headerBox .inbox > #gnb {
-      width: 350px;
-      height: 30px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
       float: right;
-      margin-top: 10px; }
+      background: url(../img/btn/gnb_mini.png) no-repeat;
+      background-size: 100% 100%;
+      position: relative; }
       #container > #headerBox .inbox > #gnb > ul {
-        width: 100%;
-        height: 100%; }
+        display: none;
+        position: absolute;
+        z-index: 700;
+        top: 45px;
+        right: 0;
+        margin-right: -5px;
+        width: 160px;
+        height: auto;
+        border-radius: 5px;
+        background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
-          float: left;
-          margin-right: 15px;
-          line-height: 30px; }
+          display: block;
+          width: calc(100% - 20px);
+          height: 20px;
+          padding: 5px 10px;
+          border-bottom: 1px solid #003987; }
+          #container > #headerBox .inbox > #gnb > ul > li:last-child {
+            border-bottom: 0; }
           #container > #headerBox .inbox > #gnb > ul > li > a {
-            font-size: 0.9rem;
-            color: #595959; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(1) {
-            width: 60px;
+            text-indent: 15px;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 20px; }
+  #container > #join {
+    width: 100%;
+    height: auto; }
+    #container > #join > .inbox > h1 {
+      width: 100%;
+      height: 50px;
+      font-size: 1.875rem;
+      text-align: center;
+      font-weight: bold; }
+    #container > #join > .inbox > #formBox {
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      padding: 20px; }
+      #container > #join > .inbox > #formBox > form {
+        width: 100%;
+        height: 100%;
+        border: 3px solid #003987;
+        box-sizing: border-box; }
+        #container > #join > .inbox > #formBox > form button {
+          font-size: 1rem; }
+        #container > #join > .inbox > #formBox > form > fieldset {
+          width: 100%;
+          height: 100%; }
+          #container > #join > .inbox > #formBox > form > fieldset li {
+            width: calc(100% - 16px);
+            height: 34px;
+            padding: 8px;
+            border-bottom: 2px solid #003987; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(4) {
+              height: 70px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(5) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(6) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:last-child {
+              border-bottom: 0; }
+          #container > #join > .inbox > #formBox > form > fieldset > .infobox {
+            text-indent: 10px;
+            float: left;
+            width: 200px;
             height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(2) {
-            width: 84px;
+            #container > #join > .inbox > #formBox > form > fieldset > .infobox > li {
+              border-right: 2px solid #003987; }
+              #container > #join > .inbox > #formBox > form > fieldset > .infobox > li > label {
+                line-height: 40px;
+                font-size: 1.2rem;
+                color: #003987;
+                font-weight: bold; }
+          #container > #join > .inbox > #formBox > form > fieldset > .inputbox {
+            float: right;
+            width: calc(100% - 200px);
             height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(3) {
-            width: 64px;
-            height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(4) {
-            width: 64px;
-            height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(5) {
-            display: none; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > span {
+              line-height: 30px;
+              font-weight: bold;
+              font-size: 1.2rem; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > input {
+              width: 50%;
+              height: 100%;
+              border: 1px solid #333;
+              box-sizing: border-box;
+              text-indent: 0.4rem;
+              line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > button {
+              font-size: 0.8rem;
+              width: 120px;
+              height: 100%;
+              box-shadow: 1px 1px 1px #777;
+              cursor: pointer;
+              margin-left: 10px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > select {
+              width: 15%;
+              height: 30px;
+              border: 1px solid #333; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > input {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > button {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms {
+              width: calc(100% - 10px);
+              height: 30px;
+              margin-top: 10px;
+              padding-left: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dt {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd {
+                width: 20%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > input {
+              width: 40%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > select {
+              width: 30%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email {
+              width: 100%;
+              height: 20px;
+              float: left;
+              margin-left: 10px;
+              padding-top: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dt {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd {
+                width: 20%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > p {
+              float: left;
+              width: 100%;
+              height: 30px;
+              font-size: 0.8rem;
+              line-height: 40px;
+              color: #ff0000;
+              white-space: pre-line; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(1), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(2) {
+              width: 15%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(3), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(4) {
+              width: 100%;
+              height: 22px;
+              margin-top: 5px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > button {
+              width: 20%;
+              height: 30px; }
+      #container > #join > .inbox > #formBox .btnbox {
+        padding: 30px 0;
+        width: 100%;
+        height: auto; }
+        #container > #join > .inbox > #formBox .btnbox > div {
+          float: right;
+          width: 200px;
+          height: 40px; }
+          #container > #join > .inbox > #formBox .btnbox > div > button {
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 57, 135, 0.3); }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(1) {
+              width: 60px;
+              margin-right: 30px; }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(2) {
+              width: 100px; }
   #container > #footerBox {
     width: 100%;
     height: auto;
     position: relative; }
     #container > #footerBox > button {
       position: absolute;
-      top: 10px;
+      bottom: 10px;
       right: 10px;
       z-index: 100;
       width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      background-image: url(../img/btn/m_t.png);
+      height: 100px;
+      background-color: transparent;
+      background-image: url(../img/btn/m_t_2.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: center;
-      box-shadow: 3px 3px 3px #555; }
+      background-position: center; }
     #container > #footerBox > .inbox > #help {
       width: 100%;
       height: 120px; }
@@ -482,54 +915,225 @@
         background: url(../img/header/h1.png) no-repeat;
         background-size: 100%; }
     #container > #headerBox .inbox > #gnb {
-      width: 470px;
-      height: 30px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
       float: right;
-      margin-top: 10px; }
+      background: url(../img/btn/gnb_mini.png) no-repeat;
+      background-size: 100% 100%;
+      position: relative; }
       #container > #headerBox .inbox > #gnb > ul {
-        width: 100%;
-        height: 100%; }
+        display: none;
+        position: absolute;
+        z-index: 700;
+        top: 45px;
+        right: 0;
+        margin-right: -5px;
+        width: 160px;
+        height: auto;
+        border-radius: 5px;
+        background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
-          float: left;
-          margin-right: 15px;
-          line-height: 30px; }
+          display: block;
+          width: calc(100% - 20px);
+          height: 20px;
+          padding: 5px 10px;
+          border-bottom: 1px solid #003987; }
+          #container > #headerBox .inbox > #gnb > ul > li:last-child {
+            border-bottom: 0; }
           #container > #headerBox .inbox > #gnb > ul > li > a {
-            font-size: 0.9rem;
-            color: #595959; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(1) {
-            width: 60px;
+            text-indent: 15px;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 20px; }
+  #container > #join {
+    width: 100%;
+    height: auto; }
+    #container > #join > .inbox > h1 {
+      width: 100%;
+      height: 50px;
+      font-size: 1.875rem;
+      text-align: center;
+      font-weight: bold; }
+    #container > #join > .inbox > #formBox {
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      padding: 20px; }
+      #container > #join > .inbox > #formBox > form {
+        width: 100%;
+        height: 100%;
+        border: 3px solid #003987;
+        box-sizing: border-box; }
+        #container > #join > .inbox > #formBox > form button {
+          font-size: 1rem; }
+        #container > #join > .inbox > #formBox > form > fieldset {
+          width: 100%;
+          height: 100%; }
+          #container > #join > .inbox > #formBox > form > fieldset li {
+            width: calc(100% - 16px);
+            height: 34px;
+            padding: 8px;
+            border-bottom: 2px solid #003987; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(4) {
+              height: 70px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(5) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(6) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:last-child {
+              border-bottom: 0; }
+          #container > #join > .inbox > #formBox > form > fieldset > .infobox {
+            text-indent: 10px;
+            float: left;
+            width: 200px;
             height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(2) {
-            width: 84px;
+            #container > #join > .inbox > #formBox > form > fieldset > .infobox > li {
+              border-right: 2px solid #003987; }
+              #container > #join > .inbox > #formBox > form > fieldset > .infobox > li > label {
+                line-height: 40px;
+                font-size: 1.2rem;
+                color: #003987;
+                font-weight: bold; }
+          #container > #join > .inbox > #formBox > form > fieldset > .inputbox {
+            float: right;
+            width: calc(100% - 200px);
             height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(3) {
-            width: 64px;
-            height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(4) {
-            width: 64px;
-            height: 100%; }
-          #container > #headerBox .inbox > #gnb > ul > li:nth-child(5) {
-            width: 130px;
-            height: 30px;
-            margin-right: 0; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > span {
+              line-height: 30px;
+              font-weight: bold;
+              font-size: 1.2rem; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > input {
+              width: 50%;
+              height: 100%;
+              border: 1px solid #333;
+              box-sizing: border-box;
+              text-indent: 0.4rem;
+              line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > button {
+              font-size: 0.8rem;
+              width: 120px;
+              height: 100%;
+              box-shadow: 1px 1px 1px #777;
+              cursor: pointer;
+              margin-left: 10px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > select {
+              width: 15%;
+              height: 30px;
+              border: 1px solid #333; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > input {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > button {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms {
+              width: calc(100% - 10px);
+              height: 30px;
+              margin-top: 10px;
+              padding-left: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dt {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd {
+                width: 20%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > input {
+              width: 40%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > select {
+              width: 30%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email {
+              width: 100%;
+              height: 20px;
+              float: left;
+              margin-left: 10px;
+              padding-top: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dt {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd {
+                width: 20%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > p {
+              float: left;
+              width: 100%;
+              height: 30px;
+              font-size: 0.8rem;
+              line-height: 40px;
+              color: #ff0000;
+              white-space: pre-line; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(1), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(2) {
+              width: 15%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(3), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(4) {
+              width: 100%;
+              height: 22px;
+              margin-top: 5px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > button {
+              width: 20%;
+              height: 30px; }
+      #container > #join > .inbox > #formBox .btnbox {
+        padding: 30px 0;
+        width: 100%;
+        height: auto; }
+        #container > #join > .inbox > #formBox .btnbox > div {
+          float: right;
+          width: 200px;
+          height: 40px; }
+          #container > #join > .inbox > #formBox .btnbox > div > button {
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 57, 135, 0.3); }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(1) {
+              width: 60px;
+              margin-right: 30px; }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(2) {
+              width: 100px; }
   #container > #footerBox {
     width: 100%;
     height: auto;
     position: relative; }
     #container > #footerBox > button {
       position: absolute;
-      top: 10px;
+      bottom: 10px;
       right: 10px;
       z-index: 100;
       width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      background-image: url(../img/btn/m_t.png);
+      height: 100px;
+      background-color: transparent;
+      background-image: url(../img/btn/m_t_2.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: center;
-      box-shadow: 3px 3px 3px #555; }
+      background-position: center; }
     #container > #footerBox > .inbox > #help {
       width: 100%;
       height: 120px; }
@@ -776,24 +1380,181 @@
             #container > #headerBox > .inbox > #gnb > ul > li:nth-child(5) {
               width: 130px;
               height: 100%; }
+  #container > #join {
+    width: 100%;
+    height: auto; }
+    #container > #join > .inbox > h1 {
+      width: 100%;
+      height: 50px;
+      font-size: 1.875rem;
+      text-align: center;
+      font-weight: bold; }
+    #container > #join > .inbox > #formBox {
+      width: calc(100% - 200px);
+      height: calc(100% - 40px);
+      padding: 20px 100px; }
+      #container > #join > .inbox > #formBox > form {
+        width: 100%;
+        height: 100%;
+        border: 3px solid #003987;
+        box-sizing: border-box; }
+        #container > #join > .inbox > #formBox > form button {
+          font-size: 1rem; }
+        #container > #join > .inbox > #formBox > form > fieldset {
+          width: 100%;
+          height: 100%; }
+          #container > #join > .inbox > #formBox > form > fieldset li {
+            width: calc(100% - 16px);
+            height: 34px;
+            padding: 8px;
+            border-bottom: 2px solid #003987; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(4) {
+              height: 70px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(5) {
+              height: 80px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:nth-child(6) {
+              height: 86px; }
+            #container > #join > .inbox > #formBox > form > fieldset li:last-child {
+              border-bottom: 0; }
+          #container > #join > .inbox > #formBox > form > fieldset > .infobox {
+            text-indent: 10px;
+            float: left;
+            width: 200px;
+            height: 100%; }
+            #container > #join > .inbox > #formBox > form > fieldset > .infobox > li {
+              border-right: 2px solid #003987; }
+              #container > #join > .inbox > #formBox > form > fieldset > .infobox > li > label {
+                line-height: 40px;
+                font-size: 1.2rem;
+                color: #003987;
+                font-weight: bold; }
+          #container > #join > .inbox > #formBox > form > fieldset > .inputbox {
+            float: right;
+            width: calc(100% - 200px);
+            height: 100%; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > span {
+              line-height: 30px;
+              font-weight: bold;
+              font-size: 1.2rem; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > input {
+              width: 50%;
+              height: 100%;
+              border: 1px solid #333;
+              box-sizing: border-box;
+              text-indent: 0.4rem;
+              line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li > button {
+              width: 120px;
+              height: 100%;
+              box-shadow: 1px 1px 1px #777;
+              cursor: pointer;
+              margin-left: 10px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > select {
+              width: 15%;
+              height: 30px;
+              border: 1px solid #333; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > input {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > button {
+              width: 20%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms {
+              width: calc(100% - 10px);
+              height: 30px;
+              margin-top: 10px;
+              padding-left: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dt {
+                width: 20%;
+                height: 100%;
+                float: left;
+                margin-top: 5px;
+                font-size: 0.8rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd {
+                width: 15%;
+                height: 100%;
+                float: left;
+                font-size: 0.7rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > input {
+                width: 15px;
+                height: 15px;
+                margin-top: 5px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(4) > .sms > dd > label {
+                line-height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > input {
+              width: 40%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > select {
+              width: 30%;
+              height: 30px;
+              float: left; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email {
+              width: 50%;
+              height: 20px;
+              float: left;
+              margin-left: 10px;
+              padding-top: 10px; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dt {
+                float: left;
+                width: 45%;
+                height: 100%;
+                font-size: 0.9rem; }
+              #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > .email > dd {
+                float: left;
+                width: 25%;
+                height: 100%;
+                font-size: 0.9rem; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(5) > p {
+              float: left;
+              width: 100%;
+              height: 10px;
+              font-size: 0.8rem;
+              line-height: 20px;
+              color: #ff0000; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(1), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(2) {
+              width: 15%;
+              height: 30px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(3), #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > input:nth-of-type(4) {
+              width: 100%;
+              height: 22px;
+              margin-top: 5px; }
+            #container > #join > .inbox > #formBox > form > fieldset > .inputbox > li:nth-of-type(6) > button {
+              width: 20%;
+              height: 30px; }
+      #container > #join > .inbox > #formBox .btnbox {
+        margin-top: 40px;
+        width: 100%;
+        height: auto; }
+        #container > #join > .inbox > #formBox .btnbox > div {
+          float: right;
+          width: 200px;
+          height: 40px; }
+          #container > #join > .inbox > #formBox .btnbox > div > button {
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 57, 135, 0.3); }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(1) {
+              width: 60px;
+              margin-right: 30px; }
+            #container > #join > .inbox > #formBox .btnbox > div > button:nth-of-type(2) {
+              width: 100px; }
   #container > #footerBox {
     width: 100%;
     height: auto;
     position: relative; }
     #container > #footerBox > button {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
+      bottom: 30px;
+      right: 30px;
       z-index: 100;
       width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      background-image: url(../img/btn/m_t.png);
+      height: 100px;
+      background-color: transparent;
+      background-image: url(../img/btn/m_t_2.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: center;
-      box-shadow: 3px 3px 3px #555; }
+      background-position: center; }
     #container > #footerBox > .inbox {
       padding: 30px 0 0 0;
       height: calc(100% - 30px); }

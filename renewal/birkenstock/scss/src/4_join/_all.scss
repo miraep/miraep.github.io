@@ -1,4 +1,4 @@
-
+.bar{width:7px; height:13px;  border-bottom:1px solid #333; display:inline-block;}
 .indWidth{background-color: #333;}
 #container{
 	width: 100%;
@@ -6,7 +6,23 @@
    	>#headerBox{
       background-color: #fff;
    	}
+   	>#join{
+   		background-image: url(../img/bg/section_bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+   	}
    	>#footerBox{
-   		background-color: #6593db;
+   		background-color: rgba(#aacccc,0.7);
    	}
 }//#container
+
+
+#gnb{
+  >ul{
+    li{
+    &:nth-child(1n+6){display: none;}
+    }
+  }
+}

@@ -24,50 +24,154 @@
                         background-size: 100%;}
                 }//h1
                 >#gnb{
-                    width: 470px;
-                    height: 30px;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
                     float: right;
-                    margin-top: 10px;
+                    background: url(../img/btn/gnb_mini.png) no-repeat;
+                    background-size:  100% 100%;
+                    position: relative;
                     >ul{
-                        width: 100%;
-                        height: 100%;
+                        display: none;
+                        position: absolute;
+                        z-index: 700;
+                        top: 45px; right: 0;
+                        margin-right: -5px;
+                        width: 160px;
+                        height: auto;
+                        border-radius: 5px;
+                        background-color: rgba(#003987,0.9);
                         >li{
-                            float: left;
-                            margin-right: 15px;
-                            line-height: 30px;
-                            >a{font-size: 0.9rem; color:#595959}
-                        &:nth-child(1){
-                            width: 60px;
-                            height: 100%;
-                            >a{}
-                        }
-                        &:nth-child(2){
-                            width: 84px;
-                            height: 100%;
-                            >a{}
-                        }
-                        &:nth-child(3){
-                            width: 64px;
-                            height: 100%;
-                            >a{}
-                        }
-                        &:nth-child(4){
-                            width: 64px;
-                            height: 100%;
-                            >a{}
-                        }
-                        &:nth-child(5){
-                            width: 130px;
-                            height: 30px;
-                            margin-right: 0;
-                            >a{}
-                        }//li4
-                      }//li
+                            display: block;
+                            width: calc(100% - 20px);
+                            height: 20px;
+                            padding: 5px 10px;
+                            border-bottom: 1px solid #003987;
+                        &:last-child{border-bottom: 0;}
+                            >a{
+                                text-indent: 15px;
+                                text-align: right;
+                                display: block;
+                                width: 100%; height: 100%;
+                                color: #fff;
+                                font-size: 1.1rem; line-height: 20px; }//a
+                        }//li
                     }//ul
-                }//gnb
+                }//#gnb
           }//inbox
         }//#header
-
+    //_____JOIN_FORM____________________
+        >#join{
+            width: 100%;
+            height: auto;
+            >.inbox{
+                >h1{
+                    width: 100%;
+                    height: 50px;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                >#formBox{
+                    width: calc(100% - 40px);
+                    height: calc(100% - 40px);
+                    padding: 20px;
+                    >form{
+                        width: 100%; height: 100%;
+                        border: 3px solid #003987; box-sizing: border-box;
+                        button{font-size: 1rem;}
+                        >fieldset{
+                            width: 100%; height: 100%;
+                            li{
+                                width: calc(100% - 16px);
+                                height: 34px; //총50 
+                                padding: 8px;
+                                border-bottom: 2px solid #003987;
+                            &:nth-child(4){height: 70px;}
+                            &:nth-child(5){height: 86px;}
+                            &:nth-child(6){height: 86px;}
+                            &:last-child{border-bottom: 0;}
+                            }//li
+                            >.infobox{
+                                text-indent: 10px;
+                                float: left;
+                                width: 200px;
+                                height: 100%;
+                                >li{
+                                    border-right: 2px solid #003987;
+                                    >label{
+                                        line-height: 40px;
+                                        font-size: 1.2rem;
+                                        color: #003987;
+                                        font-weight: bold;
+                                    }//label
+                                }//li
+                            }//info
+                            >.inputbox{
+                                float: right;
+                                width: calc(100% - 200px);
+                                height: 100%;
+                                >li{
+                                    >span{line-height: 30px; font-weight: bold; font-size: 1.2rem;}
+                                    >input{
+                                        width: 50%; height: 100%; 
+                                        border:1px solid #333; box-sizing: border-box;
+                                        text-indent:0.4rem; line-height:30px; }
+                                    >button{
+                                        font-size: 0.8rem;
+                                        width:120px; height:100%; 
+                                        box-shadow:1px 1px 1px #777;
+                                        cursor: pointer; margin-left:10px; }//btn
+                                &:nth-of-type(4)>select{width:15%; height:30px; border:1px solid #333;}
+                                &:nth-of-type(4)>input{width:20%; height:30px; }
+                                &:nth-of-type(4)>button{width:20%; height:30px;}
+                                &:nth-of-type(4)>.sms{
+                                    width: calc(100% - 10px); height:30px; margin-top: 10px; padding-left: 10px;
+                                    >dt{width:30%; height: 100%; float: left; margin-top: 5px; font-size: 0.8rem;}
+                                    >dd{width: 20%; height: 100%; float: left; font-size: 0.7rem;}
+                                    >dd>input{width:15px; height:15px; margin-top:5px; }
+                                    >dd>label{line-height:30px;}  }//sms
+                                &:nth-of-type(5)>input{ width: 40%; height: 30px; float: left; }
+                                &:nth-of-type(5)>select{ width: 30%; height: 30px; float: left; }
+                                &:nth-of-type(5)>.email{
+                                    width: 100%; height: 20px; float: left;
+                                    margin-left: 10px; padding-top: 10px;
+                                    >dt{width:30%; height: 100%; float: left; margin-top: 5px; font-size: 0.8rem;}
+                                    >dd{width: 20%; height: 100%; float: left; font-size: 0.7rem;}
+                                    >dd>input{width:15px; height:15px; margin-top:5px; }
+                                    >dd>label{line-height:30px;}  }//email
+                                &:nth-of-type(5)>p{
+                                    float: left; width: 100%; height: 30px;
+                                    font-size: 0.8rem; line-height: 40px; color:#ff0000; white-space: pre-line;}
+                                &:nth-of-type(6)>input:nth-of-type(1),
+                                &:nth-of-type(6)>input:nth-of-type(2){width: 15%; height: 30px;}
+                                &:nth-of-type(6)>input:nth-of-type(3),
+                                &:nth-of-type(6)>input:nth-of-type(4){width: 100%; height: 22px; margin-top: 5px;}
+                                &:nth-of-type(6)>button{width: 20%; height: 30px;}
+                                }//li
+                            }//inputBox
+                        }//fset
+                    }//form
+                    .btnbox{
+                        padding: 30px 0;
+                        width: 100%;
+                        height: auto;
+                        >div{
+                            float: right;
+                            width: 200px;
+                            height: 40px;
+                            >button{
+                                border-radius: 10px;
+                                height: 100%;
+                                background-color: rgba(#003987,0.3);
+                            &:nth-of-type(1){width: 60px; margin-right: 30px;}
+                            &:nth-of-type(2){width: 100px;}
+                            }//btn
+                        }//div
+                    }//btnBox
+                }//formbox
+            }//inbox
+        }//joinbox       
     //_____FOOTER____________________
         >#footerBox{
             width: 100%;
@@ -75,17 +179,15 @@
             position: relative;
             >button{
                 position: absolute;
-                top: 10px; right: 10px;
+                bottom: 10px; right: 10px;
                 z-index: 100;
                 width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: #fff;
-                background-image: url(../img/btn/m_t.png);
+                height: 100px;
+                background-color: transparent;
+                background-image: url(../img/btn/m_t_2.png);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: center;
-                box-shadow: 3px 3px 3px #555;
             }//btn
             >.inbox{
                 >#help{

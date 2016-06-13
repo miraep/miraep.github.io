@@ -13,10 +13,10 @@ function popupcollection(){
 
 		//그 이미지 속성 중 src를
 
-		var thisImg =  $(this).attr('src');
+		var thisImg =  popupli_img.attr('src');
 
 		//팝업창에 띄운다.
-		popup.fadeIn(100).find('img').attr({'src': thisImg});
+		popup.fadeIn(100).find('img').attr({ 'src': thisImg });
 
 
 	});

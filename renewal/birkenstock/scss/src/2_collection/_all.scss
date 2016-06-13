@@ -92,9 +92,31 @@
          }//bslide
       }
     #kind{
-        *{transition: all 0.3s;}
+      #popupFade{
+          >.popupbox{
+              >img{
+                  width: 100%;
+              }
+          }
+          >button{
+              background-image: url(../img/btn/exit.png);
+              background-repeat: no-repeat;
+              background-size: 105% 105%;
+              background-color: #fff;
+          }
+      }
+              *{transition: all 0.3s;}
     }
     >#footerBox{
       background-color: #acc;
     }
 }//#container
+
+#gnb{
+  >ul{
+    li{
+    &:nth-child(1n+6){display: none;}
+    }
+  }
+}
+
