@@ -284,12 +284,12 @@
                     width: calc(50% - 170px);
                     height: calc(60% - 170px);
                     float: left;
+                    border-radius: 20px;
                     overflow: hidden;
                     >ul{
                         width: 300%;
                         height: 100%;
                         >li{
-                            border-radius: 20px;
                             background-color: rgba(0,0,0,0.1);
                             text-align: center;
                             font-size: 1rem;

@@ -96,6 +96,9 @@
 #gnb > ul li:nth-child(1n+6) {
   display: none; }
 
+.dollar {
+  font-style: italic; }
+
 @media screen and (max-width: 480px) {
   .inbox {
     width: 100%;
@@ -132,7 +135,7 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 130px;
+        width: 600%;
         height: auto;
         border-radius: 5px;
         overflow: hidden;
@@ -140,7 +143,7 @@
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 10px);
-          height: 20px;
+          height: 30px;
           padding: 2px 5px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
@@ -152,8 +155,8 @@
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 0.85rem;
-            line-height: 20px; }
+            font-size: 1.5rem;
+            line-height: 40px; }
   #container > #banner {
     width: 100%;
     height: 300px;
@@ -203,21 +206,19 @@
         height: 100%; }
         #container > #kind > .inbox > #menu > ul > li {
           text-align: center;
-          font-size: 0.875rem;
+          font-size: 0.85rem;
           float: left;
           width: 20%;
           height: 30px;
           border-radius: 5px; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(1) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(2) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(3) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(4) {
-            width: 55%; }
-          #container > #kind > .inbox > #menu > ul > li:nth-child(5) {
-            width: 45%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li > a {
             line-height: 30px; }
     #container > #kind > .inbox > form {
@@ -234,7 +235,7 @@
         height: 100%; }
         #container > #kind > .inbox > form > fieldset > select {
           float: left;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           width: 50%;
           height: 100%;
           margin-bottom: 5px; }
@@ -324,22 +325,18 @@
                 top: 0;
                 right: 0;
                 margin-top: -20px; }
-              #container > #kind > .inbox > #content > ul > li > figure > a:hover {
-                color: #000; }
   #container > #footerBox {
     width: 100%;
     height: 40px;
-    padding-top: 10px; }
+    padding: 10px 0; }
     #container > #footerBox > button {
       margin: 0 auto;
       display: block;
-      width: 40%;
-      height: 30px;
+      width: 60%;
+      height: 100%;
       background-image: url(../img/footer/top.png);
       background-repeat: no-repeat;
       background-size: 100% 100%; }
-      #container > #footerBox > button:hover {
-        background-image: url(../img/footer/_top.png); }
     #container > #footerBox > .inbox {
       display: none; } }
 @media screen and (min-width: 481px) and (max-width: 640px) {
@@ -378,7 +375,7 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 130px;
+        width: 600%;
         height: auto;
         border-radius: 5px;
         overflow: hidden;
@@ -386,7 +383,7 @@
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 10px);
-          height: 20px;
+          height: 30px;
           padding: 2px 5px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
@@ -398,8 +395,8 @@
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 0.85rem;
-            line-height: 20px; }
+            font-size: 1.5rem;
+            line-height: 40px; }
   #container > #banner {
     width: 100%;
     height: 300px;
@@ -455,21 +452,15 @@
           height: 30px;
           border-radius: 5px; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(1) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(2) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(3) {
-            width: 33.333333%; }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li:nth-child(4) {
-            width: 55%; }
-          #container > #kind > .inbox > #menu > ul > li:nth-child(5) {
-            width: 45%; }
-          #container > #kind > .inbox > #menu > ul > li:hover {
-            background-color: rgba(0, 61, 135, 0.7); }
+            width: 50%; }
           #container > #kind > .inbox > #menu > ul > li > a {
             line-height: 30px; }
-            #container > #kind > .inbox > #menu > ul > li > a:hover {
-              color: #fff; }
     #container > #kind > .inbox > form {
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
@@ -573,22 +564,18 @@
                 top: 0;
                 right: 0;
                 margin-top: -20px; }
-              #container > #kind > .inbox > #content > ul > li > figure > a:hover {
-                color: #000; }
   #container > #footerBox {
     width: 100%;
     height: 40px;
-    padding-top: 10px; }
+    padding: 10px 0; }
     #container > #footerBox > button {
       margin: 0 auto;
       display: block;
-      width: 40%;
-      height: 30px;
+      width: 60%;
+      height: 100%;
       background-image: url(../img/footer/top.png);
       background-repeat: no-repeat;
       background-size: 100% 100%; }
-      #container > #footerBox > button:hover {
-        background-image: url(../img/footer/_top.png); }
     #container > #footerBox > .inbox {
       display: none; } }
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -627,27 +614,26 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 160px;
+        width: 800%;
         height: auto;
         border-radius: 5px;
         background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 20px);
-          height: 20px;
-          padding: 5px 10px;
+          height: 30px;
+          padding: 10px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
             border-bottom: 0; }
           #container > #headerBox .inbox > #gnb > ul > li > a {
-            text-indent: 15px;
             text-align: right;
             display: block;
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 1.1rem;
-            line-height: 20px; }
+            font-size: 2rem;
+            line-height: 35px; }
   #container > #banner {
     width: 100%;
     height: 46.801872vw;
@@ -697,14 +683,9 @@
           text-align: center;
           font-size: 0.9rem;
           float: left;
-          width: 20%;
+          width: 25%;
           height: 30px;
           border-radius: 5px; }
-          #container > #kind > .inbox > #menu > ul > li:nth-child(4) {
-            width: 27%; }
-          #container > #kind > .inbox > #menu > ul > li:last-child {
-            width: 13%;
-            border-right: 0; }
           #container > #kind > .inbox > #menu > ul > li > a {
             line-height: 30px; }
     #container > #kind > .inbox > form {
@@ -999,27 +980,26 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 160px;
+        width: 800%;
         height: auto;
         border-radius: 5px;
         background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 20px);
-          height: 20px;
-          padding: 5px 10px;
+          height: 30px;
+          padding: 10px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
             border-bottom: 0; }
           #container > #headerBox .inbox > #gnb > ul > li > a {
-            text-indent: 15px;
             text-align: right;
             display: block;
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 1.1rem;
-            line-height: 20px; }
+            font-size: 2rem;
+            line-height: 35px; }
   #container > #banner {
     width: 100%;
     height: 46.801872vw;
@@ -1069,14 +1049,9 @@
           text-align: center;
           font-size: 1rem;
           float: left;
-          width: 20%;
+          width: 25%;
           height: 30px;
           border-radius: 5px; }
-          #container > #kind > .inbox > #menu > ul > li:nth-child(4) {
-            width: 27%; }
-          #container > #kind > .inbox > #menu > ul > li:last-child {
-            width: 13%;
-            border-right: 0; }
           #container > #kind > .inbox > #menu > ul > li > a {
             line-height: 30px; }
     #container > #kind > .inbox > form {
@@ -1494,14 +1469,9 @@
           text-align: center;
           font-size: 1rem;
           float: left;
-          width: 20%;
+          width: 25%;
           height: 30px;
           border-radius: 5px; }
-          #container > #kind > .inbox > #menu > ul > li:nth-child(4) {
-            width: 27%; }
-          #container > #kind > .inbox > #menu > ul > li:last-child {
-            width: 13%;
-            border-right: 0; }
           #container > #kind > .inbox > #menu > ul > li:hover {
             background-color: rgba(0, 61, 135, 0.7); }
           #container > #kind > .inbox > #menu > ul > li:hover a {

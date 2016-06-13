@@ -210,7 +210,7 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 130px;
+        width: 600%;
         height: auto;
         border-radius: 5px;
         overflow: hidden;
@@ -218,7 +218,7 @@
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 10px);
-          height: 20px;
+          height: 30px;
           padding: 2px 5px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
@@ -230,8 +230,8 @@
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 0.85rem;
-            line-height: 20px; }
+            font-size: 1.5rem;
+            line-height: 40px; }
   #container > #banner {
     width: 100%;
     height: 300px;
@@ -1225,27 +1225,26 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 160px;
+        width: 800%;
         height: auto;
         border-radius: 5px;
         background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 20px);
-          height: 20px;
-          padding: 5px 10px;
+          height: 30px;
+          padding: 10px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
             border-bottom: 0; }
           #container > #headerBox .inbox > #gnb > ul > li > a {
-            text-indent: 15px;
             text-align: right;
             display: block;
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 1.1rem;
-            line-height: 20px; }
+            font-size: 2rem;
+            line-height: 35px; }
   #container > #banner {
     width: 100%;
     height: 46.801872vw;
@@ -1765,18 +1764,16 @@
     position: relative; }
     #container > #footerBox > button {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      bottom: 30px;
+      right: 30px;
       z-index: 100;
       width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      background-image: url(../img/btn/m_t.png);
+      height: 100px;
+      background-color: transparent;
+      background-image: url(../img/btn/m_t_2.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: center;
-      box-shadow: 3px 3px 3px #555; }
+      background-position: center; }
     #container > #footerBox > .inbox > #help {
       width: 100%;
       height: 120px; }
@@ -1988,14 +1985,14 @@
         top: 45px;
         right: 0;
         margin-right: -5px;
-        width: 160px;
+        width: 800%;
         height: auto;
         border-radius: 5px;
         background-color: rgba(0, 57, 135, 0.9); }
         #container > #headerBox .inbox > #gnb > ul > li {
           display: block;
           width: calc(100% - 20px);
-          height: 20px;
+          height: 30px;
           padding: 5px 10px;
           border-bottom: 1px solid #003987; }
           #container > #headerBox .inbox > #gnb > ul > li:last-child {
@@ -2007,8 +2004,8 @@
             width: 100%;
             height: 100%;
             color: #fff;
-            font-size: 1.1rem;
-            line-height: 20px; }
+            font-size: 2rem;
+            line-height: 40px; }
   #container > #banner {
     width: 100%;
     height: 46.801872vw;
@@ -2097,7 +2094,7 @@
           background-position: top left; }
   #container > #sectionBox2 {
     width: 100%;
-    height: 400px; }
+    height: 500px; }
     #container > #sectionBox2 > .inbox > #miniBanner {
       margin-left: 6%;
       width: 40%;
@@ -2540,8 +2537,8 @@
     position: relative; }
     #container > #footerBox > button {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
+      bottom: 30px;
+      right: 30px;
       z-index: 100;
       width: 50px;
       height: 100px;
@@ -2960,12 +2957,12 @@
       width: calc(50% - 170px);
       height: calc(60% - 170px);
       float: left;
+      border-radius: 20px;
       overflow: hidden; }
       #container > #sectionBox2 > .inbox > #miniText > ul {
         width: 300%;
         height: 100%; }
         #container > #sectionBox2 > .inbox > #miniText > ul > li {
-          border-radius: 20px;
           background-color: rgba(0, 0, 0, 0.1);
           text-align: center;
           font-size: 1rem;
