@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.png">
+	<link rel="apple-touch-icon" href="./favicon/favicon.png">
+	<link rel="stylesheet" href="./css/lib/normalize.css">
+	<link rel="stylesheet" href="./css/join.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<!--[if lte IE 9]>
+		<script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+	<![endif]-->
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<script src="./js/gotop.js"></script>
+	<title>_JOIN</title>
+	<style type="text/css"></style>
+	<script>
+		$(document).ready(function(){
+			gotop();
+		}); //all
+	</script>
+</head>
+<body>
+	<div id="container">
+		<header id="headerBox">
+			<div class="inbox">
+				<div id="sitemap">
+					<ul>
+						<li><a href="#">LOGIN</a></li>
+						<span><!--bar--></span>
+						<li><a href="./join.html">JOIN</a></li>
+						<span><!--bar--></span>
+						<li><a href="#">CART</a></li>
+						<span><!--bar--></span>
+						<li><a href="#">ORDER</a></li>
+						<span><!--bar--></span>
+						<li><a href="#">MY PAGE</a></li>
+					</ul>
+				</div>
+				<h1><a href="./index.html"><span>logo</span></a></h1>
+				<nav id="gnb">
+					<ul>
+						<li><a href="./collection.html">Collection</a></li>
+						<li><a href="./lookbook.html">16s Lookbook</a></li>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="#">Customize</a></li>
+						<li><a href="#">Club Birkenstock</a></li>
+						<!-- 모바일 , 타블렛용 -->
+						<li><a href="#">LOGIN</a></li>
+						<li><a href="./join.html">JOIN</a></li>
+						<li><a href="#">CART</a></li>
+						<li><a href="#">ORDER</a></li>
+						<li><a href="#">MY PAGE</a></li>
+					</ul>
+				</nav>
+				</div> <!-- 담는박스 -->
+		</header>
+	<section id="join">
+		<div class="inbox">
+			<h1 class="me_char">JOIM US</h1>
+			<div id="formBox">
+				<form>
+					<fieldset>
+						<legend>회원가입 기초 양식</legend>
+						<!-- label -->
+						<ol class="infobox">
+							<li>
+								<label for="join_01">아아디</label>
+							</li>
+
+							<li>
+								<label for="join_02">패스워드
+									<span class="me_hidden">특수문자 포함하여 최소 여덟자 이상의 영문글자를 입력하세요.</span>
+								</label>
+							</li>
+
+							<li>
+								<label for="join_03">패스워드 확인
+									<span class="me_hidden">특수문자 포함하여 최소 여덟자 이상의 영문글자를 입력하세요.</span>
+							 	</label>
+							</li>
+
+							<li>
+								<label for="join_04">핸드폰 인증</label>
+							</li>
+
+							<li>
+								<label for="join_05">이메일</label>
+							</li>
+
+							<li>
+								<label for="join_06">주소</label>
+							</li>
+
+						</ol>
+						<!-- input -->
+						<ul class="inputbox">
+							<li>
+								<input type="text" id="join_01" name="" value="" required="required">
+								<button type="button" name="" id="idcheck">중복확인</button>
+								<label for="idcheck" class="me_hidden">아이디 중복확인</label>
+							</li>
+							<li>
+								<input type="text" id="join_02" name="" value="" required="required">
+							</li>
+							<li>
+								<input type="text" id="join_03" name="" value="" required="required">
+							</li>
+							<li>
+								<select name="" id="join_04">
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="012">012</option>
+									<option value="013">013</option>
+									<option value="016">016</option>
+									<option value="017">017</option>
+									<option value="018">018</option>
+									<option value="019">019</option>
+								</select>
+								<span class="bar"><!--bar--></span>
+								<input type="text" name="" id="tel_02" value="" required="required" />
+								<span class="bar"><!--bar--></span>
+								<input type="text" name="" id="tel_03" value="" required="required" />
+								<button type="button" name="">휴대폰인증</button>
+								<label for="tel_02" class="me_hidden">휴대폰 가운데 셋 또는 네자리를 입력하세요.</label>
+								<label for="tel_03" class="me_hidden">휴대폰 세번째 네자리를 입력하세요.</label>
+									<dl class="sms">
+										<dt><abbr title="short message service">SMS</abbr> 수신동의</dt>
+										<dd>
+										<input type="radio" id="mobyes" name="mobyesno">
+										<label for="mobyes">예</label>
+										</dd>
+										<dd>
+										<input type="radio" id="mobno" name="mobyesno">
+										<label for="mobno">아니요</label>
+										</dd>
+									</dl>
+							</li>
+							
+							<li>
+								<input type="text" id="join_05" name="" value="" required="required" />
+								<span class="gol"><!--골뱅이--></span>
+								<select name="" id="join_05">
+										<option value="네이버">@ naver.com</option>
+										<option value="구글">@ gmail.com</option>
+										<option value="한메일">@ hanmail.com</option>
+										<option value="다음">@ daum.net</option>
+									</select>
+								<dl class="email">
+									<dt>이메일 수신동의</dt>
+									<dd>
+									<input type="radio" id="emailyes" name="emailyesno" />
+									<label for="emailyes">예</label>	
+									</dd>
+									<dd>
+									<input type="radio" id="emailyno" name="emailyesno" />
+									<label for="emailno">아니요</label>	
+									</dd>
+								</dl>
+								<p>* 회원가입 완료시 인증메일이 발송되오니 정확한 메일주소를 기재해주세요!</p>
+							</li>
+							<li>
+								<label for="join_08"></label>
+								<input type="text"  name="join_06" list="addressbox" value="" required="required" />
+								<span class="bar"><!---bar--></span>
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
+								<button>주소 검색</button>
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
+							</li>
+						</ul>
+						<div class="btnbox">
+							<button type="submit">가 입 완 료</button>
+							<button type="reset">취 소</button>
+						</div>
+					</fieldset>
+				</form>
+				<!-- <div class="btnbox clearfix">
+					<button type="submit">가 입 완 료</button>
+					<button type="reset">취 소</button>
+				</div> -->
+			</div><!--form box-->
+		</div>
+	</section>
+		<footer id="footerBox">
+			<button><span class="me_hidden">맨위로 가는 버튼</span></button>
+			<div class="inbox">
+				<h2>FOOTER</h2>
+				<div id="help">
+					<ul>
+						<li>
+							<h1>STAY CONNECTED</h1>
+							<ul>
+								<li><a href="https://www.facebook.com/Birkenstock" target="_blank"><span class="me_hidden">facebook</span></a></li>
+								<li><a href="https://twitter.com/birkenstockusa" target="_blank"><span class="me_hidden">instagram</span></a></li>
+								<li><a href="http://instagram.com/birkenstockusa" target="_blank"><span class="me_hidden">youtube</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<h1>BE THE FIRST TO KNOW</h1>
+							<p>Sign up to hear about the latest news, trends and events.</p>
+							<form action="#">
+								<fieldset>
+									<legend>이메일 박스</legend>
+									<input type="text" placeholder="Your e-mail address" />
+									<button>SIGN UP</button>
+								</fieldset>
+							</form>
+						</li>
+						<li>
+							<h1>NEED HELP?</h1>
+							<p>Visit <a href="#">customer service</a>,<br />
+							call (800) 867-2475,<br />
+							or <a href="#">email us</a>.</p>
+						</li>
+					</ul>
+				</div>
+				<div id="text" class="clearfix">
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">The Birkenstock Footbed</a></li>
+						<li><a href="#">Sizing &amp; Tips</a></li>
+						<li><a href="#">Store Locator</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Customer Service</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Returm Policy</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+				<div id="company">
+					<p>CALL : (800) 867-2475 MONDAY–FRIDAY 9:00 AM–3:00 PM PST, OR <br />
+					EMAIL US ANYTIME AT INFO@SUPPORT.BIRKENSTOCKUSA.COM</p>	
+					<p>©2016 Birkenstock USA, LP Novato, CA 94945 <br /> All rights reserved. BIRKENSTOCK® is a registered trademark of Birkenstock Sales GmbH, Germany.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		// 모바일 , 타블렛 gnb 버튼
+		$(function(){
+	            function rwd(t){
+	                var winW = parseInt($(window).width()),
+	                    pc = 1024;
+	                // var winT = winW + t;
+	                
+	                if(winW <= pc){
+	                    $('#gnb').on('click', function(){
+
+	                    	var gnb_ul = $(this).find('ul');
+	                    	gnb_ul.slideToggle();
+
+	                    });
+	                };
+	            }; // rwd();
+	            rwd();
+	            
+	            var windowWidth = $(window).width();
+	            $(window).on('resize',function(){
+	                if(windowWidth != $(window).width()){
+	                    location.reload();  // 새로고침
+	                    rwd();
+	                    return;
+	                }
+	            });
+	        });
+	</script>
+</body>
+</html>
