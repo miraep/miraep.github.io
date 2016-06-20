@@ -4,49 +4,45 @@ html, body {
 section {
   height: 100%; }
 
-#container > #main {
+#container > #homer {
   width: 100%;
-  background-image: url(../images/bg/family.png);
+  background-image: url(../img/homer/bg_dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
-#container > #homer {
-  width: 100%;
-  background-image: url(../images/homer/bg_dark.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
 #container > #marge {
   width: 100%;
-  background-image: url(../images/marge/bg_dark.jpg);
+  background-image: url(../img/marge/bg_dark.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: left top; }
+  background-position: left top;
+  background-attachment: fixed; }
 #container > #bart {
   width: 100%;
-  background-image: url(../images/bart/bg_dark.jpg);
+  background-image: url(../img/bart/bg_dark.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 #container > #lisa {
   width: 100%;
-  background-image: url(../images/lisa/bg_dark.jpg);
+  background-image: url(../img/lisa/bg_dark.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: left top; }
+  background-position: left top;
+  background-attachment: fixed; }
 #container > #maggie {
   width: 100%;
-  background-image: url(../images/maggie/bg_dark.jpg);
+  background-image: url(../img/maggie/bg_dark.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: left top; }
-#container > #pet {
-  width: 100%;
-  background-image: url(../images/pet/bg_dark.jpg);
+  background-position: left top;
+  background-attachment: fixed; }
+#container > #footerBox {
+  background-image: url(../img/footer/intro.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left top; }
+  background-position: center; }
 
 @media screen and (max-width: 480px) {
   body {
@@ -101,10 +97,43 @@ section {
     left: 0;
     z-index: 500; } }
 @media screen and (min-width: 1025px) {
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20% 10%; }
+
+  strong {
+    padding-bottom: 10px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff; }
+
   #container {
     width: 100%;
     height: 100%;
     position: relative; }
+    #container > .top_btn {
+      cursor: pointer;
+      transition: all 0.5s;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 500;
+      border: 5px solid #333;
+      background-color: #fcde0a;
+      background-image: url(../img/btn/top_1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      overflow: hidden; }
+      #container > .top_btn:hover {
+        background-image: url(../img/btn/top.jpg); }
     #container > #headerBox {
       padding: 20px;
       width: calc(100% - 40px);
@@ -113,7 +142,7 @@ section {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 500;
+      z-index: 1500;
       transition: all 0.3s; }
       #container > #headerBox > h1 {
         width: 200px;
@@ -124,11 +153,11 @@ section {
           width: 100%;
           height: 100%;
           display: block;
-          background-image: url(../images/header/h1_red.png);
+          background-image: url(../img/header/h1_red.png);
           background-repeat: no-repeat;
           background-size: 100% 100%; }
       #container > #headerBox > #gnb {
-        width: 600px;
+        width: 500px;
         height: 80px;
         float: right; }
         #container > #headerBox > #gnb > ul {
@@ -144,36 +173,31 @@ section {
             background-color: #acd;
             float: left; }
             #container > #headerBox > #gnb > ul > li:nth-child(1) {
-              background-image: url(../images/header/gnb/1.jpg);
+              background-image: url(../img/header/gnb/1.jpg);
               background-repeat: no-repeat;
               background-position: center;
               background-size: 100% 100%; }
             #container > #headerBox > #gnb > ul > li:nth-child(2) {
-              background-image: url(../images/header/gnb/2.jpg);
+              background-image: url(../img/header/gnb/2.jpg);
               background-repeat: no-repeat;
               background-position: center;
               background-size: 100% 100%; }
             #container > #headerBox > #gnb > ul > li:nth-child(3) {
-              background-image: url(../images/header/gnb/3.jpg);
+              background-image: url(../img/header/gnb/3.jpg);
               background-repeat: no-repeat;
               background-position: center;
               background-size: 100% 100%; }
             #container > #headerBox > #gnb > ul > li:nth-child(4) {
-              background-image: url(../images/header/gnb/4.jpg);
+              background-image: url(../img/header/gnb/4.jpg);
               background-repeat: no-repeat;
               background-position: center;
               background-size: 100% 100%; }
             #container > #headerBox > #gnb > ul > li:nth-child(5) {
-              background-image: url(../images/header/gnb/5.jpg);
+              background-image: url(../img/header/gnb/5.jpg);
               background-repeat: no-repeat;
               background-position: center;
-              background-size: 100% 100%; }
-            #container > #headerBox > #gnb > ul > li:nth-child(6) {
-              margin-right: 0;
-              background-image: url(../images/header/gnb/6.jpg);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 100% 100%; }
+              background-size: 100% 100%;
+              margin-right: 0; }
             #container > #headerBox > #gnb > ul > li:hover div {
               background-color: rgba(0, 0, 0, 0.5); }
             #container > #headerBox > #gnb > ul > li:hover a {
@@ -191,12 +215,22 @@ section {
                 height: 100%;
                 display: none; }
     #container > #main {
-      background-color: #a9a;
-      width: 100%; }
-      #container > #main > #bannerBox {
-        position: relative;
-        width: 50%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.7); }
+      #container > #main > video {
         height: 100%;
+        position: absolute;
+        z-index: -500;
+        top: 0;
+        left: 0; }
+      #container > #main > #bannerBox {
+        position: absolute;
+        top: 130px;
+        left: 100px;
+        width: 40%;
+        height: calc(100% - 150px);
         overflow: hidden; }
         #container > #main > #bannerBox > ul.ban {
           width: 700%;
@@ -207,49 +241,48 @@ section {
             height: 100%;
             float: left; }
             #container > #main > #bannerBox > ul.ban > li.box1 {
-              background-image: url(../images/banner/1.jpg);
+              background-image: url(../img/banner/1.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
             #container > #main > #bannerBox > ul.ban > li.box2 {
-              background-image: url(../images/banner/2.jpg);
+              background-image: url(../img/banner/2.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
             #container > #main > #bannerBox > ul.ban > li.box3 {
-              background-image: url(../images/banner/3.jpg);
+              background-image: url(../img/banner/3.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
             #container > #main > #bannerBox > ul.ban > li.box4 {
-              background-image: url(../images/banner/4.jpg);
+              background-image: url(../img/banner/4.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
             #container > #main > #bannerBox > ul.ban > li.box5 {
-              background-image: url(../images/banner/5.jpg);
+              background-image: url(../img/banner/5.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
             #container > #main > #bannerBox > ul.ban > li.box6 {
-              background-image: url(../images/banner/6.jpg);
+              background-image: url(../img/banner/6.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%; }
         #container > #main > #bannerBox > .ind {
           width: 150px;
           height: 10px;
-          background-color: #d9d;
           position: absolute;
           left: 50%;
           bottom: 10px;
-          margin-left: -75px; }
+          margin-left: -65px; }
           #container > #main > #bannerBox > .ind > li {
-            transition: width 0.5s;
+            transition: all 0.3s;
             cursor: pointer;
             width: 10px;
             height: 10px;
             margin-right: 10px;
             background-color: #fff;
-            border-radius: 40%;
+            border: 2px solid #595959;
+            border-radius: 50%;
             float: left; }
             #container > #main > #bannerBox > .ind > li.indWidth {
-              width: 30px;
-              background-color: #ccc; }
+              background-color: #e65526; }
             #container > #main > #bannerBox > .ind > li:last-child {
               margin-right: 0; }
         #container > #main > #bannerBox > .l_btn {
@@ -261,7 +294,7 @@ section {
           cursor: pointer;
           width: 30px;
           height: 50px;
-          background-image: url(../images/btn/left.png);
+          background-image: url(../img/btn/left.png);
           background-size: 100% 100%;
           background-repeat: no-repeat; }
         #container > #main > #bannerBox > .r_btn {
@@ -273,11 +306,229 @@ section {
           cursor: pointer;
           width: 30px;
           height: 50px;
-          background-image: url(../images/btn/right.png);
+          background-image: url(../img/btn/right.png);
           background-size: 100% 100%;
           background-repeat: no-repeat; }
+      #container > #main > #mainText {
+        margin: 160px 100px 50px 0;
+        float: right;
+        width: 40%;
+        height: 100%; }
+        #container > #main > #mainText > p {
+          display: block;
+          padding: 10%;
+          width: 80%;
+          height: 500px;
+          background-color: rgba(0, 0, 0, 0.6);
+          overflow-y: scroll; }
+          #container > #main > #mainText > p > strong {
+            height: 50px;
+            line-height: 50px; }
+        #container > #main > #mainText > button {
+          width: 80%;
+          height: 50px;
+          margin-top: 30px;
+          margin-left: 10%;
+          background-color: rgba(254, 227, 35, 0.9);
+          color: #523d3d;
+          font-size: 1.875rem; }
+          #container > #main > #mainText > button:hover {
+            background-color: #523d3d;
+            color: #fff; }
+      #container > #main > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); }
+        #container > #main > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+    #container > #homer {
+      padding-top: 120px;
+      position: relative;
+      width: 100%;
+      height: calc(100% - 120px); }
+      #container > #homer > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.6); }
+        #container > #homer > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+      #container > #homer > .homer_1 {
+        margin: 50px 0 50px 100px;
+        float: left;
+        width: calc(50% - 100px);
+        height: calc(100% - 100px);
+        background-color: rgba(0, 0, 0, 0.6); }
+      #container > #homer > .homer_2 {
+        cursor: pointer;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        z-index: 100;
+        width: 40%;
+        height: 50vw;
+        max-height: 700px;
+        background-image: url(../img/homer/homer.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+    #container > #marge {
+      padding-top: 120px;
+      position: relative;
+      width: 100%;
+      height: calc(100% - 120px); }
+      #container > #marge > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.6); }
+        #container > #marge > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+      #container > #marge > .marge_1 {
+        cursor: pointer;
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        z-index: 100;
+        width: 40%;
+        height: 60vw;
+        max-height: 750px;
+        background-image: url(../img/marge/marge.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      #container > #marge > .marge_2 {
+        margin: 50px 100px 50px 0;
+        float: right;
+        width: calc(50% - 100px);
+        height: calc(100% - 100px);
+        background-color: rgba(0, 0, 0, 0.6); }
+    #container > #bart {
+      padding-top: 120px;
+      position: relative;
+      width: 100%;
+      height: calc(100% - 120px); }
+      #container > #bart > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.6); }
+        #container > #bart > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+      #container > #bart > .bart_1 {
+        cursor: pointer;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        z-index: 100;
+        width: 40%;
+        height: 60vw;
+        max-height: 750px;
+        background-image: url(../img/bart/bart.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      #container > #bart > .bart_2 {
+        margin: 50px 100px 50px 0;
+        float: right;
+        width: calc(50% - 100px);
+        height: calc(100% - 100px);
+        background-color: rgba(0, 0, 0, 0.6); }
+    #container > #lisa {
+      padding-top: 120px;
+      position: relative;
+      width: 100%;
+      height: calc(100% - 120px); }
+      #container > #lisa > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.6); }
+        #container > #lisa > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+      #container > #lisa > .lisa_1 {
+        margin: 50px 0 50px 100px;
+        float: left;
+        width: calc(50% - 100px);
+        height: calc(100% - 100px);
+        background-color: rgba(0, 0, 0, 0.6); }
+      #container > #lisa > .lisa_2 {
+        cursor: pointer;
+        position: absolute;
+        top: 170px;
+        right: 0;
+        z-index: 100;
+        width: 40%;
+        height: 60vw;
+        max-height: 670px;
+        background-image: url(../img/lisa/lisa.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+    #container > #maggie {
+      padding-top: 120px;
+      position: relative;
+      width: 100%;
+      height: calc(100% - 120px); }
+      #container > #maggie > .mv {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.6); }
+        #container > #maggie > .mv > video {
+          margin-top: 150px;
+          margin-left: 10%;
+          width: 77vw; }
+      #container > #maggie > .maggie_1 {
+        cursor: pointer;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        z-index: 100;
+        width: 40%;
+        height: 60vw;
+        max-height: 750px;
+        background-image: url(../img/maggie/maggie.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      #container > #maggie > .maggie_2 {
+        margin: 50px 100px 50px 0;
+        float: right;
+        width: calc(50% - 100px);
+        height: calc(100% - 100px);
+        background-color: rgba(0, 0, 0, 0.6); }
     #container > #footerBox {
-      background-color: #daaaad;
       height: 120px; } }
 
 /*# sourceMappingURL=index.css.map */

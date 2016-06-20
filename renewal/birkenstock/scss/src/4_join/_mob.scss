@@ -80,7 +80,6 @@
                     >form{
                         background-color: #fff;
                         width: 100%; height: 100%;
-                        border: 3px solid #003987; box-sizing: border-box;
                         button{font-size: 1rem;}
                         >fieldset{
                             width: 100%; height: 100%;
@@ -95,6 +94,10 @@
                             &:last-child{border-bottom: 0;}
                             }//li
                             >.infobox{
+                                border-top: 3px solid #003987;
+                                border-bottom: 3px solid #003987;
+                                border-left: 3px solid #003987;
+                                box-sizing: border-box;
                                 text-indent: 10px;
                                 float: left;
                                 width: 110px;
@@ -110,6 +113,10 @@
                                 }//li
                             }//info
                             >.inputbox{
+                                border-top: 3px solid #003987;
+                                border-bottom: 3px solid #003987;
+                                border-right: 3px solid #003987;
+                                box-sizing: border-box;
                                 float: right;
                                 width: calc(100% - 110px);
                                 height: 100%;
@@ -161,10 +168,7 @@
                         }//fset
                     }//form
                     .btnbox{
-                        margin-top: 5px;
-                        width: 100%;
-                        height: auto;
-                            >button{/* all */}//btn
+                        margin-bottom: 20px;
                     }//btnBox
                 }//formbox
             }//inbox

@@ -16,7 +16,7 @@
           r_btn = $('.r_btn'),
           
           
-          slideTime = 1000, //배너 움직이는 시간
+          slideTime = 700, //배너 움직이는 시간
           settingTime = 1100; //슬라이드가 작동되ㅣ도록 하는 시간(버튼)
       
       
@@ -59,7 +59,6 @@
             banner.stop().delay(100).animate({'margin-left':"+="+banLiWid},slideTime)
             var bannerMarginCut = Math.abs( parseInt($('.ban').css('margin-left') ) ) / $('.ban').find('li').width();
              $('.ind li').eq(bannerMarginCut-1).addClass('indWidth').siblings().removeClass('indWidth');
-            console.log(bannerMarginCut);
           };
         });
       var rightBtn = function(){
@@ -72,7 +71,6 @@
             };
           var bannerMarginCut = Math.abs( parseInt($('.ban').css('margin-left') ) ) / $('.ban').find('li').width();
            $('.ind li').eq(bannerMarginCut+1).addClass('indWidth').siblings().removeClass('indWidth');
-          console.log(bannerMarginCut);
         });
       }
       rightBtn();
@@ -86,8 +84,8 @@
       // 일정한 시간간격을 두고 움직이는기능 : setInterval
       function startBtn(){ settingTime = setInterval('$(".r_btn").click()', 2000) };
       //setInterval 취소시키는 기능: clearInterval
-      function stopBtn(){	clearInterval( settingTime )};
+      function stopBtn(){ clearInterval( settingTime )};
       startBtn()
-      $(banner).on({mouseenter:stopBtn ,mouseleave:startBtn});
+      $('.ban').on({mouseenter:stopBtn ,mouseleave:startBtn});
     })(this.jQuery);
     

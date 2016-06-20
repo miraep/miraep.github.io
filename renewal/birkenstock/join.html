@@ -103,15 +103,15 @@
 						<!-- input -->
 						<ul class="inputbox">
 							<li>
-								<input type="text" id="join_01" name="" value="">
+								<input type="text" id="join_01" name="" value="" required="required">
 								<button type="button" name="" id="idcheck">중복확인</button>
 								<label for="idcheck" class="me_hidden">아이디 중복확인</label>
 							</li>
 							<li>
-								<input type="text" id="join_02" name="" value="">
+								<input type="text" id="join_02" name="" value="" required="required">
 							</li>
 							<li>
-								<input type="text" id="join_03" name="" value="">
+								<input type="text" id="join_03" name="" value="" required="required">
 							</li>
 							<li>
 								<select name="" id="join_04">
@@ -125,9 +125,9 @@
 									<option value="019">019</option>
 								</select>
 								<span class="bar"><!--bar--></span>
-								<input type="text" name="" id="tel_02" value="" />
+								<input type="text" name="" id="tel_02" value="" required="required" />
 								<span class="bar"><!--bar--></span>
-								<input type="text" name="" id="tel_03" value="" />
+								<input type="text" name="" id="tel_03" value="" required="required" />
 								<button type="button" name="">휴대폰인증</button>
 								<label for="tel_02" class="me_hidden">휴대폰 가운데 셋 또는 네자리를 입력하세요.</label>
 								<label for="tel_03" class="me_hidden">휴대폰 세번째 네자리를 입력하세요.</label>
@@ -145,7 +145,7 @@
 							</li>
 							
 							<li>
-								<input type="text" id="join_05" name="" value="">
+								<input type="text" id="join_05" name="" value="" required="required" />
 								<span class="gol"><!--골뱅이--></span>
 								<select name="" id="join_05">
 										<option value="네이버">@ naver.com</option>
@@ -168,20 +168,24 @@
 							</li>
 							<li>
 								<label for="join_08"></label>
-								<input type="text"  name="join_06" list="addressbox" value="" />
+								<input type="text"  name="join_06" list="addressbox" value="" required="required" />
 								<span class="bar"><!---bar--></span>
-								<input type="text"  name="join_07" list="addressbox" value="" />
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
 								<button>주소 검색</button>
-								<input type="text"  name="join_07" list="addressbox" value="" />
-								<input type="text"  name="join_07" list="addressbox" value="" />
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
+								<input type="text"  name="join_07" list="addressbox" value="" required="required" />
 							</li>
 						</ul>
+						<div class="btnbox">
+							<button type="submit">가 입 완 료</button>
+							<button type="reset">취 소</button>
+						</div>
 					</fieldset>
 				</form>
-				<div class="btnbox clearfix">
-					<button>가 입 완 료</button>
-					<button>취 소</button>
-				</div>
+				<!-- <div class="btnbox clearfix">
+					<button type="submit">가 입 완 료</button>
+					<button type="reset">취 소</button>
+				</div> -->
 			</div><!--form box-->
 		</div>
 	</section>

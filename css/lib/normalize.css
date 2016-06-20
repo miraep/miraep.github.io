@@ -44,10 +44,10 @@
 *, h1,h2,h3,h4,h5,h6, p, blockque, figcaption, div, form, fieldset{
 	margin: 0; padding: 0; border: 0; color:#333; vertical-align: top;
 	font-size:100%; line-height:1.2em;
-	font-family: "OCR A Std","myriad pro", arial, nanumGothic, dotum, sans-serif;}
+	font-family: "myriad pro", arial, nanumGothic, dotum, sans-serif;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none; color:#777;}
-a:hover, a:active{text-decoration: underline; color:#0af;}
+/*a:hover, a:active{text-decoration: underline; color:#0af;}*/
 hr{border-bottom:1px solid #333;}/* 내용을 구분지을때만 사용할것*/
 address{font-style:normal;}
 table, tr, td, th, thead, tbody, tfoot{border:1px solid #777; border-spacing: 0; border-collapse:collapse;}

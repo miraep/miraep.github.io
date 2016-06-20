@@ -59,7 +59,6 @@
             banner.stop().delay(100).animate({'margin-left':"+="+banLiWid},slideTime)
             var bannerMarginCut = Math.abs( parseInt($('.ban').css('margin-left') ) ) / $('.ban').find('li').width();
              $('.ind li').eq(bannerMarginCut-1).addClass('indWidth').siblings().removeClass('indWidth');
-            // console.log(bannerMarginCut);
           };
         });
       var rightBtn = function(){
@@ -72,7 +71,6 @@
             };
           var bannerMarginCut = Math.abs( parseInt($('.ban').css('margin-left') ) ) / $('.ban').find('li').width();
            $('.ind li').eq(bannerMarginCut+1).addClass('indWidth').siblings().removeClass('indWidth');
-          // console.log(bannerMarginCut);
         });
       }
       rightBtn();

@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=960">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.png">
     <link rel="apple-touch-icon" href="./img/favicon/favicon.png">
     <link rel="stylesheet" href="./css/lib/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./js/dist/html5shiv.min.js">
-    <link rel="stylesheet" href="./js/dist/ie9.min.js">
-    <link rel="stylesheet" href="./js/dist/PIE.js">
     <!--[if lte IE 9]>
         <script src="./js/dist/html5shiv.min.js"></script>
         <script src="./js/dist/ie9.min.js"></script>
@@ -20,115 +17,91 @@
     <script src="./js/jquery/jquery-1.12.3.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
-    <title>Document</title>
+    <script src="./js/rwd.js"></script>
+    <title>_MIRAE's portfolio site</title>
     <style type="text/css">
     </style>
-    <script>$(document).ready(function(){});</script>
+    <script>
+        $(document).ready(function(){
+            rwd();
+
+        //____scrolltop____________________________________________
+            $('.btn').on('click', function(){
+                $('html,body').animate({'scrollTop':0},500);
+            });    
+        });
+    </script>
     
 </head>
 <body>
 
 <div id="container">
-    <section id="page_01">
-    <!-- ABOUTME -->
-    <div id="gnb">
-        <ul>
-            <li><a href="#">Resume<br />infographic</a></li>
-            <li><a href="./renewal/timberland/index.html" target="_blank">Renewal site _1</a></li>
-            <li><a href="./renewal/birkenstock/index.html" target="_blank">Renewal site _2</a></li>
-            <li><a href="#">Make a logo</a></li>
-            <li><a href="#">LOVE YOU</a></li>
-        </ul>
-    </div>
-
-    <div id="text">
-        <p>SIMPLE IS<br />&nbsp;&nbsp;THE BEST</p>
-    </div>
-
-    <!-- GNB -->
-    <div id="aboutme">
-        <ul>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="https://www.facebook.com/mirae.park.946" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/___miraep/" target="_blank">Instagram</a></li>
-            <li><a href="#page_01">PAGE_1</a></li>
-            <li><a href="#page_02">PAGE_2</a></li>
-            <li><a href="#page_03">PAGE_3</a></li>
-        </ul>
-    </div>
-    </section> <!-- //PAGE_01-->
-
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    <section id="page_02">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section> <!-- //PAGE_02 -->
-
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    <section id="page_03">
-     <ul id="allbox">
-       <!-- left box -->
-        <li class="boxleft">
-           <div class="effect_box">
-                 <figure class="fig_box1">
-                    <img src="./img/p1.jpg" alt="설명!~"/>
-                    <figcaption>
-                         <h2>010-8456-6615</h2>
-                         <p>박 미 래</p>
-                    </figcaption>           
-                 </figure>
-             </div>
-        </li>
-
-       <!-- right box 1 -->
-        <li class="boxright">
-           <div class="effect_box">
-                 <figure class="fig_box2">
-                    <img src="./img/6.jpg" alt="설명!~"/>
-                    <figcaption>
-                         <h2>010-8456-6615</h2>
-                         <p>박 미 래</p>
-                    </figcaption>           
-                 </figure>
-             </div>
-        </li>
-       <!-- right box 2 -->
-        <li class="boxright">
-            <div class="effect_box">
-                 <figure class="fig_box2">
-                    <img src="./img/6.jpg" alt="설명!~"/>
-                    <figcaption>
-                        <h2>010-8456-6615</h2>
-                        <p>박 미 래</p>
-                    </figcaption>           
-                 </figure>
-             </div>
-        </li>
-        <!-- right box 3 -->
-         <li class="boxright">
-           <div class="effect_box">
-                 <figure class="fig_box2">
-                    <img src="./img/6.jpg" alt="설명!~"/>
-                    <figcaption>
-                        <h2>010-8456-6615</h2>
-                        <p>박 미 래</p>
-                    </figcaption>           
-                 </figure>
-            </div>
-       </li>
-     </ul>
+    <section id="sectionBox1">
+        <div class="intro">
+            <dl>
+                <dt>
+                    <h1 class="btn">ABOUT ME</h1>
+                    <ul>
+                        <li><a href="#" target="_blank">RESOME INFOGRAPHIC</a></li>
+                        <li><a href="https://miraep.hithub.io" target="_blank">GIT SITE</a></li>
+                        <li><a href="https://www.facebook.com/mirae.park.946" target="_blank">FACEBOOK</a></li>
+                        <li><a href="https://www.instagram.com/___miraep/" target="_blank">INSTAGRAM</a></li>
+                    </ul>
+                </dt>
+               <!--  <dd class="dd1">
+                    <h2>버켄스탁 리뉴얼</h2>
+                    <img src="./img/hustle_01.jpg" alt="의미없는 배경사진">
+                    <a href="./renewal/birkenstock/index.html" target="_blank"> BIRKENSTOCK RENEWAL </a>
+                </dd>
+                <dd class="dd2">
+                    <h2>심슨 사이트</h2>
+                    <img src="./img/cafe_02.jpg" alt="의미없는 배경사진">
+                    <a href="./renewal/simpson/index.html" target="_blank"> SIMPSON FAMILY </a>
+                </dd>
+                <dd class="dd3">
+                    <h2>PORTFOLIO POWERPOINT</h2>
+                    <img src="./img/hustle_04.jpg" alt="의미없는 배경사진">
+                    <a href="#" target="_blank"> _PORTFOLIO POWERPOINT </a>   
+                </dd> -->
+                <dd class="dd1">
+                    <h2>버켄스탁 리뉴얼</h2>
+                    <a href="./renewal/birkenstock/index.html" target="_blank">
+                    <span>BIRKENSTOCK RENEWAL</span></a>
+                </dd>
+                <dd class="dd2">
+                    <h2>심슨 사이트</h2>
+                    <a href="./renewal/simpson/index.html" target="_blank">
+                    <span>SIMPSON FAMILY</span> </a>
+                </dd>
+                <dd class="dd3">
+                    <h2>PORTFOLIO POWERPOINT</h2>
+                    <a href="#" target="_blank">
+                    <span>_PORTFOLIO POWERPOINT</spam> </a>   
+                </dd>
+            </dl>
+        </div>
     </section>
-
-</div> <!-- //CONTAINER -->
+    <section id="sectionBox2">
+        <h2>I Love it!</h2>
+        <div class="content">
+            <ul class="clearfix">
+                <li><a href="http://www.supremenewyork.com/" target="_blank"><span class="me_hidden">Supreme</span></a></li>
+                <li><a href="https://bape.com/index/" target="_blank"><span class="me_hidden">bape</span></a></li>
+                <li><a href="http://store.y-3.com/kr" target="_blank"><span class="me_hidden">Y-3</span></a></li>
+                <li><a href="http://www.nike.com/us/en_us/c/jordan" target="_blank"><span class="me_hidden">Jordan</span></a></li>
+                <li><a href="http://fromcare.org/main/" target="_blank"><span class="me_hidden">JJONG</span></a></li>
+                <li><a href="http://www.stussy.com/" target="_blank"><span class="me_hidden">Stussy</span></a></li>
+                <li><a href="http://www.carhartt.com/" target="_blank"><span class="me_hidden">Carhartt</span></a></li>
+                <li><a href="http://www.golfwang.com/" target="_blank"><span class="me_hidden">Golf wang</span></a></li>
+                <li><a href="https://www.off---white.com/en/KR" target="_blank"><span class="me_hidden">Off White</span></a></li>
+                <li><a href="http://deuscustoms.com/" target="_blank"><span class="me_hidden">Deus</span></a></li>
+                <li><a href="http://www.ray-ban.com/korea" target="_blank"><span class="me_hidden">Rayban</span></a></li>
+                <li><a href="http://www.comme-des-garcons.com/" target="_blank"><span class="me_hidden">Comme des garcons</span></a></li>
+            </ul>
+            <div class="btn"><span class="me_hidden">Go top</span></div>
+        </div>
+    </section>
+</div>
 
 </body>
 </html>
