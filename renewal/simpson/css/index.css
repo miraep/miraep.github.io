@@ -100,7 +100,11 @@ section {
   p {
     color: #fff;
     font-size: 1.2rem;
-    padding: 20% 10%; }
+    padding: 10% 10%;
+    overflow-y: scroll;
+    width: 80%;
+    height: 60%;
+    text-align: justify; }
 
   strong {
     padding-bottom: 10px;
@@ -228,7 +232,7 @@ section {
       #container > #main > #bannerBox {
         position: absolute;
         top: 130px;
-        left: 100px;
+        right: 80px;
         width: 40%;
         height: calc(100% - 150px);
         overflow: hidden; }
@@ -310,15 +314,15 @@ section {
           background-size: 100% 100%;
           background-repeat: no-repeat; }
       #container > #main > #mainText {
-        margin: 160px 100px 50px 0;
-        float: right;
+        margin-left: 10%;
+        margin-top: 150px;
         width: 40%;
-        height: 100%; }
+        height: calc(100% - 150px); }
         #container > #main > #mainText > p {
           display: block;
           padding: 10%;
           width: 80%;
-          height: 500px;
+          height: 60%;
           background-color: rgba(0, 0, 0, 0.6);
           overflow-y: scroll; }
           #container > #main > #mainText > p > strong {
@@ -375,12 +379,11 @@ section {
       #container > #homer > .homer_2 {
         cursor: pointer;
         position: absolute;
-        top: 150px;
+        top: 120px;
         right: 0;
         z-index: 100;
         width: 40%;
-        height: 50vw;
-        max-height: 700px;
+        height: calc(100% - 120px);
         background-image: url(../img/homer/homer.png);
         background-repeat: no-repeat;
         background-size: contain; }
@@ -409,8 +412,7 @@ section {
         left: 50px;
         z-index: 100;
         width: 40%;
-        height: 60vw;
-        max-height: 750px;
+        height: calc(100% - 120px);
         background-image: url(../img/marge/marge.png);
         background-repeat: no-repeat;
         background-size: contain; }
@@ -445,8 +447,7 @@ section {
         left: 0;
         z-index: 100;
         width: 40%;
-        height: 60vw;
-        max-height: 750px;
+        height: calc(100% - 120px);
         background-image: url(../img/bart/bart.png);
         background-repeat: no-repeat;
         background-size: contain; }
@@ -487,8 +488,7 @@ section {
         right: 0;
         z-index: 100;
         width: 40%;
-        height: 60vw;
-        max-height: 670px;
+        height: calc(100% - 170px);
         background-image: url(../img/lisa/lisa.png);
         background-repeat: no-repeat;
         background-size: contain; }
@@ -517,8 +517,7 @@ section {
         left: 0;
         z-index: 100;
         width: 40%;
-        height: 60vw;
-        max-height: 750px;
+        height: calc(100% - 150px);
         background-image: url(../img/maggie/maggie.png);
         background-repeat: no-repeat;
         background-size: contain; }

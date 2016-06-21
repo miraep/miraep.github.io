@@ -148,7 +148,7 @@
     //_____BANNER____________________
     	>#banner{
             width: 100%;
-            height: 700px;
+            height: 600px;
             position: relative;
             >.left_btn{
                 position: absolute;
@@ -964,6 +964,7 @@
                     }//ul
                 }//#text
                 >#company{
+                    text-align: center;
                     margin: 0 auto;
                     width: 780px;
                     padding: 1.5rem 0;

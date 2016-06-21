@@ -52,7 +52,7 @@
           var bannerML = parseInt(banner.css('margin-left'));
           if(bannerML == -banLiWid){
             banner.stop().delay(100).animate({'margin-left':"+="+banLiWid},slideTime, function(){
-              banner.css({'margin-left':-banLiWid*7})
+              banner.css({'margin-left':-banLiWid*6})
             });
             $('.ind li').last().addClass('indWidth').siblings().removeClass('indWidth');
           }else{
@@ -64,7 +64,7 @@
       var rightBtn = function(){
         r_btn.on('click', function(){
             var bannerML = parseInt(banner.css('margin-left'));
-            if(bannerML <= -banLiWid*7){
+            if(bannerML <= -banLiWid*6){
               banner.css({'margin-left':0}).stop().delay(100).animate({'margin-left':"-="+banLiWid},slideTime);
             }else{
               banner.stop().delay(100).animate({'margin-left':"-="+banLiWid},slideTime)
