@@ -127,9 +127,6 @@
 #gnb > ul li:nth-child(1n+6) {
   display: none; }
 
-#topAdd {
-  display: none; }
-
 @media screen and (max-width: 480px) {
   .inbox {
     width: 100%;
