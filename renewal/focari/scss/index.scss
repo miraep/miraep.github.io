@@ -1,0 +1,341 @@
+
+html,body{height: 100%;}
+section{height: 100%;}
+
+#container{
+	width: 100%;
+	height: 100%;
+	>#headerBox{
+		width: 100%;
+		height: 6rem;
+		>ul{
+			width: 100%;
+			height: 100%;
+			>li{
+				width: calc(70% / 4);
+				height: 100%;
+				float: left;
+				border-right: 1px solid #fff;
+				box-sizing : border-box;
+				background-color: #0071ba;
+				>a{
+					width: 100%;
+					height: 100%;
+					display: block;
+					font-size: 2rem;
+					font-weight: bold;
+					line-height: 96px;
+					text-align: center;
+					color: #fff;
+				}//a
+//header_____HISTORY____________________________________________
+			&:nth-of-type(1){
+			&:hover > ul{display: block;}
+				>ul{
+					display: none;
+					width: 100%;
+					height: 16rem;
+					>li{
+						border-bottom: 1px solid #0071ba;
+						box-sizing: border-box;
+						width: 100%;
+						height: 4rem;
+						text-align: center;
+						>a{
+							width: 100%; height: 100%;
+							font-weight: bold;
+							color: #0071ba;
+							background-color: #fff;
+							display: block;
+							font-size: 1.5rem;
+							line-height: 64px;
+						&:hover{
+							color: #fff;
+							background-color: #0071ba;
+						}//hover
+						}//a
+					&:first-child{border-top: 1px solid #0071ba;}
+					&:last-child{border-bottom: 0;}
+					}//li
+				}//ul
+			}//history
+//header_____PRODUCT____________________________________________
+			&:nth-of-type(2){
+			&:hover > ul{display: block;}
+				>ul{
+					display: none;
+					width: 100%;
+					height: 16rem;
+					>li{
+						border-bottom: 1px solid #0071ba;
+						box-sizing: border-box;
+						width: 100%;
+						height: 4rem;
+						text-align: center;
+						>a{
+							width: 100%; height: 100%;
+							font-weight: bold;
+							color: #0071ba;
+							background-color: #fff;
+							display: block;
+							font-size: 1.5rem;
+							line-height: 64px;
+						&:hover{
+							color: #fff;
+							background-color: #0071ba;
+						}//hover
+						}//a
+					&:first-child{border-top: 1px solid #0071ba;}
+					&:last-child{border-bottom: 0;}
+					}//li
+				}//ul
+			}//product
+//header_____LOGO____________________________________________
+			&:nth-of-type(3){
+				width: 30%;
+                background-image: url(../img/logo.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                background-color: #fff;
+            }
+//header_____AD____________________________________________
+            &:nth-of-type(4){
+            &:hover > ul{display: block;}
+				>ul{
+					display: none;
+					width: 100%;
+					height: 16rem;
+					>li{
+						border-bottom: 1px solid #0071ba;
+						box-sizing: border-box;
+						width: 100%;
+						height: 4rem;
+						text-align: center;
+						>a{
+							width: 100%; height: 100%;
+							font-weight: bold;
+							color: #0071ba;
+							background-color: #fff;
+							display: block;
+							font-size: 1.5rem;
+							line-height: 64px;
+						&:hover{
+							color: #fff;
+							background-color: #0071ba;
+						}//hover
+						}//a
+					&:first-child{border-top: 1px solid #0071ba;}
+					&:last-child{border-bottom: 0;}
+					}//li
+				}//ul
+            }
+//EVENT____________________________________________
+            &:nth-of-type(5){
+            &:hover > ul{display: block;}
+				>ul{
+					display: none;
+					width: 100%;
+					height: 16rem;
+					>li{
+						border-bottom: 1px solid #0071ba;
+						box-sizing: border-box;
+						width: 100%;
+						height: 4rem;
+						text-align: center;
+						>a{
+							width: 100%; height: 100%;
+							font-weight: bold;
+							color: #0071ba;
+							background-color: #fff;
+							display: block;
+							font-size: 1.5rem;
+							line-height: 64px;
+						&:hover{
+							color: #fff;
+							background-color: #0071ba;
+						}//hover
+						}//a
+					&:first-child{border-top: 1px solid #0071ba;}
+					&:last-child{border-bottom: 0;}
+					}//li
+				}//ul
+            }//li_event
+			}//li_all
+		}//ul
+	}//headerBox
+	>#main{
+		background-color: #a9c;
+		width: 100%;
+		height: calc(100% - 6rem);
+		>#back{
+			width: 100%; height: 100%;
+			background-color: rgba(#000,0.5);
+			position: relative;
+			>.click{
+				cursor: pointer;
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%; left: 50%;
+				margin-top: -150px; margin-left: -150px;
+				background-image: url(../img/click.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}//click
+		}//click
+	}
+	>#history{
+		background-color: #d9a;
+		width: 100%;
+	}//box01
+	>#product{
+		background-color: #aaa;
+		>#gallery{
+			padding: 100px;
+			width: calc(100% - 200px);
+			height: calc(100% - 200px);
+			background-color: #a91;
+			>.imgbox{
+				float: left;
+				width: calc(100% - 250px);
+				height: 100%;
+				background-color: #a01;
+			}//.imgbox
+			>.thumnail{
+				float: right;
+				width: calc(250px - 20px);
+				height: calc(100% - 20px);
+				padding: 10px;
+				background-color: #d9d;
+				position: relative;
+				>ul{
+					float: left;
+					width: 100%;
+					height: 100%;
+					>li{
+						float: left;
+						width: 50%;
+						height: 20%;
+						background-color: #fff;
+						border : 2px solid #acf;
+						box-sizing: border-box;
+						>a{
+							width: 100%;
+							height: 100%;
+							display: block;
+							background-size: 100% 100%;
+							background-position: center;
+							background-repeat: no-repeat;
+						&:hover{ background-size: 150%; }
+						}//a
+					&:nth-of-type(1) > a{background-image: url(../img/kind/1.png);}
+					&:nth-of-type(2) > a{background-image: url(../img/kind/2.png);}
+					&:nth-of-type(3) > a{background-image: url(../img/kind/3.png);}
+					&:nth-of-type(4) > a{background-image: url(../img/kind/4.png);}
+					&:nth-of-type(5) > a{background-image: url(../img/kind/5.png);}
+					&:nth-of-type(6) > a{background-image: url(../img/kind/6.png);}
+					&:nth-of-type(7) > a{background-image: url(../img/kind/7.png);}
+					&:nth-of-type(8) > a{background-image: url(../img/kind/8.png);}
+					&:nth-of-type(9) > a{background-image: url(../img/kind/9.png);}
+					&:nth-of-type(10) > a{background-image: url(../img/kind/10.png);}
+					}//li
+				}//ul
+			}//thumnail
+		}//gallery
+	}//product
+	>#ad{
+		background-color: #d9d;
+		>#banner{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+            >.left_btn{
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+                left: 10px;
+                width: 30px;
+                height: 50px;
+                >button{
+                    width: 100%;
+                    height: 100%; 
+                    background: url('../img/logo/left.png') no-repeat; }
+            }//btn
+            >.right_btn{
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+                right: 10px;
+                width: 30px;
+                height: 50px;
+                >button{
+                    width: 100%;
+                    height: 100%; 
+                    background: url('../img/logo/right.png') no-repeat; }
+            }//btn
+            >.bslide{
+	            width: 100%;
+	            height: 100%;
+	            >.ban{
+	                width: 700%;
+	                height: 100%;
+	                margin-left: -100%;
+	                >li{
+	                    width: calc(100% / 7);
+	                    height: 100%;
+	                    float: left;
+	                &.b1{
+	                	background-color: #dad;
+	                    // background: url(../img/banner/b1.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                &.b2{
+	                	background-color: #aad;
+	                    // background: url(../img/banner/b2.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                &.b3{
+	                	background-color: #ddd;
+	                    // background: url(../img/banner/b3.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                &.b4{
+	                	background-color: #a9a;
+	                    // background: url(../img/banner/b4.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                &.b5{
+	                	background-color: #f93;
+	                    // background: url(../img/banner/b5.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                &.b6{
+	                	background-color: #d90;
+	                    // background: url(../img/banner/b6.jpg) no-repeat;
+	                    background-size: 100% 100%; }
+	                }//li
+	             }//ul.ban
+	             >.ind{
+	                transition: all 0.3s;
+	                position: absolute;
+	                z-index: 100;
+	                bottom: 10px;
+	                left: 50%;
+	                margin-left: -50px;
+	                width: 200px;
+	                height: 20px;
+	                >li{
+	                	transition: all 0.2s;
+	                	border-radius: 50%;
+	                	cursor: pointer;
+	                	float: left;
+	                	width: 10px;
+	                	height: 10px;
+	                	margin-right: 5px;
+	                	border: 2px solid #333;
+	                }//li
+	            }//.ind
+	        }//bslide
+        }//#banner
+	}//ad
+
+	>#event{background-color: #33a;}//event
+}//container
