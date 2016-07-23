@@ -26,8 +26,25 @@
 		$(document).ready(function(){
 			kind();
 
-			$('.click').on('click',function(){
-				$('#back').fadeOut(500);
+			// $('.click').on('click',function(){
+			// 	$(this).fadeOut(500);
+			// });
+			// $('.product').on('click',function(){
+			// 	$(this).find('ul').css({'display' : 'block'})
+			// });
+
+			var focari_1 = $('.focari_1'),
+				focari_2 = $('.focari_2');
+
+			focari_1.on("mousemove",function(e){
+
+				var posX = e.pageX;
+				focari_1.css({"left": 20 + posX/20 });
+			});
+			focari_2.on("mousemove",function(e){
+
+				var posX = e.pageX;
+				focari_2.css({"left": 250 + posX/-20 });
 			});
 		});//all
 	</script>
@@ -37,7 +54,7 @@
 	<div id="container">
 		<header id="headerBox">
 			<ul>
-				<li>
+				<li class="history">
 					<a href="#history">HISTORY</a>
 					<ul>
 						<li><a href="#history">2010s</a></li>
@@ -46,7 +63,7 @@
 						<li><a href="#history">1980s</a></li>
 					</ul>
 				</li>
-				<li>
+				<li class="product">
 					<a href="#product">PRODUCT</a>
 					<ul>
 						<li><a href="#product">CAN</a></li>
@@ -63,7 +80,7 @@
 						<li></li>
 					</ul>
 				</li>
-				<li>
+				<li class="ad">
 					<a href="#ad">AD</a>
 					<ul>
 						<li></li>
@@ -71,7 +88,7 @@
 						<li></li>
 					</ul>
 				</li>
-				<li>
+				<li class="event">
 					<a href="#event">EVENT</a>
 					<ul>
 						<li></li>
@@ -82,10 +99,10 @@
 			</ul>
 		</header>
 
-		<section id="main">
-			<div id="back">
-				<div class="click"></div>
-			</div>
+		<section id="pagemain">
+			<!-- <div class="click"></div> -->
+			<div class="focari_1"></div>
+			<div class="focari_2"></div>
 		</section>
 <!-- ___history________________________________________________________________________ -->
 		<section id="history">history</section>
@@ -157,6 +174,6 @@
 <!-- ___event________________________________________________________________________ -->
 		<section id="event">event</section>
 	</div> <!--CONTAINER-->
-	<script src="./js/banner.js"></script>
+	<!-- <script src="./js/banner.js"></script> -->
 </body>
 </html>

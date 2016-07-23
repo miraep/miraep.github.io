@@ -5,6 +5,7 @@ section{height: 100%;}
 #container{
 	width: 100%;
 	height: 100%;
+//HEADER______________________________________________________________________
 	>#headerBox{
 		width: 100%;
 		height: 6rem;
@@ -28,7 +29,7 @@ section{height: 100%;}
 					text-align: center;
 					color: #fff;
 				}//a
-//header_____HISTORY____________________________________________
+	//header_____HISTORY____________________________________________
 			&:nth-of-type(1){
 			&:hover > ul{display: block;}
 				>ul{
@@ -59,7 +60,7 @@ section{height: 100%;}
 					}//li
 				}//ul
 			}//history
-//header_____PRODUCT____________________________________________
+	//header_____PRODUCT____________________________________________
 			&:nth-of-type(2){
 			&:hover > ul{display: block;}
 				>ul{
@@ -90,7 +91,7 @@ section{height: 100%;}
 					}//li
 				}//ul
 			}//product
-//header_____LOGO____________________________________________
+	//header_____LOGO____________________________________________
 			&:nth-of-type(3){
 				width: 30%;
                 background-image: url(../img/logo.png);
@@ -99,7 +100,7 @@ section{height: 100%;}
                 background-position: center;
                 background-color: #fff;
             }
-//header_____AD____________________________________________
+	//header_____AD____________________________________________
             &:nth-of-type(4){
             &:hover > ul{display: block;}
 				>ul{
@@ -130,7 +131,7 @@ section{height: 100%;}
 					}//li
 				}//ul
             }
-//EVENT____________________________________________
+	//header_____EVENT____________________________________________
             &:nth-of-type(5){
             &:hover > ul{display: block;}
 				>ul{
@@ -164,27 +165,42 @@ section{height: 100%;}
 			}//li_all
 		}//ul
 	}//headerBox
-	>#main{
+	>#pagemain{
 		background-color: #a9c;
 		width: 100%;
 		height: calc(100% - 6rem);
-		>#back{
-			width: 100%; height: 100%;
-			background-color: rgba(#000,0.5);
-			position: relative;
-			>.click{
-				cursor: pointer;
-				width: 300px;
-				height: 300px;
-				border-radius: 50%;
-				position: absolute;
-				top: 50%; left: 50%;
-				margin-top: -150px; margin-left: -150px;
-				background-image: url(../img/click.png);
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-			}//click
-		}//click
+		position: relative;
+			// >.click{
+			// 	cursor: pointer;
+			// 	width: 300px;
+			// 	height: 300px;
+			// 	border-radius: 50%;
+			// 	position: absolute;
+			// 	top: 50%; left: 50%; z-index: 100;
+			// 	margin-top: -150px; margin-left: -150px;
+			// 	background-image: url(../img/click.png);
+			// 	background-repeat: no-repeat;
+			// 	background-size: 100% 100%;
+			// }//click
+		.focari_1{
+			position: absolute; z-index: 300;
+			top: 15%; left: 5%;
+			width: 550px;
+			height: 700px;
+			background-image: url(../img/focari_1.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.focari_2{
+			position: absolute; z-index: 200;
+			top: 15%; left: 18%;
+			width: 550px;
+			height: 700px;
+			background-image: url(../img/focari_2.png);
+			background-repeat: no-repeat;
+			background-size: 80% 80%;
+		}
+
 	}
 	>#history{
 		background-color: #d9a;
