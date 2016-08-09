@@ -2,10 +2,12 @@
 
 function kind(){
 	var thumli = $('.thumnail').find('li'),
-		bigImg = $('.imgbox');
+		bigImg = $('.imgbox'),
+		kind = $('.kind_list').find('li');
+		
 
-	bigImg.html("<img src='./img/kind/1.png'>").find('img')
-				.css({'width': 'auto' , 'height': 100+'%'});
+	bigImg.html("<img src='./img/kind/1_2.png'>").find('img')
+				.css({'height': 100 + '%'});
 
 	thumli.on('click', function(e){
 		e.preventDefault();

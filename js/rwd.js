@@ -52,6 +52,13 @@
             dd3.on('mouseleave', function(){
                 dd3.find('a').css({'font-size':'2rem','font-weight':'normal'})
             });
+
+            dd4.on('mouseenter', function(){
+                dd4.find('a').css({'font-size':'2.5rem','font-weight':'bold'})
+            });
+            dd4.on('mouseleave', function(){
+                dd4.find('a').css({'font-size':'2rem','font-weight':'normal'})
+            });
         }else {
             //메뉴나타나기
             $('.btn').on('click', function(){
@@ -78,6 +85,13 @@
             });
             dd3.on('mouseleave', function(){
                 dd3.find('a').css({'font-size':'2rem','font-weight':'normal'})
+            });
+
+            dd4.on('mouseenter', function(){
+                dd4.find('a').css({'font-size':'2.5rem','font-weight':'bold'})
+            });
+            dd4.on('mouseleave', function(){
+                dd4.find('a').css({'font-size':'2rem','font-weight':'normal'})
             });
         };
     }; // rwd();

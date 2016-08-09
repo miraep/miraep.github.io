@@ -1,0 +1,68 @@
+
+/*_____mobile_v 모바일 세로____________________*/
+@media screen and (max-width:480px) {
+    body{background-color: #9a1;}
+}
+/*_____mobile_h 모바일 가로____________________*/
+@media screen and (min-width:481px) and (max-width:640px) {
+    body{background-color: #acc;}
+}
+/*_____tablet_v 타블렛 세로____________________*/
+@media screen and (min-width:641px) and (max-width:768px) {
+    body{background-color: #cda;}
+}
+/*_____tablet_h 타블렛 가로____________________*/
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body{background-color: #000;}
+}
+/*_____pc 피씨_______________________________*/
+@media screen and (min-width:1025px) {
+    #container{
+	width: 100%;
+	height: 4000px;
+	background-color: beige;
+	>#headerBox{
+		width: 100%; height: 120px;
+		background-color: #daa;
+	}//header
+	>#main{
+		width: 100%; height: 650px;
+		background-color: #9a1;
+	}//main
+	>#notice{
+		width: 100%; height: 60px;
+		background-color: #9a9;
+	}//notice
+	>#reward{
+		width: 100%; height: 320px;
+		background-color: #f91;
+	}//reward
+	>#bigImg{
+		width: 100%; height: 700px;
+		background-color: #998;
+	}//bigImg
+	>#reserve{
+		width: 100%; height: 700px;
+		background-color: #acf;
+		//여기 박스 두개!
+	}//reserve
+	>#favorite{
+		width: 100%; height: 800px;
+		background-color: #8fd;
+	}//favorite
+	>#thru{
+		width: 100%; height: 600px;
+		background-color: #aaf;
+	}//thru
+	>#store{
+		width: 100%; height: 400px;
+		background-color: #2ac;
+	}//store
+	>#footerBox{
+		width: 100%; height: 700px;
+		background-color: #af1;
+	}//footerBox
+}//container
+
+
+}

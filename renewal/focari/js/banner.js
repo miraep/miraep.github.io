@@ -75,7 +75,7 @@
       indLi.first().css({'display':'none'});
    
       // 자동움직임
-      function startBtn(){ settingTime = setInterval('$(".right_btn").click()', 2000) };
+      function startBtn(){ settingTime = setInterval('$(".right_btn").click()', 5000) };
       function stopBtn(){	clearInterval( settingTime )};
       startBtn()
       $('.ban').on({mouseenter:stopBtn ,mouseleave:startBtn});

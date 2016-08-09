@@ -6,10 +6,22 @@ section {
 
 #container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative;
+  /*_____HEADER________________________________________*/
+  /*_____NAV______________________________________*/
+  /*_____PAGEMAIN______________________________________*/
+  /*_____HISTORY_______________________________________*/
+  /*_____PRODUCT_______________________________________*/
+  /*_____AD____________________________________________*/
+  /*_____EVENT_________________________________________*/ }
   #container > #headerBox {
     width: 100%;
-    height: 6rem; }
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; }
     #container > #headerBox > ul {
       width: 100%;
       height: 100%; }
@@ -19,7 +31,35 @@ section {
         float: left;
         border-right: 1px solid #fff;
         box-sizing: border-box;
-        background-color: #0071ba; }
+        background-color: rgba(0, 113, 186, 0.8); }
+        #container > #headerBox > ul > li:hover > ul {
+          display: block; }
+        #container > #headerBox > ul > li > ul {
+          display: none;
+          width: 100%;
+          height: 16rem; }
+          #container > #headerBox > ul > li > ul > li {
+            border-bottom: 1px solid #0071ba;
+            box-sizing: border-box;
+            width: 100%;
+            height: 4rem;
+            text-align: center; }
+            #container > #headerBox > ul > li > ul > li > a {
+              width: 100%;
+              height: 100%;
+              font-weight: bold;
+              color: #0071ba;
+              background-color: #fff;
+              display: block;
+              font-size: 1.5rem;
+              line-height: 64px; }
+              #container > #headerBox > ul > li > ul > li > a:hover {
+                color: #fff;
+                background-color: #0071ba; }
+            #container > #headerBox > ul > li > ul > li:first-child {
+              border-top: 1px solid #0071ba; }
+            #container > #headerBox > ul > li > ul > li:last-child {
+              border-bottom: 0; }
         #container > #headerBox > ul > li > a {
           width: 100%;
           height: 100%;
@@ -29,62 +69,6 @@ section {
           line-height: 96px;
           text-align: center;
           color: #fff; }
-        #container > #headerBox > ul > li:nth-of-type(1):hover > ul {
-          display: block; }
-        #container > #headerBox > ul > li:nth-of-type(1) > ul {
-          display: none;
-          width: 100%;
-          height: 16rem; }
-          #container > #headerBox > ul > li:nth-of-type(1) > ul > li {
-            border-bottom: 1px solid #0071ba;
-            box-sizing: border-box;
-            width: 100%;
-            height: 4rem;
-            text-align: center; }
-            #container > #headerBox > ul > li:nth-of-type(1) > ul > li > a {
-              width: 100%;
-              height: 100%;
-              font-weight: bold;
-              color: #0071ba;
-              background-color: #fff;
-              display: block;
-              font-size: 1.5rem;
-              line-height: 64px; }
-              #container > #headerBox > ul > li:nth-of-type(1) > ul > li > a:hover {
-                color: #fff;
-                background-color: #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(1) > ul > li:first-child {
-              border-top: 1px solid #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(1) > ul > li:last-child {
-              border-bottom: 0; }
-        #container > #headerBox > ul > li:nth-of-type(2):hover > ul {
-          display: block; }
-        #container > #headerBox > ul > li:nth-of-type(2) > ul {
-          display: none;
-          width: 100%;
-          height: 16rem; }
-          #container > #headerBox > ul > li:nth-of-type(2) > ul > li {
-            border-bottom: 1px solid #0071ba;
-            box-sizing: border-box;
-            width: 100%;
-            height: 4rem;
-            text-align: center; }
-            #container > #headerBox > ul > li:nth-of-type(2) > ul > li > a {
-              width: 100%;
-              height: 100%;
-              font-weight: bold;
-              color: #0071ba;
-              background-color: #fff;
-              display: block;
-              font-size: 1.5rem;
-              line-height: 64px; }
-              #container > #headerBox > ul > li:nth-of-type(2) > ul > li > a:hover {
-                color: #fff;
-                background-color: #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(2) > ul > li:first-child {
-              border-top: 1px solid #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(2) > ul > li:last-child {
-              border-bottom: 0; }
         #container > #headerBox > ul > li:nth-of-type(3) {
           width: 30%;
           background-image: url(../img/logo.png);
@@ -92,109 +76,317 @@ section {
           background-size: contain;
           background-position: center;
           background-color: #fff; }
-        #container > #headerBox > ul > li:nth-of-type(4):hover > ul {
-          display: block; }
-        #container > #headerBox > ul > li:nth-of-type(4) > ul {
-          display: none;
+  #container > #nav {
+    width: 15px;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    right: 20px;
+    margin-top: -50px; }
+    #container > #nav > ul {
+      width: 100%;
+      height: 100%; }
+      #container > #nav > ul > li {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #0071ba;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: all 0.2s; }
+        #container > #nav > ul > li:last-child {
+          margin-bottom: 0; }
+        #container > #nav > ul > li:hover {
+          background-color: #0071ba;
+          border: 1px solid #fff; }
+        #container > #nav > ul > li > a {
           width: 100%;
-          height: 16rem; }
-          #container > #headerBox > ul > li:nth-of-type(4) > ul > li {
-            border-bottom: 1px solid #0071ba;
-            box-sizing: border-box;
-            width: 100%;
-            height: 4rem;
-            text-align: center; }
-            #container > #headerBox > ul > li:nth-of-type(4) > ul > li > a {
-              width: 100%;
-              height: 100%;
-              font-weight: bold;
-              color: #0071ba;
-              background-color: #fff;
-              display: block;
-              font-size: 1.5rem;
-              line-height: 64px; }
-              #container > #headerBox > ul > li:nth-of-type(4) > ul > li > a:hover {
-                color: #fff;
-                background-color: #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(4) > ul > li:first-child {
-              border-top: 1px solid #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(4) > ul > li:last-child {
-              border-bottom: 0; }
-        #container > #headerBox > ul > li:nth-of-type(5):hover > ul {
-          display: block; }
-        #container > #headerBox > ul > li:nth-of-type(5) > ul {
-          display: none;
-          width: 100%;
-          height: 16rem; }
-          #container > #headerBox > ul > li:nth-of-type(5) > ul > li {
-            border-bottom: 1px solid #0071ba;
-            box-sizing: border-box;
-            width: 100%;
-            height: 4rem;
-            text-align: center; }
-            #container > #headerBox > ul > li:nth-of-type(5) > ul > li > a {
-              width: 100%;
-              height: 100%;
-              font-weight: bold;
-              color: #0071ba;
-              background-color: #fff;
-              display: block;
-              font-size: 1.5rem;
-              line-height: 64px; }
-              #container > #headerBox > ul > li:nth-of-type(5) > ul > li > a:hover {
-                color: #fff;
-                background-color: #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(5) > ul > li:first-child {
-              border-top: 1px solid #0071ba; }
-            #container > #headerBox > ul > li:nth-of-type(5) > ul > li:last-child {
-              border-bottom: 0; }
+          height: 100%;
+          display: block;
+          line-height: 60px;
+          font-weight: bolder;
+          font-size: 1.5rem; }
   #container > #pagemain {
-    background-color: #a9c;
+    background-image: url(../img/bg/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: calc(100% - 6rem);
+    padding-top: 6rem;
     position: relative; }
-    #container > #pagemain .focari_1 {
+    #container > #pagemain > .focari_1 {
       position: absolute;
       z-index: 300;
-      top: 15%;
-      left: 5%;
-      width: 550px;
-      height: 700px;
+      top: 23%;
+      left: 0;
+      width: 450px;
+      height: 550px;
       background-image: url(../img/focari_1.png);
       background-repeat: no-repeat;
       background-size: 100% 100%; }
-    #container > #pagemain .focari_2 {
+    #container > #pagemain > .focari_2 {
       position: absolute;
       z-index: 200;
-      top: 15%;
-      left: 18%;
-      width: 550px;
-      height: 700px;
+      top: 23%;
+      left: 15%;
+      width: 450px;
+      height: 550px;
       background-image: url(../img/focari_2.png);
       background-repeat: no-repeat;
       background-size: 80% 80%; }
+    #container > #pagemain > .intro1 {
+      position: absolute;
+      z-index: 300;
+      left: 43%;
+      top: 22%;
+      width: 170px;
+      height: 190px;
+      background-size: cover;
+      background-image: url(../img/intro_1.png); }
+    #container > #pagemain > .intro2 {
+      position: absolute;
+      z-index: 300;
+      left: 39%;
+      top: 50%;
+      width: 140px;
+      height: 140px;
+      background-size: 100% 100%;
+      background-image: url(../img/intro_2.png); }
+    #container > #pagemain > .intro3 {
+      position: absolute;
+      z-index: 300;
+      left: 44%;
+      top: 68%;
+      width: 110px;
+      height: 110px;
+      background-size: 100% 100%;
+      background-image: url(../img/intro_3.png); }
+    #container > #pagemain .ka {
+      float: right;
+      width: 450px;
+      height: 450px;
+      background-image: url(../img/main_box.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-right: 100px;
+      margin-top: 150px; }
+      #container > #pagemain .ka > ul {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        #container > #pagemain .ka > ul > li {
+          position: absolute;
+          z-index: 100;
+          width: 100px;
+          height: 50px;
+          background-repeat: no-repeat; }
+          #container > #pagemain .ka > ul > li:nth-of-type(1) {
+            top: 140px;
+            left: 260px;
+            background-image: url(../img/box1/ca.png);
+            animation: ca 4s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(2) {
+            top: 100px;
+            left: 80px;
+            background-image: url(../img/box1/citrate.png);
+            animation: citrate 5s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(3) {
+            top: 190px;
+            left: 100px;
+            background-image: url(../img/box1/cl.png);
+            animation: cl 3s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(4) {
+            top: 160px;
+            left: 180px;
+            background-image: url(../img/box1/k.png);
+            animation: k 4s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(5) {
+            top: 230px;
+            left: 200px;
+            background-image: url(../img/box1/lactate.png);
+            animation: lactate 6s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(6) {
+            top: 900px;
+            left: 200px;
+            background-image: url(../img/box1/mg.png);
+            animation: mg 3s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(7) {
+            top: 180px;
+            left: 300px;
+            background-image: url(../img/box1/na.png);
+            animation: na 3s ease infinite; }
+          #container > #pagemain .ka > ul > li:nth-of-type(8) {
+            right: 0;
+            top: 70px;
+            width: 150px;
+            height: 280px;
+            background-size: contain;
+            background-image: url(../img/kind/2.png);
+            animation: deg 3s ease infinite; }
   #container > #history {
-    background-color: #d9a;
-    width: 100%; }
-  #container > #product {
-    background-color: #aaa; }
-    #container > #product > #gallery {
-      padding: 100px;
+    background-color: #5571b0;
+    width: 100%;
+    height: 100%; }
+    #container > #history > h2 {
+      float: left;
+      display: block;
+      margin: 10px;
+      width: 180px;
+      height: 60px;
+      border-bottom: 1px solid #fff;
+      background-image: url(../img/history_1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    #container > #history > ul {
       width: calc(100% - 200px);
-      height: calc(100% - 200px);
-      background-color: #a91; }
+      height: 100%;
+      float: right;
+      overflow: hidden; }
+      #container > #history > ul > li {
+        float: left;
+        height: 100%;
+        padding-top: 70px;
+        border-right: 1px solid #0071ba;
+        box-sizing: border-box;
+        transition: all 1s ease; }
+        #container > #history > ul > li > h3 {
+          margin-left: 60px;
+          margin-top: 50px;
+          width: 200px;
+          height: 80px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        #container > #history > ul > li > .history_in_box {
+          margin: 20px 50px 50px 60px;
+          width: 400px;
+          height: 600px;
+          border: 1px solid; }
+        #container > #history > ul > li:nth-of-type(1) {
+          background-color: #fff;
+          width: 50%;
+          background-image: url(../img/history/box.png);
+          background-repeat: no-repeat;
+          background-size: 150px 100px;
+          background-position: 0 0; }
+          #container > #history > ul > li:nth-of-type(1) > h3 {
+            background-image: url(../img/history/2010.png); }
+          #container > #history > ul > li:nth-of-type(1) > div {
+            background-image: url(../img/history/2010_text.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%; }
+        #container > #history > ul > li:nth-of-type(2) {
+          background-color: #ddd;
+          width: calc(50% / 3);
+          background-image: url(../img/history/box.png);
+          background-repeat: no-repeat;
+          background-size: 150px 100px;
+          background-position: 0 0; }
+          #container > #history > ul > li:nth-of-type(2) > h3 {
+            background-image: url(../img/history/2000.png); }
+          #container > #history > ul > li:nth-of-type(2) > div {
+            background-image: url(../img/history/2000_text.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow-y: scroll; }
+        #container > #history > ul > li:nth-of-type(3) {
+          background-color: #fff;
+          width: calc(50% / 3);
+          background-image: url(../img/history/box.png);
+          background-repeat: no-repeat;
+          background-size: 150px 100px;
+          background-position: 0 0; }
+          #container > #history > ul > li:nth-of-type(3) > h3 {
+            background-image: url(../img/history/1990.png); }
+          #container > #history > ul > li:nth-of-type(3) > div {
+            background-image: url(../img/history/1990_text.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow-y: scroll; }
+        #container > #history > ul > li:nth-of-type(4) {
+          border-right: 0;
+          background-color: #ddd;
+          width: calc(50% / 3);
+          background-image: url(../img/history/box.png);
+          background-repeat: no-repeat;
+          background-size: 150px 100px;
+          background-position: 0 0; }
+          #container > #history > ul > li:nth-of-type(4) > h3 {
+            background-image: url(../img/history/1980.png); }
+          #container > #history > ul > li:nth-of-type(4) > div {
+            background-image: url(../img/history/1980_text.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%; }
+        #container > #history > ul > li.widthview {
+          width: 50%;
+          height: 100%; }
+        #container > #history > ul > li.otherWidth {
+          width: calc(50% / 3); }
+  #container > #product {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #container > #product > #kind {
+      width: 220px;
+      float: right;
+      height: 100%;
+      background-color: #0071ba; }
+      #container > #product > #kind > h2 {
+        display: block;
+        margin: 10px;
+        width: 200px;
+        height: 60px;
+        border-bottom: 1px solid #fff;
+        background-image: url(../img/product_1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+      #container > #product > #kind > ol {
+        margin-top: 20px;
+        width: 100%;
+        height: calc(100% - 100px); }
+        #container > #product > #kind > ol > li {
+          padding-left: 10%;
+          width: 90%;
+          height: 2.5rem;
+          margin-top: 1rem;
+          transition: all 0.5s; }
+          #container > #product > #kind > ol > li > a {
+            line-height: 48px;
+            font-size: 1.3rem;
+            color: #fff;
+            border-bottom: 1px solid  #fff; }
+          #container > #product > #kind > ol > li:hover {
+            background-color: #0071ba; }
+          #container > #product > #kind > ol > li:hover a {
+            color: #fff;
+            font-weight: bold; }
+    #container > #product > #gallery {
+      float: left;
+      padding: 100px;
+      width: calc(100% - 420px);
+      height: calc(100% - 200px); }
       #container > #product > #gallery > .imgbox {
         float: left;
         width: calc(100% - 250px);
         height: 100%;
-        background-color: #a01; }
+        border: 10px solid #0071ba;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.5); }
+        #container > #product > #gallery > .imgbox > img {
+          width: 100%;
+          height: 100%;
+          position: center; }
       #container > #product > #gallery > .thumnail {
         float: right;
-        width: calc(250px - 20px);
-        height: calc(100% - 20px);
-        padding: 10px;
-        background-color: #d9d;
-        position: relative; }
+        width: 250px;
+        height: 100%;
+        border-right: 10px solid #0071ba;
+        border-top: 10px solid #0071ba;
+        border-bottom: 10px solid #0071ba;
+        box-sizing: border-box; }
         #container > #product > #gallery > .thumnail > ul {
           float: left;
           width: 100%;
@@ -206,15 +398,6 @@ section {
             background-color: #fff;
             border: 2px solid #acf;
             box-sizing: border-box; }
-            #container > #product > #gallery > .thumnail > ul > li > a {
-              width: 100%;
-              height: 100%;
-              display: block;
-              background-size: 100% 100%;
-              background-position: center;
-              background-repeat: no-repeat; }
-              #container > #product > #gallery > .thumnail > ul > li > a:hover {
-                background-size: 150%; }
             #container > #product > #gallery > .thumnail > ul > li:nth-of-type(1) > a {
               background-image: url(../img/kind/1.png); }
             #container > #product > #gallery > .thumnail > ul > li:nth-of-type(2) > a {
@@ -235,18 +418,40 @@ section {
               background-image: url(../img/kind/9.png); }
             #container > #product > #gallery > .thumnail > ul > li:nth-of-type(10) > a {
               background-image: url(../img/kind/10.png); }
+            #container > #product > #gallery > .thumnail > ul > li > a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat; }
+              #container > #product > #gallery > .thumnail > ul > li > a:hover {
+                background-size: 120%; }
   #container > #ad {
-    background-color: #d9d; }
+    background-color: #0071ba;
+    width: 100%;
+    height: 100%; }
+    #container > #ad > h2 {
+      float: left;
+      display: block;
+      margin: 20px;
+      width: 200px;
+      height: 60px;
+      border-bottom: 1px solid #fff;
+      background-image: url(../img/ad_1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 30px; }
     #container > #ad > #banner {
       width: 100%;
-      height: 600px;
+      height: 700px;
       position: relative;
       overflow: hidden; }
       #container > #ad > #banner > .left_btn {
         position: absolute;
         top: 50%;
         margin-top: -30px;
-        left: 10px;
+        left: 30px;
         width: 30px;
         height: 50px; }
         #container > #ad > #banner > .left_btn > button {
@@ -257,7 +462,7 @@ section {
         position: absolute;
         top: 50%;
         margin-top: -30px;
-        right: 10px;
+        right: 30px;
         width: 30px;
         height: 50px; }
         #container > #ad > #banner > .right_btn > button {
@@ -277,22 +482,40 @@ section {
             float: left; }
             #container > #ad > #banner > .bslide > .ban > li.b1 {
               background-color: #dad;
-              background-size: 100% 100%; }
+              background: url(../img/ad/7.png) no-repeat;
+              background-size: 50% 100%;
+              background-position: center center;
+              background-color: #fff; }
             #container > #ad > #banner > .bslide > .ban > li.b2 {
               background-color: #aad;
-              background-size: 100% 100%; }
+              background: url(../img/ad/2.jpg) no-repeat;
+              background-size: 90% 90%;
+              background-position: center center;
+              background-color: #fff; }
             #container > #ad > #banner > .bslide > .ban > li.b3 {
               background-color: #ddd;
-              background-size: 100% 100%; }
+              background: url(../img/ad/3.jpg) no-repeat;
+              background-size: 100% 100%;
+              background-position: center center;
+              background-color: #fff; }
             #container > #ad > #banner > .bslide > .ban > li.b4 {
               background-color: #a9a;
-              background-size: 100% 100%; }
+              background: url(../img/ad/4.jpg) no-repeat;
+              background-size: 50% 100%;
+              background-position: center center;
+              background-color: #fff; }
             #container > #ad > #banner > .bslide > .ban > li.b5 {
               background-color: #f93;
-              background-size: 100% 100%; }
+              background: url(../img/ad/5.jpg) no-repeat;
+              background-size: 50% 100%;
+              background-position: center center;
+              background-color: #fff; }
             #container > #ad > #banner > .bslide > .ban > li.b6 {
               background-color: #d90;
-              background-size: 100% 100%; }
+              background: url(../img/ad/6.jpg) no-repeat;
+              background-size: 50% 100%;
+              background-position: center center;
+              background-color: #fff; }
         #container > #ad > #banner > .bslide > .ind {
           transition: all 0.3s;
           position: absolute;
@@ -312,6 +535,10 @@ section {
             margin-right: 5px;
             border: 2px solid #333; }
   #container > #event {
-    background-color: #33a; }
+    background-image: url(../img/ad/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=index.css.map */

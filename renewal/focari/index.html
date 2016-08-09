@@ -18,13 +18,62 @@
 	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
 	<script src="./js/jquery/jquery-ui.min.js"></script>
 	<script src="./js/gallery.js"></script>
+	<script src="./js/accodion.js"></script>
 	<title>DONG-A OTSUKA</title>
 	<style type="text/css">
 		.indWidth{background-color: #0071ba;}
+		@keyframes ca{
+			0%{top: 120px; left: 200px;}
+			33%{top: 130px; left: 210px;}
+			66%{top: 140px; left: 210px;}
+			100%{top: 120px; left: 200px;}
+		}
+		@keyframes citrate{
+			0%{top: 80px; left: 40px;}
+			33%{top: 80px; left: 50px;}
+			66%{top: 90px; left: 50px;}
+			100%{top: 80px; left: 40px;}
+		}
+		@keyframes cl{
+			0%{top: 170px; left: 60px;}
+			33%{top: 160px; left: 70px;}
+			66%{top: 160px; left: 80px;}
+			100%{top: 170px; left: 60px;}
+		}
+		@keyframes k{
+			0%{top: 130px; left: 130px;}
+			33%{top: 150px; left: 150px;}
+			66%{top: 160px; left: 140px;}
+			100%{top: 130px; left: 130px;}
+		}
+		@keyframes lactate{
+			0%{top: 200px; left: 140px;}
+			33%{top: 190px; left: 130px;}
+			66%{top: 200px; left: 130px;}
+			100%{top: 200px; left: 140px;}
+		}
+		@keyframes mg{
+			0%{top: 70px; left: 160px;}
+			33%{top: 80px; left: 160px;}
+			66%{top: 80px; left: 170px;}
+			100%{top: 70px; left: 160px;}
+		}
+		@keyframes na{
+			0%{top: 150px; left: 230px;}
+			33%{top: 170px; left: 250px;}
+			66%{top: 150px; left: 250px;}
+			100%{top: 150px; left: 230px;}
+		}
+		@keyframes deg{
+			0%{transform: rotate(0deg);}
+			66%{transform: rotate(10deg);}
+			100%{transform: rotate(0deg);}
+		}
 	</style>
 	<script>
 		$(document).ready(function(){
 			kind();
+			accodion();
 
 			// $('.click').on('click',function(){
 			// 	$(this).fadeOut(500);
@@ -44,8 +93,11 @@
 			focari_2.on("mousemove",function(e){
 
 				var posX = e.pageX;
-				focari_2.css({"left": 250 + posX/-20 });
+				focari_2.css({"left": 220 + posX/-20 });
 			});
+
+
+
 		});//all
 	</script>
 	
@@ -74,42 +126,84 @@
 				</li>
 				<li>
 					<a href="#"><span class="me_hidden">LOGO</span></a>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
 				</li>
 				<li class="ad">
 					<a href="#ad">AD</a>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><a href="#ad">SNS</a></li>
+						<li><a href="#ad">TV</a></li>
+						<li><a href="#ad">마케팅</a></li>
 					</ul>
 				</li>
 				<li class="event">
 					<a href="#event">EVENT</a>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><a href="#event">진행중 이벤트</a></li>
+						<li><a href="#event">지난 이벤트</a></li>
+						<li><a href="#event">당첨자 확인</a></li>
 					</ul>
 				</li>
 			</ul>
 		</header>
 
+		<div id="nav">
+			<ul>
+				<li><a href="#pagemain"></a></li>
+				<li><a href="#history"></a></li>
+				<li><a href="#product"></a></li>
+				<li><a href="#ad"></a></li>
+				<li><a href="#event"></a></li>
+			</ul>
+		</div>
+
 		<section id="pagemain">
 			<!-- <div class="click"></div> -->
 			<div class="focari_1"></div>
 			<div class="focari_2"></div>
+			<div class="intro1"></div>
+			<div class="intro2"></div>
+			<div class="intro3"></div>
+
+			<div class="ka">
+				<ul>
+					<li class="k1"></li>
+					<li class="k2"></li>
+					<li class="k3"></li>
+					<li class="k4"></li>
+					<li class="k5"></li>
+					<li class="k6"></li>
+					<li class="k7"></li>
+					<li class="can"></li>
+				</ul>
+			</div>
 		</section>
 <!-- ___history________________________________________________________________________ -->
-		<section id="history">history</section>
+		<section id="history">
+			<h2><a href="#history"></a></h2>
+			<ul class="ac">
+				<li class="his_2010">
+					<h3><span class="me_hidden">2010</span></h3>
+					<div class="history_in_box"></div>
+				</li>
+				<li class="his_2000">
+					<h3><span class="me_hidden">2000</span></h3>
+					<div class="history_in_box"></div>
+				</li>
+				<li class="his_1990">
+					<h3><span class="me_hidden">1990</span></h3>
+					<div class="history_in_box"></div>
+				</li>
+				<li class="his_1980">
+					<h3><span class="me_hidden">1980</span></h3>
+					<div class="history_in_box"></div>
+				</li>
+			</ul>
+		</section>
 <!-- ___product________________________________________________________________________ -->
 		<section id="product">
-			<!-- <div>
-				<ul>
+			<article id="kind">
+				<h2><a href="#product"></a></h2>
+				<ol class="kind_list">
 					<li><a href="#">245ml CAN</a></li>
 					<li><a href="#">340ml CAN</a></li>
 					<li><a href="#">340ml PET</a></li>
@@ -120,32 +214,38 @@
 					<li><a href="#">74g 분말</a></li>
 					<li><a href="#">분말 Pack</a></li>
 					<li><a href="#">스퀴즈보틀</a></li>
-				</ul>
-			</div> -->
+					<li><a href="#">CAN</a></li>
+					<li><a href="#">PET</a></li>
+					<li><a href="#">분말</a></li>
+					<li><a href="#">스퀴즈보틀</a></li>
+				</ol>
+			</article>
 			<article id="gallery">
 				<div class="imgbox">
-					<img src="#" alt="썸네일 이미지 크게보기">
+					<img src="#" alt="썸네일 이미지 크게보기" />
 				</div>
 				<div class="thumnail">
 					<ul>
-						<li><a href="#" data-img="./img/kind/1.png"></a></li>
-						<li><a href="#" data-img="./img/kind/2.png"></a></li>
-						<li><a href="#" data-img="./img/kind/3.png"></a></li>
-						<li><a href="#" data-img="./img/kind/4.png"></a></li>
-						<li><a href="#" data-img="./img/kind/5.png"></a></li>
-						<li><a href="#" data-img="./img/kind/6.png"></a></li>
-						<li><a href="#" data-img="./img/kind/7.png"></a></li>
-						<li><a href="#" data-img="./img/kind/8.png"></a></li>
-						<li><a href="#" data-img="./img/kind/9.png"></a></li>
-						<li><a href="#" data-img="./img/kind/10.png"></a></li>
+						<!-- 클릭시 띄워지는 이미지 -->
+						<li><a href="#" data-img="./img/kind/1_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/2_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/3_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/4_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/5_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/6_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/7_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/8_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/9_2.png"></a></li>
+						<li><a href="#" data-img="./img/kind/10_2.png"></a></li>
 					</ul>
 				</div>
 			</article>
 		</section>
 <!-- ___ad________________________________________________________________________ -->
 		<section id="ad">
+
+			<h2><a href="#ad"></a></h2>
 			<article id="banner">
-				<h2>product</h2>
 				<div class="left_btn"><button aria-label="슬라이드 왼쪽 버튼"></button></div>
 				<div class="right_btn"><button aria-label="슬라이드 오른쪽 버튼"></button></div>
 				<div class="bslide">
@@ -174,6 +274,6 @@
 <!-- ___event________________________________________________________________________ -->
 		<section id="event">event</section>
 	</div> <!--CONTAINER-->
-	<!-- <script src="./js/banner.js"></script> -->
+	<script src="./js/banner.js"></script>
 </body>
 </html>
