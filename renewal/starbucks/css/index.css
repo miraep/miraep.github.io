@@ -30,7 +30,8 @@
   .click_slide {
     width: 100%;
     height: 120px;
-    background-color: #111; }
+    background-color: #111;
+    display: none; }
     .click_slide > .inner_box1100 > .joinus {
       width: calc(50% - 1px);
       height: 100%;
