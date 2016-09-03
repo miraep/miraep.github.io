@@ -488,347 +488,157 @@
               #container > #headerBox > .inner_box1100 > #gnb > ul > li:nth-of-type(6) {
                 width: 130px;
                 height: 100%; }
-    #container > #main {
-      padding-top: 120px;
+    #container > #login_title {
+      margin-top: 120px;
       width: 100%;
-      height: 650px;
-      background-color: #9a1; }
-    #container > #notice {
-      width: 100%;
-      height: 60px;
-      background-color: #9a9; }
-      #container > #notice > .inner_box960 > #box_left {
-        width: 50%;
-        height: 100%;
-        float: left;
-        background-color: #000; }
-      #container > #notice > .inner_box960 > #box_right {
-        width: 50%;
-        height: 100%;
-        float: right;
-        background-color: #f6f5ef; }
-    #container > #reward {
-      width: 100%;
-      height: 316px;
-      position: relative; }
-      #container > #reward > .reward_left {
-        position: absolute;
-        z-index: 200;
-        left: 50%;
-        margin-left: -50%;
-        width: 40%;
-        height: 100%;
-        float: left;
-        background-image: url(../img/reward/reward_star.png);
-        background-repeat: no-repeat;
-        background-size: c; }
-      #container > #reward > .reward_right {
-        width: 100%;
-        height: 100%;
-        float: right;
-        background-image: url(../img/reward/reward_texbg.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%; }
-    #container > #bigImg {
-      width: 100%;
-      height: 700px;
-      background-image: url(../img/bigimg/bg1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      position: relative; }
-      #container > #bigImg > .circle1 {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 500;
-        top: 5%;
-        left: 5%;
-        background-color: #dad; }
-      #container > #bigImg > .circle2 {
-        width: 210px;
-        height: 210px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 500;
-        top: 40%;
-        left: 30%;
-        background-color: #add; }
-      #container > #bigImg > .circle3 {
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 500;
-        bottom: 0;
-        right: 5%;
-        margin-bottom: -5%;
-        background-color: #dda; }
-    #container > #reserve {
-      width: 100%;
-      height: 700px;
-      background-color: #acf; }
-      #container > #reserve > .beans {
-        width: 100%;
-        height: 400px;
-        background-image: url(../img/bean/beans/bg.jpg);
-        background-size: cover; }
-      #container > #reserve > .beansReserve {
-        width: 100%;
-        height: 300px;
-        background-color: #171717;
+      height: 178px;
+      background-image: url(../img/signin/login_title.jpg);
+      background-repeat: no-repeat; }
+      #container > #login_title > .inner_box1100 {
         position: relative; }
-        #container > #reserve > .beansReserve > .beans_bg {
-          background-image: url(../img/bean/beansreserve/beans_img.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          width: 600px;
-          height: 400px;
+        #container > #login_title > .inner_box1100 > h2 {
           position: absolute;
-          right: -50px;
-          top: -82px;
-          z-index: 100; }
-        #container > #reserve > .beansReserve > .beans_ob {
-          background-image: url(../img/bean/beansreserve/object.png);
-          background-repeat: no-repeat;
-          width: 500px;
-          height: 320px;
+          top: 110px;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 50px;
+          background-image: url(../img/signin/login_txt.png);
+          background-repeat: no-repeat; }
+        #container > #login_title > .inner_box1100 > ul {
           position: absolute;
-          right: 20px;
-          top: -50px;
-          z-index: 200; }
-        #container > #reserve > .beansReserve > .inner_box1100 {
-          position: relative; }
-          #container > #reserve > .beansReserve > .inner_box1100 > .reserve_logo {
-            width: 100px;
-            height: 300px;
-            float: left;
-            background-image: url(../img/bean/beansreserve/reserve_logo.png);
-            background-repeat: no-repeat;
-            background-position: center; }
-          #container > #reserve > .beansReserve > .inner_box1100 > .reserve_txt {
-            margin-top: 110px;
-            margin-left: 20px;
-            width: 420px;
-            height: 40px;
-            float: left;
-            background-image: url(../img/bean/beansreserve/reserve_txt.png);
-            background-repeat: no-repeat; }
-          #container > #reserve > .beansReserve > .inner_box1100 > .reserve_btn {
-            width: 120px;
-            height: 30px;
-            display: block;
-            float: left;
-            border: 2px solid #d5b192;
-            border-radius: 3px;
-            position: absolute;
-            top: 180px;
-            left: 120px; }
-            #container > #reserve > .beansReserve > .inner_box1100 > .reserve_btn > a {
+          bottom: 25px;
+          right: 0;
+          width: 80px;
+          height: 16px;
+          background-color: #a9d; }
+          #container > #login_title > .inner_box1100 > ul > li {
+            float: left; }
+            #container > #login_title > .inner_box1100 > ul > li:nth-of-type(1) {
+              width: 16px;
+              height: 16px; }
+              #container > #login_title > .inner_box1100 > ul > li:nth-of-type(1) > a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url(../img/signin/home_btn.png);
+                background-repeat: no-repeat; }
+            #container > #login_title > .inner_box1100 > ul > li:nth-of-type(2) {
+              margin: 2px 5px;
+              width: 6px;
+              height: 12px;
+              background-image: url(../img/signin/arrow_btn.png);
+              background-repeat: no-repeat; }
+            #container > #login_title > .inner_box1100 > ul > li:nth-of-type(3) {
+              width: 45px;
+              height: 16px;
+              background-color: #adc; }
+              #container > #login_title > .inner_box1100 > ul > li:nth-of-type(3) > a {
+                color: #fff;
+                font-size: 14px; }
+    #container > #login_bigbox {
+      padding: 50px 0 80px 0;
+      width: 100%;
+      height: 470px;
+      background-color: #fff; }
+      #container > #login_bigbox > .inner_box1100 > .login {
+        width: 100%;
+        height: 277px;
+        padding: 75px 0 30px 0;
+        background-color: #f4f4f2; }
+        #container > #login_bigbox > .inner_box1100 > .login > .desktop {
+          float: left;
+          margin: 0 141px;
+          width: 268px;
+          height: 200px;
+          background-image: url(../img/signin/desktop.png); }
+        #container > #login_bigbox > .inner_box1100 > .login > .text_area {
+          float: left;
+          width: 550px;
+          height: 100%; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(1) {
+            color: #222;
+            font-size: 19px;
+            font-weight: bold; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(1) > strong {
+              color: #006633;
+              font-size: 19px;
+              font-weight: bold;
+              margin-right: 3px; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(2) {
+            color: #444;
+            font-size: 14px;
+            margin-top: 8px; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul {
+            margin-top: 30px;
+            float: left; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) {
+              width: 70px;
+              height: 60px; }
+              #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) > li {
+                width: 100%;
+                height: calc(100% / 2);
+                margin-bottom: 2px; }
+                #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) > li > label {
+                  width: 100%;
+                  height: 26px;
+                  padding: 2px 0;
+                  font-size: 16px;
+                  line-height: 28px; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) {
+              width: 280px;
+              height: 56px;
+              padding: 2px 0; }
+              #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) > li {
+                width: 100%;
+                height: calc(100% / 2);
+                margin-bottom: 2px; }
+                #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) > li > input {
+                  width: 100%;
+                  height: 100%;
+                  text-indent: 1px;
+                  border-radius: 2px;
+                  line-height: 28px; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > button {
+            margin: 30px 0 0 10px;
+            width: 83px;
+            height: 61px;
+            float: left; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > button > a {
+              background: #006633;
+              border-radius: 3px;
+              color: #fff;
+              display: block;
               width: 100%;
               height: 100%;
-              display: block;
-              color: #d5b192;
-              background-color: transparent;
-              text-align: center;
-              line-height: 30px; }
-              #container > #reserve > .beansReserve > .inner_box1100 > .reserve_btn > a:hover {
-                color: #171717;
-                background-color: #d5b192; }
-    #container > #favorite {
-      width: 100%;
-      height: 800px;
-      background-image: url(../img/favorite/bg.jpg);
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      background-attachment: fixed;
-      background-position: center center; }
-      #container > #favorite > .inner_box1100 {
-        width: 1024px;
-        padding-top: 150px;
-        height: calc(100% - 150px);
-        position: relative; }
-        #container > #favorite > .inner_box1100 > .txt01 {
-          margin-left: 104px;
-          margin-bottom: 50px;
-          width: 258px;
-          height: 204px;
-          background-image: url(../img/favorite/fav_txt01.png);
-          background-repeat: no-repeat; }
-        #container > #favorite > .inner_box1100 > .txt02 {
-          width: 362px;
-          height: 156px;
-          background-image: url(../img/favorite/fav_txt02.png);
-          background-repeat: no-repeat; }
-        #container > #favorite > .inner_box1100 > .btn03 {
-          margin-left: 230px;
-          margin-top: 20px;
-          width: 120px;
-          height: 32px; }
-          #container > #favorite > .inner_box1100 > .btn03 > a {
-            border: 2px solid #fff;
-            color: #fff;
+              line-height: 61px; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id {
+            float: left;
+            width: calc(100% - 5px);
+            height: 14px;
+            margin-top: 20px;
+            padding-left: 5px; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id > input {
+              width: 12px;
+              height: 12px; }
+            #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id > label {
+              font-size: 12px; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(3) {
+            float: left;
             width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 3px;
-            text-align: center;
-            line-height: 32px;
-            transition: all 0.3s; }
-            #container > #favorite > .inner_box1100 > .btn03 > a:hover {
-              color: #222;
-              background-color: #fff; }
-        #container > #favorite > .inner_box1100 > .img04 {
-          position: absolute;
-          z-index: 100;
-          top: 15%;
-          right: 0;
-          width: 612px;
-          height: 464px;
-          background-image: url(../img/favorite/fav_img.png);
-          background-repeat: no-repeat; }
-    #container > #thru {
-      width: 100%;
-      height: 600px;
-      background-image: url(../img/thru/thru_bg.jpg);
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      background-attachment: fixed;
-      background-position: center center;
-      position: relative; }
-      #container > #thru > .circle_01 {
-        width: 206px;
-        height: 206px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 100;
-        left: 50%;
-        top: 50%;
-        margin-left: -103px;
-        margin-top: -103px;
-        background-image: url(../img/thru/drive_medal01.png);
-        background-repeat: no-repeat;
-        cursor: pointer;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease-out;
-        transform: rotateY(0deg); }
-      #container > #thru > .circle_02 {
-        display: none;
-        width: 334px;
-        height: 334px;
-        background-color: #dd1;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 100;
-        left: 50%;
-        top: 50%;
-        margin-left: -167px;
-        margin-top: -167px;
-        background-image: url(../img/thru/drive_medal02.png);
-        background-repeat: no-repeat;
-        cursor: pointer;
-        transition: all 0.5s ease-out;
-        transform-style: preserve-3d; }
-        #container > #thru > .circle_02 > a {
-          position: absolute;
-          left: 50%;
-          top: 70%;
-          margin-left: -70px;
-          width: 140px;
-          height: 38px;
-          display: block;
-          border: 2px solid #222;
-          text-align: center;
-          line-height: 38px;
-          border-radius: 5px;
-          background-color: transparent;
-          transition: all 0.3s; }
-          #container > #thru > .circle_02 > a:hover {
-            background-color: #222;
-            color: #fff; }
-    #container > #store {
-      width: 100%;
-      height: 400px;
-      background-image: url(../img/store/bg.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative; }
-      #container > #store > .store_circle_01 {
-        position: absolute;
-        z-index: 100;
-        top: 0;
-        left: 10%;
-        width: 366px;
-        height: 312px;
-        background-image: url(../img/store/store_circle01.png);
-        background-repeat: no-repeat; }
-      #container > #store > .store_circle_02 {
-        position: absolute;
-        z-index: 200;
-        top: 40%;
-        left: 30%;
-        width: 228px;
-        height: 228px;
-        background-image: url(../img/store/store_circle02.png);
-        background-repeat: no-repeat; }
-      #container > #store > .bean_img {
-        position: absolute;
-        z-index: 200;
-        top: 0;
-        left: 40%;
-        margin-top: -50px;
-        width: 343px;
-        height: 142px;
-        background-image: url(../img/store/bean.png);
-        background-repeat: no-repeat; }
-      #container > #store > .store_txt1 {
-        position: absolute;
-        z-index: 200;
-        top: 28%;
-        left: 55%;
-        width: 385px;
-        height: 54px;
-        background-image: url(../img/store/store_txt01.png);
-        background-repeat: no-repeat; }
-      #container > #store > .store_txt2 {
-        position: absolute;
-        z-index: 200;
-        top: 45%;
-        left: 55%;
-        width: 366px;
-        height: 61px;
-        background-image: url(../img/store/store_txt02.png);
-        background-repeat: no-repeat; }
-      #container > #store > .store_btn {
-        width: 120px;
-        height: 32px;
-        position: absolute;
-        z-index: 200;
-        top: 70%;
-        left: 55%; }
-        #container > #store > .store_btn > a {
-          border: 2px solid #222;
-          color: #222;
-          width: 100%;
-          height: 100%;
-          display: block;
-          border-radius: 3px;
-          text-align: center;
-          line-height: 32px;
-          transition: all 0.3s; }
-          #container > #store > .store_btn > a:hover {
-            color: #fff;
-            background-color: #222; }
-      #container > #store > .coffee_img {
-        position: absolute;
-        z-index: 200;
-        bottom: 0;
-        right: 0;
-        width: 230px;
-        height: 102px;
-        background-image: url(../img/store/coffee.png);
-        background-repeat: no-repeat; }
+            height: 38px;
+            margin-top: 10px;
+            color: #b7312c;
+            font-size: 12px;
+            line-height: 1.4; }
+          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(4) {
+            float: left;
+            width: 100%;
+            height: 38px;
+            margin-top: 10px;
+            color: #b7312c;
+            font-size: 12px;
+            line-height: 1.4; }
     #container > #footerBox {
       width: 100%;
       height: 678px;
@@ -970,4 +780,4 @@
           margin: 0 auto;
           color: #999; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=signin.css.map */

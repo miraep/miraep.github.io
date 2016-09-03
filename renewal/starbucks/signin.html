@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="./img/logo/favicon.png">
 	<link rel="apple-touch-icon" href="./img/logo/favicon.png">
 	<link rel="stylesheet" href="./css/lib/normalize.css">
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/signin.css">
 	<!--[if lte IE 9]>
 		<script src="./js/dist/html5shiv.min.js"></script>
         <script src="./js/dist/ie9.min.js"></script>
@@ -17,7 +17,7 @@
 	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
 	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
 	<script src="./js/jquery/jquery-ui.min.js"></script>
-	<title>스타벅스 / main</title>
+	<title>스타벅스 / sign in</title>
 	<style type="text/css">
 	</style>
 	<script>
@@ -166,84 +166,46 @@
 				</nav>
 			</div>
 		</header>
-
-	<!-- 	<div class="float_menu hide_1">1123123123</div>
-		<div class="float_menu hide_2">2</div>
-		<div class="float_menu hide_3">3</div>
-		<div class="float_menu hide_4">4</div>
-		<div class="float_menu hide_5">5</div>
-		<div class="float_menu hide_6">6</div> -->
-
-		<section id="main">
-			첫번째화면
-		</section>
-		
-		<section id="notice">
-			<div class="inner_box960">
-				<div id="box_left"></div>
-				<div id="box_right"></div>
+<!--_________헤드 & 푸터 제외 부분 시작_________________________________-->
+		<section id="login_title">
+			<div class="inner_box1100">
+				<h2><span class="me_hidden">로그인</span></h2>
+				<ul>
+					<li><a href="#"><span class="me_hidden">홈버튼</span></a></li>
+					<li></li>
+					<li><a href="#">로그인</a></li>
+				</ul>
 			</div>
 		</section>
-
-		<section id="reward">
-			<div class="reward_left">star</div>
-			<div class="reward_right">text</div>
-		</section>
-
-		<section id="bigImg">
-			<div class="circle1"></div>
-			<div class="circle2"></div>
-			<div class="circle3"></div>
-		</section>
-
-		<section id="reserve">
-				<div class="beans">
-					<div class="inner_box1100">
-				</div>
-				</div>
-				<div class="beansReserve">
-					<div class="beans_bg"></div>
-					<div class="beans_ob"></div>
-					<div class="inner_box1100">
-						<div class="reserve_logo"></div>
-						<div class="reserve_txt"></div>
-						<div class="reserve_btn">
-							<a href="#">자세히보기</a>
+		<section id="login_bigbox">
+			<div class="inner_box1100">
+				<div class="login">
+					<div class="desktop"></div>
+					<div class="text_area">
+						<p><strong>Welcome!</strong> 스타벅스커피 코리아에 오신 것을 환영합니다.</p>
+						<p>설정하신 아이디와 비밀번호를 입력해 주세요.</p>
+						<ul>
+							<li><label for="user_id">아이디</label></li>
+							<li><label for="user_pwd">비밀번호</label></li>
+						</ul>
+						<ul>
+							<li><input type="text" id="user_id"></li>
+							<li><input type="password" id="user_pwd"></li>
+						</ul>
+						<button><a href="#">로그인</a></button>
+						<div class="save_id">
+							<input type="checkbox" id="id_save" />
+							<label for="id_save">아이디 저장</label>
 						</div>
+						<p>* 타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로,<br />
+정기적인 비밀번호 변경을 해주시길 바랍니다.</p>
+						<p>* 스타벅스 커피 코리아의 공식 홈페이지는 Internet Explorer 9.0 이상,<br />
+Chrome, Firefox, Safari 브라우저에 최적화 되어있습니다.</p>
 					</div>
 				</div>
-		</section>
-
-		<section id="favorite">
-			<div class="inner_box1100">
-				<div class="txt01"></div>
-				<div class="txt02"></div>
-				<div class="btn03">
-					<a href="#">자세히 보기</a>
-				</div>
-				<div class="img04"></div>
 			</div>
 		</section>
-
-		<section id="thru">
-			<div class="circle_01"></div>
-			<div class="circle_02">
-				<a href="#">매장보기</a>	
-			</div>
-		</section>
-
-		<section id="store">
-			<div class="store_circle_01"></div>
-			<div class="store_circle_02"></div>
-			<div class="bean_img"></div>
-			<div class="store_txt1"></div>
-			<div class="store_txt2"></div>
-			<div class="store_btn">
-				<a href="#">자세히 보기</a>
-			</div>
-			<div class="coffee_img"></div>
-		</section>
-
+<!--_________헤드 & 푸터 제외 부분 끝_________________________________-->
 		<footer id="footerBox">
 			<div class="foot_menu">
 				<!-- COMPANY Menu -->
