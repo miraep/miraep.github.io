@@ -47,7 +47,7 @@
 	font-family:'noto sans',"myriad pro", arial, nanumGothic, dotum, sans-serif;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none; color:#333; }
-a:hover, a:active{text-decoration: none; color:#669900;}
+a:hover, a:active{text-decoration: none; color:#063;}
 hr{border-bottom:1px solid #333;}/* 내용을 구분지을때만 사용할것*/
 address{font-style:normal;}
 table, tr, td, th, thead, tbody, tfoot{border:1px solid #777; border-spacing: 0; border-collapse:collapse;}
