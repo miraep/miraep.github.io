@@ -9,6 +9,9 @@
   height: 100%;
   margin: 0 auto; }
 
+strong {
+  color: #222; }
+
 /*_____mobile_v 모바일 세로____________________*/
 @media screen and (max-width: 480px) {
   body {
@@ -261,7 +264,7 @@
                 width: 130px;
                 height: 100%; }
     #container > #login_title {
-      margin-top: 120px;
+      margin-top: 122px;
       width: 100%;
       height: 178px;
       background-image: url(../img/signin/login_title.jpg);
@@ -275,13 +278,13 @@
           display: block;
           width: 100%;
           height: 50px;
-          background-image: url(../img/signin/login_txt.png);
+          background-image: url(../img/customer/customer.png);
           background-repeat: no-repeat; }
         #container > #login_title > .inner_box1100 > ul {
           position: absolute;
           bottom: 25px;
           right: 0;
-          width: 80px;
+          width: auto;
           height: 16px; }
           #container > #login_title > .inner_box1100 > ul > li {
             float: left; }
@@ -301,150 +304,290 @@
               background-image: url(../img/signin/arrow_btn.png);
               background-repeat: no-repeat; }
             #container > #login_title > .inner_box1100 > ul > li:nth-of-type(3) {
-              width: 45px;
+              width: 170px;
               height: 16px; }
               #container > #login_title > .inner_box1100 > ul > li:nth-of-type(3) > a {
                 color: #fff;
                 font-size: 14px; }
-    #container > #login_bigbox {
-      padding: 50px 0 80px 0;
+    #container > section#leftbox {
+      margin: 50px 0 90px 0;
       width: 100%;
-      height: 470px;
-      background-color: #fff; }
-      #container > #login_bigbox > .inner_box1100 > .login {
-        width: 100%;
-        height: 277px;
-        padding: 75px 0 30px 0;
-        margin-bottom: 30px;
-        background-color: #f4f4f2; }
-        #container > #login_bigbox > .inner_box1100 > .login > .desktop {
+      height: auto; }
+      #container > section#leftbox > .inner_box1100 {
+        background-color: #acf; }
+        #container > section#leftbox > .inner_box1100 > form {
           float: left;
-          margin: 0 141px;
-          width: 268px;
-          height: 200px;
-          background-image: url(../img/signin/desktop.png); }
-        #container > #login_bigbox > .inner_box1100 > .login > .text_area {
-          float: left;
-          width: 550px;
-          height: 100%; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(1) {
-            color: #222;
-            font-size: 19px;
-            font-weight: bold; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(1) > strong {
-              color: #006633;
-              font-size: 19px;
-              font-weight: bold;
-              margin-right: 3px; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(2) {
-            color: #444;
-            font-size: 14px;
-            margin-top: 8px; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul {
-            margin-top: 30px;
-            float: left; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) {
-              width: 70px;
-              height: 60px; }
-              #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) > li {
-                width: 100%;
-                height: calc(100% / 2);
-                margin-bottom: 2px; }
-                #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(1) > li > label {
-                  width: 100%;
-                  height: 26px;
-                  padding: 2px 0;
-                  font-size: 16px;
-                  line-height: 28px; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) {
-              width: 280px;
-              height: 56px;
-              padding: 2px 0; }
-              #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) > li {
-                width: 100%;
-                height: calc(100% / 2);
-                margin-bottom: 2px; }
-                #container > #login_bigbox > .inner_box1100 > .login > .text_area > ul:nth-of-type(2) > li > input {
+          width: 830px;
+          height: auto; }
+          #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox {
+            border-radius: 3px;
+            padding-top: 50px;
+            width: 100%;
+            height: 240px;
+            background-image: url(../img/customer/search.png);
+            background-repeat: no-repeat;
+            position: relative; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > p {
+              width: 100%;
+              height: 70px;
+              font-size: 14px;
+              color: #444;
+              text-align: center;
+              line-height: 1.4; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > p > strong {
+                color: #222;
+                font-size: 22px;
+                margin-bottom: 5px;
+                display: inline-block; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > input {
+              position: absolute;
+              top: 160px;
+              left: 160px;
+              font-size: 14px;
+              width: 416px;
+              height: 43px;
+              color: #666;
+              line-height: 43px;
+              margin: 2px 0 0 20px;
+              text-indent: 10px;
+              border: none; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > a {
+              position: absolute;
+              top: 160px;
+              left: 630px;
+              display: block;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background-image: url(../img/customer/search_btn.png); }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul {
+              position: absolute;
+              top: 215px;
+              left: 180px;
+              width: 220px;
+              height: 14px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li {
+                float: left;
+                border-right: 1px solid #000;
+                text-align: center; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li:nth-of-type(1) {
+                  width: 55px; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li:nth-of-type(2) {
+                  width: 55px; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li:nth-of-type(3) {
+                  width: 45px; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li:last-child {
+                  width: 55px;
+                  border-right: 0; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#searchbox > ul > li > a {
                   width: 100%;
                   height: 100%;
-                  text-indent: 1px;
-                  border-radius: 2px;
-                  line-height: 28px; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > button {
-            margin: 30px 0 0 10px;
-            width: 83px;
-            height: 61px;
-            float: left; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > button > a {
-              background: #006633;
-              border-radius: 3px;
-              color: #fff;
-              display: block;
-              width: 100%;
-              height: 100%;
-              line-height: 61px; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id {
-            float: left;
-            width: calc(100% - 5px);
-            height: 14px;
-            margin-top: 20px;
-            padding-left: 5px; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id > input {
-              width: 12px;
-              height: 12px; }
-            #container > #login_bigbox > .inner_box1100 > .login > .text_area > .save_id > label {
-              font-size: 12px; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(3) {
-            float: left;
-            width: 100%;
-            height: 38px;
-            margin-top: 10px;
-            color: #b7312c;
-            font-size: 12px;
-            line-height: 1.4; }
-          #container > #login_bigbox > .inner_box1100 > .login > .text_area > p:nth-of-type(4) {
-            float: left;
-            width: 100%;
-            height: 38px;
-            margin-top: 10px;
-            color: #b7312c;
-            font-size: 12px;
-            line-height: 1.4; }
-      #container > #login_bigbox > .inner_box1100 > ul {
-        width: 100%;
-        height: 66px; }
-        #container > #login_bigbox > .inner_box1100 > ul > li {
-          position: relative;
-          float: left;
-          width: calc(100% / 2);
-          height: 100%; }
-          #container > #login_bigbox > .inner_box1100 > ul > li > p {
-            color: #666;
-            font-size: 12px;
-            line-height: 1.6;
-            margin-top: 10px; }
-            #container > #login_bigbox > .inner_box1100 > ul > li > p > strong {
-              color: #444;
-              font-size: 14px; }
-          #container > #login_bigbox > .inner_box1100 > ul > li > button {
-            position: absolute;
-            bottom: 10px;
-            right: 30px;
-            height: 24px;
-            border-radius: 3px;
+                  display: block;
+                  font-size: 12px; }
+          #container > section#leftbox > .inner_box1100 > form > fieldset#faq {
             border: 1px solid #ddd;
-            background-color: #fff; }
-            #container > #login_bigbox > .inner_box1100 > ul > li > button:nth-of-type(1) {
-              width: 66px; }
-            #container > #login_bigbox > .inner_box1100 > ul > li > button.btn_2 {
-              width: 134px; }
-            #container > #login_bigbox > .inner_box1100 > ul > li > button > a {
+            border-radius: 3px;
+            margin-top: 30px;
+            width: calc(100% - 40px);
+            height: 230px;
+            padding: 20px; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r {
+              float: left;
+              padding: 10px;
+              width: calc(60% - 21px);
+              height: 210px;
+              border-right: 1px solid #ccc;
+              margin-right: 5%; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > h2 {
+                color: #222;
+                font-size: 18px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > p {
+                width: 100%;
+                height: 14px;
+                margin-top: 12px;
+                color: #222;
+                font-size: 14px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > ul {
+                width: 100%;
+                height: auto;
+                margin-top: 20px; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > ul > li {
+                  width: 100%;
+                  height: auto;
+                  margin-top: 10px;
+                  white-space: initial; }
+                  #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > ul > li > span {
+                    line-height: 1.4;
+                    background-image: url(../img/logo/dot.png);
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    padding: 0 10px;
+                    width: 130px;
+                    height: 100%;
+                    font-size: 12px;
+                    color: #666;
+                    border-right: 1px solid #ccc;
+                    box-sizing: border-box; }
+                  #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_r > ul > li > a {
+                    line-height: 1.4;
+                    color: #666;
+                    width: calc(100% - 155px);
+                    height: 14px;
+                    display: inline-block;
+                    padding-left: 5px;
+                    font-size: 12px;
+                    text-indent: 5px; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l {
+              float: right;
+              padding: 10px;
+              width: calc(35% - 20px);
+              height: 210px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > h2 {
+                color: #222;
+                font-size: 18px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > p {
+                width: 100%;
+                height: 14px;
+                margin-top: 12px;
+                color: #222;
+                font-size: 14px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > div {
+                width: 200px;
+                height: 74px;
+                margin: 30px auto; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > div > img {
+                  float: left;
+                  width: 74px;
+                  height: 100%;
+                  border-radius: 50%; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > div > p {
+                  margin-top: 20px;
+                  width: calc(100% - 74px);
+                  height: 30px;
+                  float: left;
+                  text-align: center;
+                  font-size: 14px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#faq > .faq_inner_l > a {
+                width: 100%;
+                height: 30px;
+                display: block;
+                border: 1px solid #bb9f65;
+                background-color: #e2c383;
+                border-radius: 3px;
+                color: #222;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 30px; }
+          #container > section#leftbox > .inner_box1100 > form > fieldset#usetip {
+            margin-top: 30px;
+            width: calc(100% - 60px);
+            height: 490px;
+            padding: 30px;
+            background-color: #f4f4f2;
+            border-radius: 3px; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > h2 {
+              font-size: 18px;
               width: 100%;
-              height: 100%;
-              display: block;
-              color: #444;
-              font-size: 12px;
-              line-height: 24px; }
+              height: 40px;
+              border-bottom: 1px solid #ddd; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .banner {
+              margin-top: 30px;
+              width: 100%;
+              height: 233px;
+              background-color: #a91; }
+            #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu {
+              padding: 18px 0;
+              margin-top: 30px;
+              width: 100%;
+              height: 104px;
+              background-color: #fff;
+              border-radius: 3px; }
+              #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul {
+                width: 100%;
+                height: 100%; }
+                #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li {
+                  float: left;
+                  width: calc(100% / 3);
+                  height: 78px;
+                  margin: 13px 0;
+                  border-right: 1px solid #ddd;
+                  box-sizing: border-box;
+                  background-repeat: no-repeat; }
+                  #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li:nth-of-type(3) {
+                    border-right: 0; }
+                  #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li > a {
+                    width: 100%;
+                    height: 100%;
+                    display: block; }
+                    #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li > a:hover {
+                      color: #333; }
+                    #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li > a > img {
+                      float: left;
+                      margin-left: 15px;
+                      width: 78px;
+                      height: 78px; }
+                    #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li > a > p {
+                      float: left;
+                      margin-top: 15px;
+                      margin-left: 8px;
+                      font-size: 14px; }
+                      #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li > a > p > strong {
+                        font-size: 16px; }
+                  #container > section#leftbox > .inner_box1100 > form > fieldset#usetip > .tip_menu > ul > li:nth-of-type(2) > a > p {
+                    margin-top: 22px; }
+        #container > section#leftbox > .inner_box1100 > nav.lnb {
+          float: right;
+          width: 220px;
+          height: auto; }
+          #container > section#leftbox > .inner_box1100 > nav.lnb > ul {
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #222; }
+            #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li {
+              width: 220px;
+              height: 54px;
+              border-bottom: 1px solid #ddd; }
+              #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li > a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                color: #444;
+                font-size: 14px;
+                line-height: 54px;
+                text-indent: 15px;
+                font-weight: bold; }
+                #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li > a:hover {
+                  color: #063; }
+              #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) {
+                height: auto;
+                position: relative; }
+                #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) > span {
+                  position: absolute;
+                  right: 10px;
+                  top: 25px;
+                  width: 12px;
+                  height: 7px;
+                  background-image: url(../img/customer/arrow_d.png);
+                  background-repeat: no-repeat;
+                  cursor: pointer; }
+                #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) > ol {
+                  width: 100%;
+                  height: auto;
+                  display: none; }
+                  #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) > ol > li {
+                    width: 100%;
+                    height: 24px; }
+                    #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) > ol > li > a {
+                      width: 100%;
+                      height: 100%;
+                      display: block;
+                      text-indent: 15px;
+                      font-size: 12px;
+                      line-height: 24px;
+                      font-weight: bold; }
+                      #container > section#leftbox > .inner_box1100 > nav.lnb > ul > li:nth-of-type(3) > ol > li > a:hover {
+                        color: #333; }
     #container > #footerBox {
       width: 100%;
       height: 678px;
@@ -586,4 +729,4 @@
           margin: 0 auto;
           color: #999; } }
 
-/*# sourceMappingURL=signin.css.map */
+/*# sourceMappingURL=customer.css.map */

@@ -1,3 +1,5 @@
+//normalize에 letter-spacing : -0.3px있음
+
 
 .inner_box960{
 	width: 960px; height: 100%;
@@ -7,7 +9,9 @@
 	width: 1100px; height: 100%;
 	margin: 0 auto;
 }
-
+strong{
+	color: #222;
+}
 
 /*_____mobile_v 모바일 세로____________________*/
 @media screen and (max-width:480px) {
@@ -27,7 +31,6 @@
 }
 /*_____pc 피씨_______________________________*/
 @media screen and (min-width:1025px) {
-
 #container{
 	width: 100%; height: auto;
 	position: relative;
@@ -264,312 +267,321 @@
 			}//gnb
 		}//inner_Box
 	}//header
-	>#main{
-		padding-top: 120px;
-		width: 100%; height: 650px;
-		background-color: #9a1;
-	}//main
-	>#notice{
-		width: 100%; height: 60px;
-		background-color: #9a9;
-		>.inner_box960{
-			>#box_left{
-				width: 50%; height: 100%;
-				float: left;
-				background-color: #000;
-			}//box_left
-			>#box_right{
-				width: 50%; height: 100%;
-				float: right;
-				background-color: #f6f5ef;
-			}//box_right
-		}//inner_Box
-	}//notice
-	>#reward{
-		width: 100%; height: 316px;
-		position: relative;
-		>.reward_left{
-			position: absolute; z-index: 200;
-			left: 50%; margin-left: -50%;
-			width: 40%; height: 100%; float: left;
-			background-image: url(../img/reward/reward_star.png);
-			background-repeat: no-repeat; background-size:c;
-		}//reward_left
-		>.reward_right{
-			// position: absolute; right: 0; z-index: 100;
-			width: 100%; height: 100%; float: right;
-			background-image: url(../img/reward/reward_texbg.jpg);
-			background-repeat: no-repeat; background-size: 100% 100%;
-		}//reward_right
-	}//reward
-	>#bigImg{
-		width: 100%; height: 700px;
-		background-image: url(../img/bigimg/bg1.jpg);
+// _________헤드 & 푸터 제외 부분 시작_________________________________
+	>#login_title{
+		margin-top: 122px;
+		width: 100%; height: 178px;
+		background-image: url(../img/signin/login_title.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		position: relative;
-		>.circle1{
-			width: 300px; height: 300px;
-			border-radius: 50%;
-			position: absolute; z-index: 500;
-			top: 5%; left: 5%;
-			background-color: #dad;
-		}//circle1
-		>.circle2{
-			width: 210px; height: 210px;
-			border-radius: 50%;
-			position: absolute; z-index: 500;
-			top: 40%; left: 30%;
-			background-color: #add;
-		}//circle2
-		>.circle3{
-			width: 320px; height: 320px;
-			border-radius: 50%;
-			position: absolute; z-index: 500;
-			bottom: 0; right: 5%;
-			margin-bottom: -5%;
-			background-color: #dda;
-		}//circle3
-	}//bigImg
-	>#reserve{
-		width: 100%; height: 700px;
-		background-color: #acf;
-		>.beans{
-			width: 100%; height: 400px;
-			background-image: url(../img/bean/beans/bg.jpg);
-			background-size: cover;
-			>.inner_box1100{
-
-			}//inner_box1100
-		}//beans
-		>.beansReserve{
-			width: 100%; height: 300px;
-			background-color: #171717;
-			position: relative;
-			>.beans_bg{
-				background-image: url(../img/bean/beansreserve/beans_img.png);
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-				width: 600px; height: 400px;
-				position: absolute; right: -50px; top: -82px; z-index: 100;
-			}//beans_bg
-			>.beans_ob{
-				background-image: url(../img/bean/beansreserve/object.png);
-				background-repeat: no-repeat;
-				width: 500px; height: 320px;
-				position: absolute; right: 20px; top: -50px; z-index: 200;
-			}//beans_ob
-			>.inner_box1100{
-				position: relative;
-				>.reserve_logo{
-					width: 100px; height: 300px; float: left;
-					background-image: url(../img/bean/beansreserve/reserve_logo.png);
-					background-repeat: no-repeat;
-					background-position: center;
-				}//h2
-				>.reserve_txt{
-					margin-top: 110px; margin-left: 20px;
-					width: 420px; height: 40px; float: left;
-					background-image: url(../img/bean/beansreserve/reserve_txt.png);
-					background-repeat: no-repeat;
-				}//reserve_txt
-				>.reserve_btn{
-					width: 120px; height: 30px; display: block; float: left;
-					border: 2px solid #d5b192; border-radius: 3px;
-					position: absolute; top: 180px; left: 120px;
-					>a{
-						width: 100%; height: 100%; display: block;
-						color: #d5b192; background-color: transparent;
-						text-align: center; line-height: 30px;
-					&:hover{
-						color: #171717;
-						background-color: #d5b192; }
-					}//a
-				}//reserve_btn
-			}//inner_box1100
-		}//beansReserve
-	}//reserve
-	>#favorite{
-		width: 100%; height: 800px;
-		background-image: url(../img/favorite/bg.jpg);
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-attachment: fixed;
-		background-position: center center;
 		>.inner_box1100{
-			width: 1024px;
-			padding-top: 150px;
-			height: calc(100% - 150px);
 			position: relative;
-			>.txt01{
-				margin-left: 104px;
-				margin-bottom: 50px;
-				width: 258px; height: 204px;
-				background-image: url(../img/favorite/fav_txt01.png);
+			>h2{
+				position: absolute;
+				top: 110px; left: 0;
+				display: block;
+				width: 100%; height: 50px;
+				background-image: url(../img/customer/customer.png);
 				background-repeat: no-repeat;
-			}//txt01
-			>.txt02{
-				width: 362px; height: 156px;
-				background-image: url(../img/favorite/fav_txt02.png);
-				background-repeat: no-repeat;
-			}//txt02
-			>.btn03{
-				margin-left: 230px;
-				margin-top: 20px;
-				width: 120px; height: 32px;
-				>a{
-					border: 2px solid #fff; color: #fff;
-					width: 100%; height: 100%; display: block;
-					border-radius: 3px;
-					text-align: center;
-					line-height: 32px;
-					transition: all 0.3s;
-				&:hover{
-					color: #222;
-					background-color: #fff;
-				}
-				}//a
-			}//btn04
-			>.img04{
-				position: absolute; z-index: 100;
-				top: 15%; right: 0;
-				width: 612px; height: 464px;
-				background-image: url(../img/favorite/fav_img.png);
-				background-repeat: no-repeat;
-			}//txt03
+			}//h2
+			>ul{
+				position: absolute;
+				bottom: 25px; right: 0;
+				width: auto; height: 16px;
+				>li{
+					float: left;
+				&:nth-of-type(1){
+					width: 16px; height: 16px;
+					>a{
+						display: block; width: 100%; height: 100%;
+						background-image: url(../img/signin/home_btn.png);
+						background-repeat: no-repeat;
+					}
+				}//li_1
+				&:nth-of-type(2){
+					margin: 2px 5px;
+					width: 6px; height: 12px;
+					background-image: url(../img/signin/arrow_btn.png);
+					background-repeat: no-repeat;
+				}//li_2
+				&:nth-of-type(3){
+					width: 170px; height: 16px;
+					>a{
+						color: #fff;
+						font-size: 14px;
+					}//a
+				}//li_3
+				}//li_all
+			}//ul
 		}//inner_box1100
-	}//favorite
-	>#thru{
-		width: 100%; height: 600px;
-		background-image: url(../img/thru/thru_bg.jpg);
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-attachment: fixed;
-		background-position: center center;
-		position: relative;
-		>.circle_01{
-			// display: none;
-			width: 206px; height: 206px;
-			border-radius: 50%;
-			position: absolute; z-index: 100;
-			left: 50%; top: 50%;
-			margin-left: -103px; margin-top: -103px;
-			background-image: url(../img/thru/drive_medal01.png);
-			background-repeat: no-repeat;
-			cursor: pointer;
-			transform-style: preserve-3d;
-			transition: all 0.5s ease-out;
-			transform: rotateY(0deg);
-		// &:hover{
-		// 	width: 334px; height: 334px;
-		// 	border-radius: 50%;
-		// 	position: absolute; z-index: 100;
-		// 	left: 50%; top: 50%;
-		// 	margin-left: -167px; margin-top: -167px;
-		// 	background-image: url(../img/thru/drive_medal02.png);
-		// 	background-repeat: no-repeat;
-		// 	transform: rotateY(180deg);
-		// }//hover
-		}//circle_01
+	}//login_title
+	>section#leftbox{
+		margin: 50px 0 90px 0;
+		width: 100%;
+		height: auto;
+		>.inner_box1100{
+			background-color: #acf;
+			>form{
+				float: left;
+				width: 830px; height: auto;
+				>fieldset#searchbox{
+					border-radius: 3px;
+					padding-top: 50px;
+					width: 100%; height: 240px; //pt때문에 50px줄임
+					background-image: url(../img/customer/search.png);
+					background-repeat: no-repeat;
+					// background-size: 100% 100%;
+					position: relative;
+					>p{
+						width: 100%; height: 70px;
+						font-size: 14px;
+						color: #444;
+						text-align: center;
+						line-height: 1.4;
+						>strong{
+							color: #222;
+							font-size: 22px;
+							margin-bottom: 5px;
+							display: inline-block;
+						}//str
+					}//p
+					>input{
+						position: absolute;
+						top: 160px; left: 160px;
+						font-size: 14px;
+	    				width: 416px; height: 43px;
+						color: #666;
+						line-height: 43px;
+						margin: 2px 0 0 20px;
+						text-indent: 10px;
+						border: none;
+					}//search_box
+					>a{
+						position: absolute;
+						top: 160px; left: 630px; display: block;
+						width: 45px; height: 45px;
+						border-radius: 50%;
+						background-image: url(../img/customer/search_btn.png);
+					}//search_btn
+					>ul{
+						position: absolute;
+						top: 215px; left: 180px;
+						width: 220px; height: 14px;
+						>li{
+							float: left;
+							border-right: 1px solid #000;
+							text-align: center;
+						&:nth-of-type(1){width: 55px;}
+						&:nth-of-type(2){width: 55px;}
+						&:nth-of-type(3){width: 45px;}
+						&:last-child{width: 55px; border-right: 0;}
+							>a{
+								width: 100%; height: 100%; display: block;
+								font-size: 12px;
+							}//a
+						}//li_all
+					}//ul
+				}//searchbox
+				>fieldset#faq{
+					border: 1px solid #ddd;
+				    border-radius: 3px;
+				    margin-top: 30px;
+					width: calc(100% - 40px); height: 230px;
+					padding: 20px;
+					>.faq_inner_r{
+						float: left;
+						padding: 10px;
+						width: calc(60% - 21px); height: 210px;
+						border-right: 1px solid #ccc;
+						margin-right: 5%;
+						>h2{
+							color: #222;
+							font-size: 18px;
+						}//h2
+						>p{
+							width: 100%; height: 14px;
+							margin-top: 12px;
+							color: #222;
+ 						    font-size: 14px;
+						}//p
+						>ul{
+							width: 100%; height: auto;
+							margin-top: 20px;
+							>li{
+								width: 100%; height: auto;
+								margin-top: 10px;
+								white-space: initial;
+								>span{
+									line-height: 1.4;
+									background-image: url(../img/logo/dot.png);
+									background-repeat: no-repeat;
+									display: inline-block;
+									padding: 0 10px;
+									width: 130px; height: 100%;
+									font-size: 12px; color: #666;
+									border-right: 1px solid #ccc;
+									box-sizing: border-box;
+								}//span[마이 스타벅스 리워드]
+								>a{
+									line-height: 1.4; color: #666;
+									width: calc(100% - 155px); height: 14px;
+									display: inline-block;
+									padding-left: 5px;
+									font-size: 12px;
+									text-indent: 5px;
+								}//a
+							}//li_all
+						}//ul
+					}//faq_inner_r
+					>.faq_inner_l{
+						float: right;
+						padding: 10px;
+						width: calc(35% - 20px); height: 210px;
+						>h2{
+							color: #222;
+							font-size: 18px;
+						}//h2
+						>p{
+							width: 100%; height: 14px;
+							margin-top: 12px;
+							color: #222;
+ 						    font-size: 14px;
+						}//p
+						>div{
+							width: 200px; height: 74px;
+							margin: 30px auto;
+							>img{
+								float: left;
+								width: 74px; height: 100%;
+								border-radius: 50%;
+							}//img
+							>p{
+								margin-top: 20px;
+								width: calc(100% - 74px);
+								height: 30px;
+								float: left;
+								text-align: center;
+								font-size: 14px;
+							}//p
+						}//div인
+						>a{
+							width: 100%; height: 30px; display: block;
+							border: 1px solid #bb9f65;
+							background-color: #e2c383;
+							border-radius: 3px;
+    						color: #222;
+    						font-size: 12px; font-weight: bold;
+    						text-align: center;
+    						line-height: 30px;
+						}//a
+					}//faq_inner_l
+				}//faq
+				>fieldset#usetip{
+					margin-top: 30px;
+					width: calc(100% - 60px); height: 490px;
+					padding: 30px; // 총 세로 550px
+					background-color: #f4f4f2;
+					border-radius: 3px;
+					>h2{
+						font-size: 18px;
+						width: 100%; height: 40px;
+						border-bottom: 1px solid #ddd;;
+					}//h2
+					>.banner{
+						margin-top: 30px;
+						width: 100%; height: 233px;
+						background-color: #a91;
+					}//banner
+					>.tip_menu{
+						padding: 18px 0 ; margin-top: 30px;
+						width: 100%; height: 104px; //총 140
+						background-color: #fff;
+						border-radius: 3px;
+						>ul{
+							width: 100%; height: 100%;
+							>li{
+								float: left;
+								width: calc(100% / 3); height: 78px;
+								margin: 13px 0;
+								border-right: 1px solid #ddd;
+								box-sizing: border-box;
+								background-repeat: no-repeat;
+							&:nth-of-type(3){ border-right: 0; }//li_last
+								>a{
+									width: 100%; height: 100%;
+									display: block;
+								&:hover{color:#333;}
+									>img{
+										float: left;
+										margin-left: 15px;
+										width: 78px; height: 78px;
+									}//img
+									>p{
+										float: left;
+										margin-top: 15px;
+										margin-left: 8px;
+										font-size: 14px;
+										>strong{font-size: 16px;}
+									}//p
+								}//a
+							&:nth-of-type(2) > a > p{margin-top: 22px;}//li_2>a>p
+							}//li_all
+						}//ul
+					}//tip_menu
+				}//usetip
+			}//form
+			>nav.lnb{
+				float: right;
+				width: 220px; height: auto;
+				>ul{
+					width: 100%; height: 100%;
+					border-top: 2px solid #222;
+					>li{
+						width: 220px; height: 54px;
+						border-bottom: 1px solid #ddd;
+						>a{
+							width: 100%; height: 100%; display: block;
+							color: #444;
+						    font-size: 14px;
+						    line-height: 54px;
+						    text-indent: 15px;
+						    font-weight: bold;
+						&:hover{color: #063}
+						}//a
+					&:nth-of-type(3){
+						height: auto;
+						position: relative;
+						>span{
+							position: absolute;
+							right: 10px; top: 25px;
+							width: 12px; height: 7px;
+							background-image: url(../img/customer/arrow_d.png);
+							background-repeat: no-repeat;
+							cursor: pointer;
+						}//slide_btn
+						>ol{
+							width: 100%;
+							height: auto;
+							display: none;
+							>li{
+								width: 100%;
+								height: 24px;
+								>a{
+									width: 100%; height: 100%; display: block;
+									text-indent: 15px; font-size: 12px;
+									line-height: 24px;
+									font-weight: bold;
+								&:hover{color: #333;}
+								}//a
+							}//ol>li_all
+						}//hide_menu
+					}//li_3
+					}//li_all
+				}//ul
+			}//lnb
+		}//inner_box1100
+	}//커스텀왕박스
+// _________헤드 & 푸터 제외 부분 끝!__________________________________
 
-
-		>.circle_02{
-			display: none;
-			width: 334px; height: 334px; background-color: #dd1;
-			border-radius: 50%;
-			position: absolute; z-index: 100;
-			left: 50%; top: 50%;
-			margin-left: -167px; margin-top: -167px;
-			background-image: url(../img/thru/drive_medal02.png);
-			background-repeat: no-repeat;
-			cursor: pointer;
-			// transform: rotateY(180deg);
-			transition: all 0.5s ease-out;
-			transform-style: preserve-3d;
-			>a{
-				position: absolute; left: 50%; top: 70%;
-				margin-left: -70px;
-				width: 140px; height: 38px; display: block;
-				border: 2px solid #222;
-				text-align: center; line-height: 38px;
-				border-radius: 5px;
-				background-color: transparent;
-				transition: all 0.3s;
-			&:hover{
-				background-color: #222;
-				color: #fff;
-			}//hover
-			}//a
-		}//circle_02
-	}//thru
-	>#store{
-		width: 100%; height: 400px;
-		background-image: url(../img/store/bg.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		>.store_circle_01{
-			position: absolute; z-index: 100;
-			top: 0; left: 10%;
-			width: 366px; height: 312px;
-			background-image: url(../img/store/store_circle01.png);
-			background-repeat: no-repeat;
-		}//store_circle_01
-		>.store_circle_02{
-			position: absolute; z-index: 200;
-			top: 40%; left: 30%;
-			width: 228px; height: 228px;
-			background-image: url(../img/store/store_circle02.png);
-			background-repeat: no-repeat;
-		}//store_circle_02
-		>.bean_img{
-			position: absolute; z-index: 200;
-			top: 0; left: 40%;
-			margin-top: -50px;
-			width: 343px; height: 142px;
-			background-image: url(../img/store/bean.png);
-			background-repeat: no-repeat;
-		}//bean_img
-		>.store_txt1{
-			position: absolute; z-index: 200;
-			top: 28%; left: 55%;
-			width: 385px; height: 54px;
-			background-image: url(../img/store/store_txt01.png);
-			background-repeat: no-repeat;
-		}//store_txt1
-		>.store_txt2{
-			position: absolute; z-index: 200;
-			top: 45%; left: 55%;
-			width: 366px; height: 61px;
-			background-image: url(../img/store/store_txt02.png);
-			background-repeat: no-repeat;
-		}//store_txt2
-		>.store_btn{
-			width: 120px; height: 32px;
-			position: absolute; z-index: 200;
-			top: 70%; left: 55%;
-			>a{
-				border: 2px solid #222; color: #222;
-				width: 100%; height: 100%; display: block;
-				border-radius: 3px;
-				text-align: center;
-				line-height: 32px;
-				transition: all 0.3s;
-			&:hover{
-				color: #fff;
-				background-color: #222; }
-			}//a
-		}//store_btn
-		>.coffee_img{
-			position: absolute; z-index: 200;
-			bottom: 0; right: 0;
-			width: 230px; height: 102px;
-			background-image: url(../img/store/coffee.png);
-			background-repeat: no-repeat;
-		}//coffee_img
-
-	}//store
 	>#footerBox{
 		width: 100%; height: 678px;
 		padding: 32px 0 35px 0;
