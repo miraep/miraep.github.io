@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/logo/favicon.png">
+	<link rel="apple-touch-icon" href="./img/logo/favicon.png">
+	<link rel="stylesheet" href="./css/lib/normalize.css">
+	<link rel="stylesheet" href="./css/store.css">
+	<!--[if lte IE 9]>
+		<script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+	<![endif]-->
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<title>스타벅스 / find a store</title>
+	<style type="text/css">
+	</style>
+	<script>
+		$(document).ready(function(){
+			var search_btn = $('.search_btn'),
+				search_box = $('.search_box');
+
+			search_btn.on('click',function(){
+				search_box.toggle({'display' : 'block'});
+			});
+
+			$('.click_hide').on('click',function(){
+				$('.click_slide').slideToggle();
+			});
+
+
+			// $('.banner_left').on('click',function(){
+			// 	$('.e_ban').css({ 'margin-left' : '-' + '380' + 'px' });
+			// });
+
+			// $('.banner_right').on('click',function(){
+			// 	$('.e_ban').css({ 'margin-left' : '380' + 'px' });
+			// });
+
+
+		});//all
+	</script>
+	
+</head>
+<body>
+	<div id="container">
+		<div class="click_slide">
+			<div class="inner_box1100">
+				<div class="joinus">
+					<i class="joinus_img"></i>
+					<p>
+					<strong>스타벅스커피 코리아 회원이 아니세요?</strong><br />
+					스타벅스커피 코리아 회원만의<br />
+					특별한 혜택을 누릴 수 있습니다.
+					</p>
+					<div>
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+					</div>
+				</div>
+				<span class="bar"></span>
+				<div class="card">
+					<i class="card_img"></i>
+					<p>
+					<strong>스타벅스 카드를 가지고 계신가요?</strong><br />
+					스타벅스 카드를 등록하시면, 마이 스타벅스 리워드 만의<br />
+					특별한 혜택을 누릴 수 있습니다.
+					</p>
+					<div>
+						<a href="#">카드 등록</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<header id="headerBox">
+			<div class="inner_box1100">
+				<h1>
+					<a href="./index.html">
+						<span class="me_hidden">Main logo</span>
+					</a>
+				</h1>
+				<div id="siteMap">
+					<ul>
+						<!-- __________________________________________________________ -->
+						<li><a href="./signin.html">Sign In</a></li>
+						<!-- __________________________________________________________ -->
+						<li><a href="#">My Starbucks</a></li>
+						<!-- __________________________________________________________ -->
+						<li><a href="./customer.html">Customer Service &amp; Ideas</a></li>
+						<!-- __________________________________________________________ -->
+						<li><a href="#">Find a Store</a></li>
+						<!-- __________________________________________________________ -->
+						<li class="search_box">
+							<form action="post">
+								<fieldset>
+									<legend>searchbox</legend>
+									<input type="text" />
+								</fieldset>
+							</form>
+						</li>
+						<!-- __________________________________________________________ -->
+						<li class="search_btn">
+							<a href="#"><span class="me_hidden">search</span></a>
+						</li>
+						<!-- __________________________________________________________ -->
+						<li class="click_hide"><a href="#"><span class="me_hidden">Coffee Button</span></a></li>
+						<!-- __________________________________________________________ -->
+					</ul>
+				</div>
+				<nav id="gnb">
+					<ul>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_1">
+							<a href="#">COFFEE</a>
+							<!-- <div class="hide_11">1123123123</div> -->
+						</li>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_2"><a href="#">MENU</a></li>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_3"><a href="#">STORE</a></li>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_4"><a href="#">RESPONSIBILITY</a></li>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_5"><a href="#">MY MEMBERSHIP REWARDS</a></li>
+						<!-- __________________________________________________________ -->
+						<li class="gnb_6"><a href="#">WHAT'S NEW</a></li>
+						<!-- __________________________________________________________ -->
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!--_________헤드 & 푸터 제외 부분 시작_________________________________-->
+		<section id="store_wrap">
+			<div id="map">지도를 넣겠다</div>
+			<script>
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = {
+				    center: new google.maps.LatLng(37.567277, 126.977902), zoom: 18
+				}
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+			</script>
+			<div class="store_event">
+				<div class="inner_box1100">
+					<h2>매장에서 진행되는 이벤트</h2>
+					<div class="b_box">
+						<ul class="e_ban">
+							<li>배너1</li>
+							<li>배너2</li>
+							<li>배너3</li>
+							<li>배너4</li>
+							<li>배너5</li>
+							<li>배너6</li>
+							<li>배너7</li>
+							<li>배너8</li>
+							<li>배너9</li>
+						</ul>
+						<div class="b_btn">
+							<ol>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<!-- <li>4</li> -->
+							</ol>	
+						</div>
+					</div>
+					<span class="banner_left" aria="왼쪽버튼"></span>
+					<span class="banner_right" aria="오른쪽버튼"></span>
+				</div>
+			</div>
+		</section>
+<!--_________헤드 & 푸터 제외 부분 끝_________________________________-->
+		<footer id="footerBox">
+			<div class="foot_menu">
+				<!-- COMPANY Menu -->
+				<ul>
+					<span class="me_hidden">COMPANY</span>
+					<li class="first_li"><a href="#">COMPANY</a></li>
+					<li><a href="#">한눈에 보기</a></li>
+					<li><a href="#">스타벅스 사명</a></li>
+					<li><a href="#">스타벅스 소개</a></li>
+					<li><a href="#">국내 뉴스룸</a></li>
+					<li><a href="#">세계의 스타벅스</a></li>
+					<li><a href="#">글로벌 뉴스룸</a></li>
+				</ul>
+				<!-- CORPORATE Menu -->
+				<ul>
+					<span class="me_hidden">CORPORATE SALES</span>
+					<li class="first_li"><a href="#">CORPORATE SALES</a></li>
+					<li><a href="#">단체 및 기업 구매 안내</a></li>
+					<li><a href="#">스타벅스 카드 e-Gift</a></li>
+					<li><a href="#">스타벅스 카드</a></li>
+					<li><a href="#">스타벅스 상품</a></li>
+					<li><a href="#">스타벅스 상품권</a></li>
+				</ul>
+				<!-- PARTNERSHIP Menu -->
+				<ul>
+					<span class="me_hidden">PARTNERSHIP</span>
+					<li class="first_li"><a href="#">PARTNERSHIP</a></li>
+					<li><a href="#">신규 입점 제의</a></li>
+					<li><a href="#">협력 고객사 등록신청</a></li>
+				</ul>
+				<!-- ONLINE COMMUNITY Menu -->
+				<ul>
+					<span class="me_hidden">ONLINE COMMUNITY</span>
+					<li class="first_li"><a href="#">ONLINE COMMUNITY</a></li>
+					<li><a href="#">페이스북</a></li>
+					<li><a href="#">트위터</a></li>
+					<li><a href="#">유튜브</a></li>
+					<li><a href="#">블로그</a></li>
+					<li><a href="#">인스타그램</a></li>
+				</ul>
+				<!-- RECRUIT Menu -->
+				<ul>
+					<span class="me_hidden">RECRUIT</span>
+					<li class="first_li"><a href="#">RECRUIT</a></li>
+					<li><a href="#">채용 소개</a></li>
+					<li><a href="#">채용 지원하기</a></li>
+				</ul>
+			</div>
+			<div class="inner_box1100">
+				<div class="ban">banner</div>
+			</div>
+			<div class="company">
+				<ul>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">영상정보처리기기 운영관리 방침</a></li>
+					<li><a href="#">홈페이지 이용약관</a></li>
+					<li><a href="#">스타벅스카드 이용약관</a></li>
+					<li><a href="#">윤리경영 핫라인</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">찾아오시는 길</a></li>
+					<li><a href="#">신규입점제의</a></li>
+					<li><a href="#">사이트 맵</a></li>
+				</ul>
+				<ul>
+					<li>사업자등록번호 201-81-21515</li>
+					<li>(주)스타벅스커피 코리아 대표이사 이석구</li>
+					<li>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</li>
+					<li>개인정보 책임자 : 강기원</li>
+				</ul>
+				<p>ⓒ 2015 Starbucks Coffee Company. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+	<script src="./js/banner.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
