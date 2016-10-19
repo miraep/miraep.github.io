@@ -426,20 +426,140 @@
                   /* 위에 전체세팅 */ }
                 #container > #headerBox > .inner_box1100 > #gnb > ul > li.gnb_6 > .gnb_h_6 > #new_sub_txt > .inner_box1100 > .txt_r {
                   /* 위에 전체세팅 */ }
-    #container > .bgc {
-      background-color: #a0a;
-      position: absolute;
-      top: 123px;
-      left: 0;
-      width: 100%;
-      height: 550px;
-      display: none;
-      z-index: 100; }
     #container > #main {
-      padding-top: 120px;
+      padding-top: 122px;
       width: 100%;
       height: 650px;
-      background-color: #9a1; }
+      background-image: url(../img/main/main_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      #container > #main > .inner_box960 {
+        position: relative; }
+        #container > #main > .inner_box960 > .teavana {
+          position: absolute;
+          z-index: 200;
+          top: 50px;
+          left: 50px;
+          width: 340px;
+          height: 140px;
+          background-image: url(../img/main/teavana.png);
+          background-repeat: no-repeat;
+          background-size: 100% auto; }
+        #container > #main > .inner_box960 > .btn_box {
+          position: absolute;
+          z-index: 200;
+          top: 230px;
+          left: 15px;
+          width: 400px;
+          height: 38px; }
+          #container > #main > .inner_box960 > .btn_box > a {
+            border-radius: 3px;
+            border: 2px solid #1d2682;
+            display: block;
+            height: 34px;
+            float: left; }
+            #container > #main > .inner_box960 > .btn_box > a > button {
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              font-size: 14px;
+              color: #1d2682;
+              background-color: transparent;
+              transition: all 0.3s; }
+              #container > #main > .inner_box960 > .btn_box > a > button:hover {
+                background-color: #1d2682;
+                color: #fff; }
+          #container > #main > .inner_box960 > .btn_box > a:nth-of-type(1) {
+            width: 160px;
+            margin-right: 30px; }
+          #container > #main > .inner_box960 > .btn_box > a:nth-of-type(2) {
+            width: 202px; }
+        #container > #main > .inner_box960 > .sinamon {
+          position: absolute;
+          z-index: 200;
+          top: 330px;
+          left: 100px;
+          width: 220px;
+          height: 247px;
+          background-image: url(../img/main/sinamon.png);
+          background-repeat: no-repeat;
+          background-size: contain; }
+          #container > #main > .inner_box960 > .sinamon > a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+        #container > #main > .inner_box960 > .cup {
+          position: absolute;
+          z-index: 0;
+          bottom: 10px;
+          left: 320px;
+          width: 71px;
+          height: 157px;
+          background-image: url(../img/main/cup_02.png);
+          background-repeat: no-repeat;
+          background-size: 100% auto; }
+        #container > #main > .inner_box960 > .table {
+          position: absolute;
+          top: 240px;
+          left: 440px;
+          width: 533px;
+          height: 378px;
+          background-image: url(../img/main/tablecloth.png);
+          background-repeat: no-repeat;
+          background-size: contain; }
+          #container > #main > .inner_box960 > .table > div {
+            position: absolute;
+            z-index: 200;
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
+            #container > #main > .inner_box960 > .table > div:nth-of-type(1) {
+              width: 289px;
+              height: 350px;
+              top: -70px;
+              left: 40px;
+              background-image: url(../img/main/menu_01.png); }
+            #container > #main > .inner_box960 > .table > div:nth-of-type(2) {
+              width: 266px;
+              height: 254px;
+              top: 70px;
+              left: 170px;
+              z-index: 300;
+              background-image: url(../img/main/menu_02.png); }
+            #container > #main > .inner_box960 > .table > div:nth-of-type(3) {
+              width: 195px;
+              height: 284px;
+              top: -20px;
+              right: 20px;
+              background-image: url(../img/main/menu_03.png); }
+          #container > #main > .inner_box960 > .table > p {
+            position: absolute;
+            z-index: 200;
+            width: 230px;
+            height: 77px;
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
+            #container > #main > .inner_box960 > .table > p:nth-of-type(1) {
+              top: 140px;
+              left: -90px;
+              background-image: url(../img/main/menu_01_txt.png); }
+            #container > #main > .inner_box960 > .table > p:nth-of-type(2) {
+              bottom: 100px;
+              right: -15px;
+              background-image: url(../img/main/menu_02_txt.png); }
+            #container > #main > .inner_box960 > .table > p:nth-of-type(3) {
+              top: -100px;
+              right: 20px;
+              background-image: url(../img/main/menu_03_txt.png); }
+          #container > #main > .inner_box960 > .table > .spoon {
+            position: absolute;
+            z-index: 200;
+            left: -70px;
+            top: 200px;
+            width: 240px;
+            height: 167px;
+            background-image: url(../img/main/spoon.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
     #container > #notice {
       width: 100%;
       height: 60px;
