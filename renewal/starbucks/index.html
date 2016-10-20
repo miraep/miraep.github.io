@@ -29,6 +29,10 @@
 				search_box.toggle({'display' : 'block'});
 			});
 
+			$('.close').on('click',function(){
+				$('#alert').slideUp();
+			});
+
 			/* 헤더 > 하이드 메뉴 나타나기 */
 			$('.click_hide').on('click',function(){
 				$('.click_slide').slideToggle();
@@ -94,7 +98,13 @@
 </head>
 <body>
 	<div id="container">
-
+		<div id="alert">
+			<div class="inner_box960">
+				<p>상업적 용도가 아닌, 개인 포트폴리오 사이트입니다.<br />
+				현재 계속 수정중에 있으며, 움직이는 배너 부분은 패스하고 봐주시면 감사하겠습니다.</p>
+				<div class="close">닫기</div>
+			</div>
+		</div>
 		<header id="headerBox">
 			<div class="click_slide">
 				<div class="inner_box1100">

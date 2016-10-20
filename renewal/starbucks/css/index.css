@@ -32,6 +32,29 @@
     height: auto;
     position: relative;
     overflow: hidden; }
+    #container > #alert {
+      width: 100%;
+      height: 80px;
+      background-color: #ccc; }
+      #container > #alert > .inner_box960 {
+        padding-top: 10px;
+        height: calc(100% - 10px); }
+        #container > #alert > .inner_box960 > p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #f00;
+          float: left; }
+        #container > #alert > .inner_box960 > div.close {
+          font-size: 1.5rem;
+          font-weight: bold;
+          line-height: 56px;
+          text-align: center;
+          cursor: pointer;
+          float: right;
+          width: 60px;
+          height: 60px;
+          border: 2px solid;
+          box-sizing: border-box; }
     #container > #headerBox {
       width: 100%;
       height: auto;
